@@ -32,6 +32,15 @@
         "https://clinicaltrials.gov/study/NCT07215585",
         "https://clinicaltrials.gov/study/NCT07201558"
       ]
+    },
+    {
+      "company": "GSK",
+      "total_score": 3.0,
+      "fit_score": 1.0,
+      "urgency_score": 0.0,
+      "access_score": 2.0,
+      "trigger_summary": "",
+      "evidence_links": []
     }
   ],
   "target_roles": [
