@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local runtime data
+data/radar.sqlite
+data/*.sqlite
