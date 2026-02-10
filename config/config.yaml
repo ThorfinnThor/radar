@@ -17,6 +17,21 @@ ctg:
     - "PHASE2"
   include_industry_collaborators: true
 
+  # If lead sponsor is not INDUSTRY, still keep the study if there is at least one INDUSTRY collaborator.
+  # The system will attribute the study to INDUSTRY collaborator accounts (not the academic lead).
+  allow_non_industry_lead_with_industry_collab: true
+
+  # Optional: promote fit=3 for known T-cell engager molecules even if titles omit 'bispecific'.
+  tcell_engager_molecules:
+    - elranatamab
+    - teclistamab
+    - talquetamab
+    - epcoritamab
+    - mosunetuzumab
+    - glofitamab
+    - odronextamab
+    - blinatumomab
+
 jobs:
   job_keywords:
     - "biomarker"

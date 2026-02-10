@@ -30,7 +30,7 @@ def _norm(s: str | None) -> str:
         t = t.replace(ch, "-")
     return t
 
-def fit_from_trial_title(title: str | None) -> Tuple[int, str]:
+def fit_from_trial_title(title: str | None, engager_molecules: list[str] | None = None) -> Tuple[int, str]:
     t = _norm(title)
     t_space = t.replace("-", " ")
 
@@ -40,6 +40,11 @@ def fit_from_trial_title(title: str | None) -> Tuple[int, str]:
         return 3, "trial title contains CAR-T/TCR-T"
 
     # T-cell engagers: capture common phrasing variants ("t cell-engaging antibody", "t-cell engaging", etc.)
+    # Known T-cell engager molecules (useful when titles omit "bispecific")
+    mols = [m.lower() for m in (engager_molecules or [])]
+    if mols and any(m in t_space for m in mols):
+        return 3, "trial title contains known T-cell engager molecule"
+
     if any(phrase in t_space for phrase in ["t cell engager", "t cell engaging", "t cell redirecting"]):
         return 3, "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting"
     if "t-cell engager" in t or "t-cell-engaging" in t or "t-cell engaging" in t:
@@ -90,7 +95,8 @@ def compute_scores(
     fit_reason = "no trials"
     best_fit_trial = None
     for t in trials[:50]:
-        s, reason = fit_from_trial_title(t.get("brief_title"))
+        mols = (config.get("ctg", {}) or {}).get("tcell_engager_molecules", [])
+        s, reason = fit_from_trial_title(t.get("brief_title"), mols)
         if s > best_fit:
             best_fit = s
             fit_reason = reason
