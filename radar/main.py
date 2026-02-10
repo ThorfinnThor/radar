@@ -8,11 +8,27 @@ from radar.collectors import clinicaltrials as ctg
 from radar.collectors import greenhouse, lever, workday
 from radar.scoring import compute_scores
 from radar.export import export_ranked, export_watchlist, summarize_triggers
+from radar.role_recommender import recommend_roles
 
 def normalize_account_name(name: str, aliases: Dict[str, str]) -> str:
     n = (name or "").strip()
     return aliases.get(n, n) if n else "UNKNOWN"
 
+
+def _job_hit_details(job_sigs: List[Dict[str, Any]], keywords: List[str], window_days: int = 45, max_titles: int = 3) -> Dict[str, Any]:
+    # Best-effort: job signals may have different title fields; we use signals table 'title'
+    from radar.scoring import within_days
+    recent = [j for j in job_sigs if within_days(j.get("published_at"), window_days)]
+    titles = []
+    matched = set()
+    for j in recent:
+        t = (j.get("title") or "").lower()
+        for k in keywords:
+            if k in t:
+                matched.add(k)
+        if j.get("title") and len(titles) < max_titles:
+            titles.append(j.get("title"))
+    return {"recent_job_hits": len(recent), "job_hit_titles": titles, "job_hit_keywords": sorted(matched)}
 def run_daily(cfg: AppConfig) -> None:
     conn = db.connect()
     db.migrate(conn)
@@ -135,6 +151,8 @@ def run_weekly(cfg: AppConfig) -> None:
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
     cur = conn.cursor()
+    keywords = [k.lower() for k in cfg.job_keywords()]
+    job_window = int(cfg.config.get('jobs', {}).get('recent_window_days', 45))
 
     # Ensure watchlist companies exist as accounts even if they have zero signals yet.
     for c in cfg.companies_list():
@@ -161,12 +179,14 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
         job_sigs = [dict(r) for r in cur.fetchall()]
 
         scores = compute_scores(trials, job_sigs, cfg.config, company_in_watchlist=(company in watchlist))
+        hit = _job_hit_details(job_sigs, keywords, window_days=job_window)
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
         cur.execute("SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
         all_sigs = [dict(r) for r in cur.fetchall()]
 
         evidence = [s["evidence_url"] for s in all_sigs[:8] if s.get("evidence_url")]
+        roles = recommend_roles(all_sigs, max_roles=5)
         row = {
             "company": company,
             "total_score": scores["total"],
@@ -175,6 +195,23 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             "access_score": scores["access"],
             "trigger_summary": summarize_triggers(all_sigs),
             "evidence_links": evidence,
+            "target_roles": roles,
+            "trial_count": scores.get("details", {}).get("trial_count"),
+            "recent_job_hits": scores.get("details", {}).get("jobs", {}).get("relevant_recent_jobs"),
+            "best_fit_trial_title": (scores.get("details", {}).get("best_fit_trial") or {}).get("brief_title"),
+            "best_fit_trial_status": (scores.get("details", {}).get("best_fit_trial") or {}).get("overall_status"),
+            "best_fit_trial_phases": (scores.get("details", {}).get("best_fit_trial") or {}).get("phases"),
+            "best_fit_trial_last_update": (scores.get("details", {}).get("best_fit_trial") or {}).get("last_update_posted"),
+            "fit_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("fit_reason"),
+            "urgency_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("urgency_reason"),
+            "urgency_source": (scores.get("details", {}).get("reasons", {}) or {}).get("urgency_source"),
+            "access_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("access_reason"),
+            "bonus_recent_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("recent_trial_bonus"),
+            "bonus_multi_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("multi_trial_bonus"),
+            "job_hit_titles": hit.get("job_hit_titles"),
+            "job_hit_keywords": hit.get("job_hit_keywords"),
+            "score_details": scores.get("details"),
+            "target_roles": roles,
         }
         rows_out.append(row)
         if company in watchlist:
