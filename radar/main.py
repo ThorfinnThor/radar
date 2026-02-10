@@ -37,10 +37,13 @@ def run_daily(cfg: AppConfig) -> None:
     keep_statuses = {s.upper() for s in cfg.ctg_keep_statuses()}
     keep_classes = {s.upper() for s in cfg.ctg_keep_sponsor_classes()}
     include_collabs = cfg.ctg_include_industry_collaborators()
-    allow_other_lead_if_industry_collab = bool(cfg.config.get('ctg', {}).get('allow_non_industry_lead_with_industry_collab', False))
+    allow_other_lead_if_industry_collab = bool(
+        cfg.config.get("ctg", {}).get("allow_non_industry_lead_with_industry_collab", False)
+    )
 
     ingested = 0
     collab_ingested = 0
+    collab_attributed = 0
 
     for q in cfg.ctg_queries():
         studies = ctg.fetch_studies(cfg.ctg_base_url(), q, page_size=cfg.ctg_page_size())
@@ -52,65 +55,88 @@ def run_daily(cfg: AppConfig) -> None:
             if keep_statuses and status and status not in keep_statuses:
                 continue
 
-lead_class = (blob.get("sponsor_class") or "").upper()
-
-# If lead sponsor is not in the kept classes (e.g., academic OTHER), we can still keep the study
-# provided there is at least one INDUSTRY collaborator. In that case we attribute the study to
-# the INDUSTRY collaborator accounts (and do NOT create an account for the academic lead).
-lead_allowed = (not keep_classes) or (lead_class in keep_classes)
-has_industry_collab = any(((c.get("class") or "").upper() == "INDUSTRY") for c in (sig.payload.get("collaborators") or []))
-
-if (not lead_allowed) and (allow_other_lead_if_industry_collab and has_industry_collab):
-    # Create collaborator accounts + signals + "synthetic study" records for scoring.
-    if include_collabs:
-        for c in (sig.payload.get("collaborators") or []):
-            cname = (c.get("name") or "").strip()
-            cclass = (c.get("class") or "").upper()
-            if not cname or cclass != "INDUSTRY":
-                continue
-            collab_name = normalize_account_name(cname, aliases)
-            collab_id = db.upsert_account(conn, collab_name, modality_tags=["car-t","t-cell engager"])
-
-            db.insert_signal(
-                conn, collab_id, "trial_collaborator", sig.source, sig.title, sig.evidence_url, sig.published_at,
-                {"nct_id": nct_id, "lead_sponsor": lead_name, "lead_sponsor_class": lead_class}
+            lead_class = (blob.get("sponsor_class") or "").upper()
+            lead_allowed = (not keep_classes) or (lead_class in keep_classes)
+            has_industry_collab = any(
+                ((c.get("class") or "").upper() == "INDUSTRY")
+                for c in (sig.payload.get("collaborators") or [])
             )
 
-            # Store a synthetic study row keyed by (nct_id + collaborator) so collaborator accounts receive trial-based scoring.
-            if nct_id:
-                synth_id = f"{nct_id}::collab::{collab_name}".replace(" ", "_")[:240]
-                db.upsert_study(
-                    conn, synth_id, collab_id,
-                    brief_title=blob.get("brief_title") or "",
-                    overall_status=blob.get("overall_status") or "",
-                    phases=blob.get("phases") or [],
-                    last_update_posted=blob.get("last_update_posted"),
-                    sponsor_class="INDUSTRY_COLLAB",
-                    study_url=blob.get("study_url"),
-                    raw={"original_nct_id": nct_id, "lead_sponsor": lead_name, "raw": (blob.get("raw") or {})},
-                )
-    # Skip lead sponsor ingestion entirely
-    continue
+            # If lead sponsor is not INDUSTRY (or not in kept classes), but there is at least one
+            # INDUSTRY collaborator, optionally keep the study by attributing it to collaborators.
+            if (not lead_allowed) and (allow_other_lead_if_industry_collab and has_industry_collab):
+                if include_collabs:
+                    for c in (sig.payload.get("collaborators") or []):
+                        cname = (c.get("name") or "").strip()
+                        cclass = (c.get("class") or "").upper()
+                        if not cname or cclass != "INDUSTRY":
+                            continue
 
-if keep_classes and lead_class and lead_class not in keep_classes:
-    continue
+                        collab_name = normalize_account_name(cname, aliases)
+                        collab_id = db.upsert_account(conn, collab_name, modality_tags=["car-t", "t-cell engager"])
 
-lead_id = db.upsert_account(conn, lead_name, modality_tags=["car-t","t-cell engager"])
+                        db.insert_signal(
+                            conn,
+                            collab_id,
+                            "trial_collaborator",
+                            sig.source,
+                            sig.title,
+                            sig.evidence_url,
+                            sig.published_at,
+                            {"nct_id": nct_id, "lead_sponsor": lead_name, "lead_sponsor_class": lead_class},
+                        )
+                        collab_ingested += 1
 
-            db.insert_signal(conn, lead_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-
-            if nct_id:
-                db.upsert_study(conn, nct_id, lead_id,
+                        # Store a synthetic study row keyed by (nct_id + collaborator) so collaborator accounts receive
+                        # trial-based scoring, without violating the studies.nct_id primary key.
+                        if nct_id:
+                            synth_id = f"{nct_id}::collab::{collab_name}".replace(" ", "_")[:240]
+                            db.upsert_study(
+                                conn,
+                                synth_id,
+                                collab_id,
                                 brief_title=blob.get("brief_title") or "",
                                 overall_status=blob.get("overall_status") or "",
                                 phases=blob.get("phases") or [],
                                 last_update_posted=blob.get("last_update_posted"),
-                                sponsor_class=blob.get("sponsor_class"),
+                                sponsor_class="INDUSTRY_COLLAB",
                                 study_url=blob.get("study_url"),
-                                raw=blob.get("raw") or {})
+                                raw={
+                                    "original_nct_id": nct_id,
+                                    "lead_sponsor": lead_name,
+                                    "raw": (blob.get("raw") or {}),
+                                },
+                            )
+                            collab_attributed += 1
+                # Skip lead sponsor ingestion entirely
+                continue
+
+            # Default behavior: only ingest lead sponsor if it passes class filters (e.g., INDUSTRY)
+            if keep_classes and lead_class and lead_class not in keep_classes:
+                continue
+
+            lead_id = db.upsert_account(conn, lead_name, modality_tags=["car-t", "t-cell engager"])
+            db.insert_signal(
+                conn, lead_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload
+            )
+
+            if nct_id:
+                db.upsert_study(
+                    conn,
+                    nct_id,
+                    lead_id,
+                    brief_title=blob.get("brief_title") or "",
+                    overall_status=blob.get("overall_status") or "",
+                    phases=blob.get("phases") or [],
+                    last_update_posted=blob.get("last_update_posted"),
+                    sponsor_class=blob.get("sponsor_class"),
+                    study_url=blob.get("study_url"),
+                    raw=blob.get("raw") or {},
+                )
+
             ingested += 1
 
-            # Fix #2: add INDUSTRY collaborators as accounts
+            # Also ingest INDUSTRY collaborators as separate accounts (even when lead is INDUSTRY).
             if include_collabs:
                 for c in (sig.payload.get("collaborators") or []):
                     cname = (c.get("name") or "").strip()
@@ -118,14 +144,24 @@ lead_id = db.upsert_account(conn, lead_name, modality_tags=["car-t","t-cell enga
                     if not cname or cclass != "INDUSTRY":
                         continue
                     collab_name = normalize_account_name(cname, aliases)
-                    collab_id = db.upsert_account(conn, collab_name, modality_tags=["car-t","t-cell engager"])
-                    db.insert_signal(conn, collab_id, "trial_collaborator", sig.source, sig.title, sig.evidence_url, sig.published_at,
-                                     {"nct_id": nct_id, "lead_sponsor": lead_name, "lead_sponsor_class": lead_class})
+                    collab_id = db.upsert_account(conn, collab_name, modality_tags=["car-t", "t-cell engager"])
+                    db.insert_signal(
+                        conn,
+                        collab_id,
+                        "trial_collaborator",
+                        sig.source,
+                        sig.title,
+                        sig.evidence_url,
+                        sig.published_at,
+                        {"nct_id": nct_id, "lead_sponsor": lead_name, "lead_sponsor_class": lead_class},
+                    )
                     collab_ingested += 1
 
     print(f"[daily] ingested lead-sponsor trial signals: {ingested}")
     if include_collabs:
         print(f"[daily] ingested industry-collaborator signals: {collab_ingested}")
+    if allow_other_lead_if_industry_collab:
+        print(f"[daily] attributed non-industry leads to collaborators (synthetic studies): {collab_attributed}")
     conn.close()
 
 def run_weekly(cfg: AppConfig) -> None:
