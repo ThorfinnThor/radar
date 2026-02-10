@@ -1,0 +1,496 @@
+{
+  "generated_rows": [
+    {
+      "company": "Zhejiang University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases | trial_candidate: Safety and Efficacy of Metabolically Armed CD19 CAR-T Cells (Meta10-19) in the Treatment of r/r B-NHL Clinical Research | trial_candidate: Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05827835",
+        "https://clinicaltrials.gov/study/NCT06716164",
+        "https://clinicaltrials.gov/study/NCT06461624",
+        "https://clinicaltrials.gov/study/NCT06383507"
+      ]
+    },
+    {
+      "company": "University Health Network, Toronto",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05963217"
+      ]
+    },
+    {
+      "company": "Istituto Clinico Humanitas",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Study of Loncastuximab Tesirine in Patients With Relapsed/Refractory Diffuse Large B-Cell Lymphoma (DLBCL) or High-Grade B-Cell Lymphoma (HGBCL) Following CAR-T Therapy Failure",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06918912"
+      ]
+    },
+    {
+      "company": "Shenzhen Geno-Immune Medical Institute",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Phase I/II Multiple Center Trial of 4SCAR19 Cells in the Treatment of Relapsed and Refractory B Cell Malignancies | trial_candidate: CD19/79b Bi-specific CAR-T Cell Therapy",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT03050190",
+        "https://clinicaltrials.gov/study/NCT05436509"
+      ]
+    },
+    {
+      "company": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus | trial_candidate: An Open-label Study of Cizutamig in Refractory Seropositive Rheumatoid Arthritis | trial_candidate: Safety, Efficacy and Cellular Metabolic Dynamics of ct1192 in Patients With Moderate to Severe Refractory SLE",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07339332",
+        "https://clinicaltrials.gov/study/NCT06946199",
+        "https://clinicaltrials.gov/study/NCT07031713",
+        "https://clinicaltrials.gov/study/NCT06945068",
+        "https://clinicaltrials.gov/study/NCT06349343",
+        "https://clinicaltrials.gov/study/NCT06691685"
+      ]
+    },
+    {
+      "company": "David Avigan",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: DC/MM Fusion Vaccine With BCMA CAR-T in R/R MM | trial_candidate: A Phase 1 Study of Vaccination With Dendritic Cell (DC)/Multiple Myeloma (MM) Fusions in Combination With Elranatamab in Relapsed or Refractory Multiple Myeloma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07377435",
+        "https://clinicaltrials.gov/study/NCT06799026"
+      ]
+    },
+    {
+      "company": "Instituto de Investigaci\u00f3n Biom\u00e9dica de Salamanca",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Treatment of Relapsed or Refractory B-cell Lymphoma With Chimeric Antigen Receptor (CAR) T-cell Therapy Produced by a New Technology",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06378190"
+      ]
+    },
+    {
+      "company": "National Cancer Institute (NCI)",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Testing the Use of Steroids and Tyrosine Kinase Inhibitors With Blinatumomab or Chemotherapy for Newly Diagnosed BCR-ABL-Positive Acute Lymphoblastic Leukemia in Adults | trial_candidate: A Study Testing the Combination of Dasatinib or Imatinib to Chemotherapy Treatment With Blinatumomab for Children, Adolescents, and Young Adults With Philadelphia Chromosome Positive (Ph+) or ABL-Class Philadelphia Chromosome-Like (Ph-Like) B-cell Acute Lymphoblastic Leukemia (B-ALL) | trial_candidate: Testing the Effect of Teclistamab on Recurrent Plasmablastic Lymphoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT04530565",
+        "https://clinicaltrials.gov/study/NCT06124157",
+        "https://clinicaltrials.gov/study/NCT07332507",
+        "https://clinicaltrials.gov/study/NCT06948084",
+        "https://clinicaltrials.gov/study/NCT06317662",
+        "https://clinicaltrials.gov/study/NCT06337318"
+      ]
+    },
+    {
+      "company": "Beijing Yongtai Ruike Biotechnology Company Ltd",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06179524"
+      ]
+    },
+    {
+      "company": "Institute of Hematology & Blood Diseases Hospital, China",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: IASO206 in Patients With Relapsed/Refractory Multiple Myeloma | trial_candidate: BCMA/CD3 Bispecific Antibody Treatment for Newly Diagnosed Amyloidosis | trial_candidate: A Prospective Clinical Study of CD3-CD20 Bisspecific Antibody Based Therapy Combined With CD19-CAR T Cells in the Treatment of Relapsed Refractory B-cell Non-Hodgkin Lymphoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07322159",
+        "https://clinicaltrials.gov/study/NCT07151690",
+        "https://clinicaltrials.gov/study/NCT06464185",
+        "https://clinicaltrials.gov/study/NCT07115667",
+        "https://clinicaltrials.gov/study/NCT07152041",
+        "https://clinicaltrials.gov/study/NCT07106710"
+      ]
+    },
+    {
+      "company": "Carina Biotech Limited",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05759728"
+      ]
+    },
+    {
+      "company": "H. Lee Moffitt Cancer Center and Research Institute",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06104592"
+      ]
+    },
+    {
+      "company": "University of Washington",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Epcoritamab With Dose Adjusted Etoposide, Cyclophosphamide, Vincristine, Doxorubicin, Prednisone and Rituximab (EPOCH-R) for the Treatment of Aggressive B-Cell Non-Hodgkin Lymphoma | trial_candidate: Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies | trial_candidate: Odronextamab for Relapsed and Refractory Large B-cell Lymphomas Before CAR-T",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07097363",
+        "https://clinicaltrials.gov/study/NCT04205409",
+        "https://clinicaltrials.gov/study/NCT06784726"
+      ]
+    },
+    {
+      "company": "Essen Biotech",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Sequential CAR-T Cells Targeting BCMA/GPRC5D in Patients With Relapsed/ Refractory Multiple Myeloma | trial_candidate: Sequential CAR-T Cells Targeting CD33/CD123 in Patients With Acute Myelocytic Leukemia AML",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07032129",
+        "https://clinicaltrials.gov/study/NCT06420063"
+      ]
+    },
+    {
+      "company": "Memorial Sloan Kettering Cancer Center",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of Anakinra to Prevent or Treat Severe Side Effects for Patients Receiving CAR-T Cell Therapy | trial_candidate: Study of CAR-T Therapy in Older Patients | trial_candidate: A Study of Armed, Activated T-Cells in Patients With Advanced Pancreatic Cancer",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT04148430",
+        "https://clinicaltrials.gov/study/NCT04300998",
+        "https://clinicaltrials.gov/study/NCT04137536"
+      ]
+    },
+    {
+      "company": "Xuzhou Medical University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Safety and Efficacy of Anti-BCMA/FcRL5 CAR-T Cell Therapy in Treating Relapsed and Refractory Multiple Myeloma (R/R MM) | trial_candidate: Safety and Efficacy of Anti-FcRL5 CAR-T Cell Therapy in Treating Relapsed and Refractory Multiple Myeloma (R/R MM)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06759181",
+        "https://clinicaltrials.gov/study/NCT06196255"
+      ]
+    },
+    {
+      "company": "National University of Malaysia",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Intravenous Autologous CD19 CAR-T Cells for R/R B-ALL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT03937544"
+      ]
+    },
+    {
+      "company": "Sun Yat-sen University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: TCR-T Cell Therapy for KRAS Mutation in Advanced Solid Tumors | trial_candidate: A Phase I Clinical Study of IX001 TCR-T Injection in the Treatment of Advanced Pancreatic Cancer Patients With KRAS G12V Mutation | trial_candidate: Safety and Efficacy of CAR-T Cell Therapy for Relapsed/refractory Neuroblastoma and Desmoplastic Small Round Cell Tumors: a Single-arm, Open-label Trial.",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07342738",
+        "https://clinicaltrials.gov/study/NCT06898385",
+        "https://clinicaltrials.gov/study/NCT06836505"
+      ]
+    },
+    {
+      "company": "The Affiliated People's Hospital of Ningbo University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05528887"
+      ]
+    },
+    {
+      "company": "Second Affiliated Hospital of Guangzhou Medical University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Induced-T Cell Like NK Cellular Immunotherapy for Cancer Lack of MHC-I | trial_candidate: GPC3/Mesothelin/Claudin18.2/GUCY2C/B7-H3/PSCA/PSMA/MUC1/TGF\u03b2/HER2/Lewis-Y/AXL/EGFR-CAR-T Cells Against Cancers | trial_candidate: TCR-T Cell Immunotherapy of Lung Cancer and Other Solid Tumors",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT03882840",
+        "https://clinicaltrials.gov/study/NCT03198052",
+        "https://clinicaltrials.gov/study/NCT03778814"
+      ]
+    },
+    {
+      "company": "Hebei Senlang Biotechnology Inc., Ltd.",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL. | trial_candidate: Assessment of Senl_B19 CAR-T Cells in Relapsed/Refractory CD19+ B-ALL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07244380",
+        "https://clinicaltrials.gov/study/NCT07244406"
+      ]
+    },
+    {
+      "company": "Shanghai East Hospital",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06072989"
+      ]
+    },
+    {
+      "company": "David Simon",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06590545"
+      ]
+    },
+    {
+      "company": "Baylor College of Medicine",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: GPC-3 CAR T CELLS FOR Recurrent GPC-3 Positive Glioblastoma | trial_candidate: HER2 Chimeric Antigen Receptor (CAR) T Cells in Combination With Checkpoint Blockade in Patients With Advanced Sarcoma | trial_candidate: C7R-GD2.CART Cells for Patients With Relapsed or Refractory Neuroblastoma and Other GD2 Positive Cancers (GAIL-N)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06815432",
+        "https://clinicaltrials.gov/study/NCT04995003",
+        "https://clinicaltrials.gov/study/NCT03635632"
+      ]
+    },
+    {
+      "company": "Second Affiliated Hospital, School of Medicine, Zhejiang University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07250386"
+      ]
+    },
+    {
+      "company": "Zhimin Zhai",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: GP350 CAR-T for Relapse/Refractory and Epstein-Barr Virus Infection Associated Lymphoid Neoplasms",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07306156"
+      ]
+    },
+    {
+      "company": "Xi'an No.3 Hospital",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07139509"
+      ]
+    },
+    {
+      "company": "Nkarta, Inc.",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05020678"
+      ]
+    },
+    {
+      "company": "Cullinan Therapeutics Inc.",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease | trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Rheumatoid Arthritis | trial_candidate: A Study of CLN-978 in Patients With Relapsed or Refractory (R/R) B Cell Non-Hodgkin Lymphoma (B-NHL)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07041099",
+        "https://clinicaltrials.gov/study/NCT06994143",
+        "https://clinicaltrials.gov/study/NCT05879744"
+      ]
+    },
+    {
+      "company": "Pfizer",
+      "total_score": 7.0,
+      "fit_score": 2.0,
+      "urgency_score": 3.0,
+      "access_score": 2.0,
+      "trigger_summary": "trial_candidate: A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30) | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06215118",
+        "https://clinicaltrials.gov/study/NCT06152575",
+        "https://clinicaltrials.gov/study/NCT05020236",
+        "https://clinicaltrials.gov/study/NCT06057402",
+        "https://clinicaltrials.gov/study/NCT05090566",
+        "https://clinicaltrials.gov/study/NCT04649359"
+      ]
+    },
+    {
+      "company": "Joseph Tuscano",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Odronextamab for the Treatment of Relapsed and Refractory Diffuse Large B-cell Lymphoma Before and After Chimeric Antigen Receptor T-cell Therapy | trial_candidate: Epcoritamab Plus Standard of Care Platinum-Based Chemotherapy and Autologous Hematopoietic Cell Transplant for the Treatment of Relapsed or Refractory Large B-cell Lymphoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06854159",
+        "https://clinicaltrials.gov/study/NCT06905509"
+      ]
+    },
+    {
+      "company": "Academic and Community Cancer Research United",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Epcoritamab Compared to Observation for Treating B-cell Lymphoma Patients Not in Complete Remission After CD19-directed CAR-T Therapy",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06238648"
+      ]
+    },
+    {
+      "company": "Samsung Medical Center",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Glofitamab in Relapsed or Refractory Diffuse Large B-cell Lymphoma After CD19 Chimeric Antigen Receptor T-cell Therapy",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06552572"
+      ]
+    },
+    {
+      "company": "Nanfang Hospital, Southern Medical University",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Single-arm, Open-label Study of Olverembatinib, CD3/CD19 Bispecific T-cell Engager, and Chidamide in Patients With Newly Diagnosed Ph+ALL",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06220487"
+      ]
+    },
+    {
+      "company": "Ruijin Hospital",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of mRNA Encoding CD19/CD3 T Cell Engager (ABO2203) in Patients With Relapsed or Refractory B-cell Non-Hodgkin Lymphoma (B-NHL)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07072169"
+      ]
+    },
+    {
+      "company": "SCRI Development Innovations, LLC",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Frontline T-cell Engager vs Autologous Stem Cell Transplant (ASCT) and Measurable Residual Disease (MRD)-Guided Sequential Intensification thERapy in Multiple Myeloma | trial_candidate: Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06974786",
+        "https://clinicaltrials.gov/study/NCT05972135"
+      ]
+    },
+    {
+      "company": "Eastern Hepatobiliary Surgery Hospital",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Clinical Study of Multi-target Hi-TCR-T Cells in the Treatment of Advanced Hepatocellular Carcinoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06902389"
+      ]
+    },
+    {
+      "company": "Chinese PLA General Hospital",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Clinical Study of EBV-TCR-T Cells for EBV-associated Hemophagocytic Lymphohistiocytosis or EBV Infection | trial_candidate: Clinical Study of EBV-TCR-T Cells for EBV Infection After Allogenic HSCT",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06135922",
+        "https://clinicaltrials.gov/study/NCT06119256"
+      ]
+    },
+    {
+      "company": "Daihong Liu",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Exploratory Study of EBV-TCR-T Cell Injection for EBV DNAemia After Allogeneic Hematopoietic Stem Cell Transplantation",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07368634"
+      ]
+    },
+    {
+      "company": "Christian Hinrichs",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: E7 T-cell Receptor (TCR) -T Cell Induction Therapy for Locoregionally Advanced HPV-associated Cancers | trial_candidate: E7 TCR-T Cell Immunotherapy for Human Papillomavirus (HPV) Associated Cancers | trial_candidate: KK-LC-1 TCR-T Cell Therapy for Gastric, Breast, Cervical, and Lung Cancer",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05639972",
+        "https://clinicaltrials.gov/study/NCT05686226",
+        "https://clinicaltrials.gov/study/NCT05483491"
+      ]
+    }
+  ],
+  "target_roles": [
+    "Director/VP, Translational Medicine (Oncology/Immunology)",
+    "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+    "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+    "Director, Bioassay / Potency / Analytical Development",
+    "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+  ]
+}
