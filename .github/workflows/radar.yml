@@ -2,7 +2,6 @@ name: Trigger Radar
 
 on:
   schedule:
-    # 06:10 UTC daily (≈07:10 Europe/Berlin in winter)
     - cron: "10 6 * * *"
   workflow_dispatch: {}
 
@@ -13,41 +12,38 @@ jobs:
   run-radar:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run daily scan (trials) + export
+      - name: Daily ingest + export
         run: |
           python -m radar.main --mode daily
           python -m radar.main --mode export-only
 
-      - name: Run weekly scan (jobs) on Mondays + export
+      - name: Weekly jobs ingest on Mondays (UTC)
         run: |
           DOW=$(date -u +%u)
           if [ "$DOW" -eq 1 ]; then
-            echo "Monday (UTC) - running weekly job scan"
             python -m radar.main --mode weekly
           else
-            echo "Not Monday (UTC) - skipping weekly job scan"
+            echo "Skipping weekly jobs ingest (not Monday UTC)"
           fi
 
-      - name: Commit exports (if changed)
+      - name: Commit exports
         run: |
           git config user.name "trigger-radar-bot"
           git config user.email "trigger-radar-bot@users.noreply.github.com"
-          git add exports/latest_top40.csv exports/latest_top40.json || true
+          git add exports/latest_top40.csv exports/latest_top40.json exports/latest_watchlist.csv exports/latest_watchlist.json || true
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes."
             exit 0
           fi
           git commit -m "Update trigger radar exports"
