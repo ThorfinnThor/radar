@@ -136,6 +136,12 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
     cur = conn.cursor()
 
+    # Ensure watchlist companies exist as accounts even if they have zero signals yet.
+    for c in cfg.companies_list():
+        nm = (c.get("name") or "").strip()
+        if nm:
+            db.upsert_account(conn, nm, modality_tags=["car-t","t-cell engager"])
+
     rows_out: List[Dict[str, Any]] = []
     watch_rows: List[Dict[str, Any]] = []
 
