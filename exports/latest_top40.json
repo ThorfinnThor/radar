@@ -32,6 +32,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
       "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -115,6 +122,12 @@
         "PHASE3"
       ],
       "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-02-05",
       "fit_reason": "trial title contains CD3",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -193,6 +206,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-11-19",
+      "best_urgency_trial_title": "A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-11-19",
       "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -271,6 +290,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-11-17",
+      "best_urgency_trial_title": "A Basket Study of Customized Autologous TCR-T Cell Therapies in Patients With Locally Advanced (Unresectable) or Metastatic Solid Tumors",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-11-17",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -348,6 +373,12 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -425,6 +456,12 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2025-11-24",
+      "best_urgency_trial_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-11-24",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -502,6 +539,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2026-01-30",
+      "best_urgency_trial_title": "KRAS-Specific Autologous TCR-T Cell Therapy for KRAS Mutation in Advanced Solid Tumors",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-30",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -579,6 +622,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-01-13",
+      "best_urgency_trial_title": "A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-01-13",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -657,6 +707,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-12-02",
+      "best_urgency_trial_title": "HRYZ-T102 TCR-T Cell for AFP Positive Advanced HCC and Other Solid Tumors",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-12-02",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -735,6 +791,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-05-08",
+      "best_urgency_trial_title": "Autologous HBV-TCR T Cell Therapy (LioCyx-M) for the Treatment of Hepatocellular Carcinoma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-05-08",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -813,6 +875,13 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2024-09-27",
+      "best_urgency_trial_title": "A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-02-18",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -891,6 +960,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-09-03",
+      "best_urgency_trial_title": "An Open-label, Phase I Clinical Trial of Super1 TCR-T in NY-ESO-1-positive Patients With Advanced Solid Tumors",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-09-03",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -967,6 +1042,12 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2025-01-13",
+      "best_urgency_trial_title": "CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-01-13",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -1043,6 +1124,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2024-12-24",
+      "best_urgency_trial_title": "NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2024-12-24",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1119,6 +1206,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-07-16",
+      "best_urgency_trial_title": "NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-07-16",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1196,6 +1289,12 @@
         "NA"
       ],
       "best_fit_trial_last_update": "2025-11-25",
+      "best_urgency_trial_title": "Universal CAR-T Cell Therapy for NHL",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "NA"
+      ],
+      "best_urgency_trial_last_update": "2025-11-25",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1272,6 +1371,12 @@
         "PHASE3"
       ],
       "best_fit_trial_last_update": "2026-02-05",
+      "best_urgency_trial_title": "Long-term Follow-up of Participants Treated With Galapagos Chimeric Antigen Receptor (CAR) T-cell Therapies",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE3"
+      ],
+      "best_urgency_trial_last_update": "2026-02-05",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1356,6 +1461,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-06",
+      "best_urgency_trial_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-06",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -1434,6 +1546,12 @@
         "EARLY_PHASE1"
       ],
       "best_fit_trial_last_update": "2025-09-29",
+      "best_urgency_trial_title": "BCMA/GPRC5D CAR-T Therapy for Multiple Myeloma",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-09-29",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status NOT_YET_RECRUITING",
       "urgency_source": "trial",
@@ -1510,6 +1628,12 @@
         "EARLY_PHASE1"
       ],
       "best_fit_trial_last_update": "2024-02-08",
+      "best_urgency_trial_title": "An Exploratory Study on the Treatment of Advanced Solid Tumors by Fast CAR T Cells",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2024-02-08",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1584,6 +1708,10 @@
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [],
       "best_fit_trial_last_update": "2025-11-03",
+      "best_urgency_trial_title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [],
+      "best_urgency_trial_last_update": "2025-11-03",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1656,6 +1784,12 @@
         "EARLY_PHASE1"
       ],
       "best_fit_trial_last_update": "2021-03-23",
+      "best_urgency_trial_title": "Clinical Study of Anti-ILT3 CAR-T Therapy for R/R AML(M4/M5)",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2021-03-23",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1732,6 +1866,12 @@
         "EARLY_PHASE1"
       ],
       "best_fit_trial_last_update": "2024-09-19",
+      "best_urgency_trial_title": "Safety and Efficacy of Anti-CD20/CD30 CAR-T Cells in Subjects with Relapsed/Refractory Lymphoma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2024-09-19",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING",
       "urgency_source": "trial",
@@ -1811,6 +1951,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2026-02-05",
+      "best_urgency_trial_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Preliminary Efficacy of YK012",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-02-05",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1889,6 +2035,12 @@
         "PHASE4"
       ],
       "best_fit_trial_last_update": "2026-01-16",
+      "best_urgency_trial_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-16",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1967,6 +2119,12 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-04",
+      "best_urgency_trial_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-04",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -2045,6 +2203,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2026-01-26",
+      "best_urgency_trial_title": "Evaluation of Xaluritamig in High-Risk, Biochemically Recurrent, Non-metastatic Castrate-sensitive Prostate Cancer",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-26",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -2123,6 +2287,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2025-12-23",
+      "best_urgency_trial_title": "MB-dNPM1-TCR.1 in Relapsed/Refractory AML",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-12-23",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2202,6 +2373,12 @@
         "PHASE3"
       ],
       "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "A Study of TAK-007 in Adults With Relapsed or Refractory (r/r) B-cell Non-Hodgkin Lymphoma (NHL)",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-08-12",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -2280,6 +2457,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-01-28",
+      "best_urgency_trial_title": "Phase 1/2 Study of IMC-R117C in Selected Advanced Cancers",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-01-28",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2359,6 +2543,12 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-06",
+      "best_urgency_trial_title": "DAREON\u2122-5: A Study to Test Whether Different Doses of BI 764532 Help People With Small Cell Lung Cancer or Other Neuroendocrine Cancers",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-06",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -2436,6 +2626,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-01-12",
+      "best_urgency_trial_title": "AB-3028, a Programmable Circuit T Cell Therapy in Patients With Castration Resistant Prostate Cancer (CRPC)",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-01-12",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2515,6 +2712,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-01-15",
+      "best_urgency_trial_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-01-15",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2593,6 +2797,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2026-01-28",
+      "best_urgency_trial_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-28",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -2670,6 +2880,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2025-11-20",
+      "best_urgency_trial_title": "Open-label, Multi-center, Phase I/II Study to Assess Safety, Disease Progression and Cellular Kinetics Following YTB323 Administration in Participants With Non-active Progressive Multiple Sclerosis (PMS)",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-11-20",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2751,6 +2968,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-06",
+      "best_urgency_trial_title": "A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-06",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2830,6 +3054,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -2907,6 +3137,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-02",
+      "best_urgency_trial_title": "A Study in Participants With Advanced Cancers Associated With Expression of DLL3 (MK-6070-001/HPN328-4001)",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-02",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -2986,6 +3223,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2025-12-17",
+      "best_urgency_trial_title": "A Study of CM336 in Patients With Relapsed or Refractory Autoimmune Cytopenia",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-12-17",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -3064,6 +3308,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-11-14",
+      "best_urgency_trial_title": "OM336 in Seropositive Autoimmune Diseases",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-11-14",
       "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",

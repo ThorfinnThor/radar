@@ -32,6 +32,13 @@
         "PHASE2"
       ],
       "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
       "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -115,6 +122,12 @@
         "PHASE3"
       ],
       "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-02-05",
       "fit_reason": "trial title contains CD3",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -187,6 +200,10 @@
       "best_fit_trial_status": null,
       "best_fit_trial_phases": null,
       "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
       "fit_reason": "no trials",
       "urgency_reason": "no trials and no relevant jobs",
       "urgency_source": "none",
