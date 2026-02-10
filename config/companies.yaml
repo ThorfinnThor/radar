@@ -1,0 +1,11 @@
+# Companies to monitor for job postings via public ATS feeds.
+# Add as many as you want; job collection only runs for these.
+
+companies:
+  # - name: "Example Bio"
+  #   ats: "greenhouse"
+  #   greenhouse_board_token: "examplebio"
+
+  # - name: "Another Bio"
+  #   ats: "lever"
+  #   lever_account: "anotherbio"

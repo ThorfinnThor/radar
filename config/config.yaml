@@ -1,0 +1,68 @@
+# Global configuration for Trigger Radar
+
+ctg:
+  # ClinicalTrials.gov API v2
+  base_url: "https://clinicaltrials.gov/api/v2/studies"
+  page_size: 200
+  # Query terms for wedge: T-cell engagers + CAR-T
+  ctg_queries:
+    - '"CAR-T" OR "CAR T" OR "chimeric antigen receptor"'
+    - '"T-cell engager" OR "T cell engager" OR "CD3 bispecific" OR ("bispecific" AND CD3)'
+    - '"TCR-T" OR "TCR T" OR "T cell receptor engineered"'
+  # Keep only these overall statuses (empty = keep all)
+  keep_statuses:
+    - "RECRUITING"
+    - "NOT_YET_RECRUITING"
+    - "ACTIVE_NOT_RECRUITING"
+  # Phases that indicate high urgency
+  high_urgency_phases:
+    - "PHASE1"
+    - "PHASE1_PHASE2"
+    - "PHASE2"
+
+jobs:
+  # Title keyword match list (case-insensitive). Keep this short + high-signal.
+  job_keywords:
+    - "biomarker"
+    - "translational"
+    - "immune monitoring"
+    - "flow cytometry"
+    - "spectral cytometry"
+    - "cytometry"
+    - "potency"
+    - "bioassay"
+    - "analytical development"
+    - "comparability"
+    - "systems immunology"
+    - "single-cell"
+  # Days window for "recent jobs" counts used in urgency scoring
+  recent_window_days: 45
+  # A "spike" occurs when relevant jobs posted in window >= this threshold
+  spike_threshold: 2
+
+normalization:
+  # Optional alias mapping to unify sponsor names (left) to canonical account names (right).
+  # Example:
+  # aliases:
+  #   "Janssen": "Johnson & Johnson"
+  aliases: {}
+
+scoring:
+  # Weighting for total score = fit + urgency + access
+  weights:
+    fit: 1.0
+    urgency: 1.0
+    access: 1.0
+
+  # Access is a proxy for "we can reach them" (placeholder rule-based score).
+  # You can later replace with real enrichment (contacts present, warm intro, etc.)
+  access:
+    # If the company is in companies.yaml (i.e., we know their ATS), add points.
+    ats_known_points: 2
+    # Otherwise minimal access score.
+    default_points: 1
+
+exports:
+  top_n: 40
+  out_csv: "exports/latest_top40.csv"
+  out_json: "exports/latest_top40.json"

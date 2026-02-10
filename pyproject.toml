@@ -1,0 +1,13 @@
+[project]
+name = "trigger-radar"
+version = "0.1.0"
+description = "Public-signal trigger radar for T-cell engagers + CAR-T account discovery"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31.0",
+  "python-dateutil>=2.9.0.post0",
+  "PyYAML>=6.0.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
