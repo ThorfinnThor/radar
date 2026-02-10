@@ -1,4 +1,3 @@
-# Default role pack for the wedge: T-cell engagers + CAR-T
 DEFAULT_ROLE_TITLES = [
     "Director/VP, Translational Medicine (Oncology/Immunology)",
     "Head/Director, Clinical Biomarkers / Translational Biomarkers",

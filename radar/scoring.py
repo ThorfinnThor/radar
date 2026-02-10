@@ -1,22 +1,18 @@
 from __future__ import annotations
-from dataclasses import dataclass
-from typing import Iterable, List, Dict, Any
+from typing import Any, Dict, List
 import datetime as dt
 from dateutil import parser as dateparser
 
-CAR_T_TERMS = ["car-t", "car t", "chimeric antigen receptor", "tcr-t", "tcr t"]
-TCE_TERMS   = ["t-cell engager", "t cell engager", "cd3 bispecific", "cd3", "bispecific"]
-
 HIGH_URGENCY_STATUSES = {"RECRUITING", "NOT_YET_RECRUITING", "ACTIVE_NOT_RECRUITING"}
-
-def _lower(x: str | None) -> str:
-    return (x or "").lower()
 
 def parse_date_maybe(s: str | None) -> dt.datetime | None:
     if not s:
         return None
     try:
-        return dateparser.parse(s)
+        d = dateparser.parse(s)
+        if d and not d.tzinfo:
+            d = d.replace(tzinfo=dt.timezone.utc)
+        return d
     except Exception:
         return None
 
@@ -24,22 +20,20 @@ def within_days(published_at: str | None, window_days: int) -> bool:
     d = parse_date_maybe(published_at)
     if not d:
         return False
-    if not d.tzinfo:
-        d = d.replace(tzinfo=dt.timezone.utc)
     now = dt.datetime.now(dt.timezone.utc)
     return (now - d) <= dt.timedelta(days=window_days)
 
 def fit_from_trial_title(title: str | None) -> int:
-    t = _lower(title)
-    # stronger signals
+    t = (title or "").lower()
     if any(term in t for term in ["car-t", "tcr-t", "chimeric antigen receptor"]):
         return 3
     if "t-cell engager" in t or "t cell engager" in t:
         return 3
-    # bispecific is noisy; keep moderate unless CD3 is present
     if "bispecific" in t and "cd3" in t:
         return 3
-    if "bispecific" in t or "cd3" in t:
+    if "cd3" in t:
+        return 2
+    if "bispecific" in t:
         return 2
     return 1
 
@@ -66,45 +60,47 @@ def access_score(ats_known: bool, ats_known_points: int, default_points: int) ->
     return ats_known_points if ats_known else default_points
 
 def compute_scores(
-    account: Dict[str, Any],
     trials: List[Dict[str, Any]],
     job_signals: List[Dict[str, Any]],
     config: Dict[str, Any],
     company_in_watchlist: bool,
 ) -> Dict[str, float]:
-    # Fit: best trial fit score
-    fit = 0
-    for t in trials[:10]:
+    # Fit
+    fit = 1
+    for t in trials[:20]:
         fit = max(fit, fit_from_trial_title(t.get("brief_title")))
-    if fit == 0:
-        fit = 1
 
-    # Urgency: max(trial urgency, job urgency)
+    # Urgency
     high_urgency_phases = config.get("ctg", {}).get("high_urgency_phases", [])
     urg_trial = 0
-    for t in trials[:10]:
+    for t in trials[:20]:
         urg_trial = max(urg_trial, urgency_from_trial(t.get("overall_status"), t.get("phases"), high_urgency_phases))
+
     job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
     spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
     relevant_recent_jobs = sum(1 for j in job_signals if within_days(j.get("published_at"), job_window))
     urg_jobs = urgency_from_jobs(relevant_recent_jobs, spike_threshold)
+
     urgency = float(max(urg_trial, urg_jobs))
 
-    # Access: whether ATS info is known (company watchlist)
+    # Access
     acc_cfg = config.get("scoring", {}).get("access", {})
-    access = float(access_score(
-        company_in_watchlist,
-        int(acc_cfg.get("ats_known_points", 2)),
-        int(acc_cfg.get("default_points", 1)),
-    ))
+    access = float(access_score(company_in_watchlist, int(acc_cfg.get("ats_known_points", 2)), int(acc_cfg.get("default_points", 1))))
 
-    # Weighted total
+    # Base total
     w = config.get("scoring", {}).get("weights", {})
     total = float(fit) * float(w.get("fit", 1.0)) + float(urgency) * float(w.get("urgency", 1.0)) + float(access) * float(w.get("access", 1.0))
 
-    return {
-        "fit": float(fit),
-        "urgency": float(urgency),
-        "access": float(access),
-        "total": float(total),
-    }
+    # Tiebreakers
+    tb = config.get("scoring", {}).get("tiebreakers", {})
+    recent_days = int(tb.get("recent_trial_update_days", 90))
+    recent_bonus = float(tb.get("recent_trial_bonus", 0.5))
+    extra_per = float(tb.get("extra_trial_bonus_per_trial", 0.15))
+    extra_cap = float(tb.get("extra_trial_bonus_cap", 0.6))
+
+    any_recent = any(within_days(t.get("last_update_posted"), recent_days) for t in trials[:20])
+    if any_recent:
+        total += recent_bonus
+    total += min(extra_cap, max(0.0, (len(trials) - 1) * extra_per))
+
+    return {"fit": float(fit), "urgency": float(urgency), "access": float(access), "total": float(total)}

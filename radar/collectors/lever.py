@@ -5,7 +5,7 @@ from radar.models import NormalizedSignal
 
 def fetch_jobs(lever_account: str) -> List[Dict[str, Any]]:
     url = f"https://api.lever.co/v0/postings/{lever_account}?mode=json"
-    r = requests.get(url, timeout=45)
+    r = requests.get(url, timeout=60)
     r.raise_for_status()
     return r.json()
 

@@ -1,7 +1,5 @@
 from __future__ import annotations
-
-import argparse
-import json
+import argparse, json
 from typing import Any, Dict, List
 
 from radar.config import AppConfig
@@ -9,15 +7,11 @@ from radar import db
 from radar.collectors import clinicaltrials as ctg
 from radar.collectors import greenhouse, lever, workday
 from radar.scoring import compute_scores
-from radar.export import export_top_accounts, summarize_triggers
-
+from radar.export import export_ranked, export_watchlist, summarize_triggers
 
 def normalize_account_name(name: str, aliases: Dict[str, str]) -> str:
     n = (name or "").strip()
-    if not n:
-        return "UNKNOWN"
-    return aliases.get(n, n)
-
+    return aliases.get(n, n) if n else "UNKNOWN"
 
 def run_daily(cfg: AppConfig) -> None:
     conn = db.connect()
@@ -25,49 +19,58 @@ def run_daily(cfg: AppConfig) -> None:
 
     aliases = cfg.aliases()
     keep_statuses = {s.upper() for s in cfg.ctg_keep_statuses()}
-    base_url = cfg.ctg_base_url()
-    page_size = cfg.ctg_page_size()
+    keep_classes = {s.upper() for s in cfg.ctg_keep_sponsor_classes()}
+    include_collabs = cfg.ctg_include_industry_collaborators()
 
     ingested = 0
-    for q in cfg.ctg_queries():
-        studies = ctg.fetch_studies(base_url, q, page_size=page_size)
-        for st in studies:
-            nct_id, sig, study_blob = ctg.normalize_study(st)
-            account_name = normalize_account_name(sig.account_name, aliases)
+    collab_ingested = 0
 
-            overall_status = (study_blob.get("overall_status") or "").upper()
-            if keep_statuses and overall_status and overall_status not in keep_statuses:
+    for q in cfg.ctg_queries():
+        studies = ctg.fetch_studies(cfg.ctg_base_url(), q, page_size=cfg.ctg_page_size())
+        for st in studies:
+            nct_id, sig, blob = ctg.normalize_study(st)
+            lead_name = normalize_account_name(sig.account_name, aliases)
+
+            status = (blob.get("overall_status") or "").upper()
+            if keep_statuses and status and status not in keep_statuses:
                 continue
 
-            account_id = db.upsert_account(conn, account_name, modality_tags=["car-t", "t-cell engager"])
-            db.insert_signal(
-                conn,
-                account_id,
-                sig.signal_type,
-                sig.source,
-                sig.title,
-                sig.evidence_url,
-                sig.published_at,
-                sig.payload,
-            )
+            lead_class = (blob.get("sponsor_class") or "").upper()
+            if keep_classes and lead_class and lead_class not in keep_classes:
+                continue
+
+            lead_id = db.upsert_account(conn, lead_name, modality_tags=["car-t","t-cell engager"])
+
+            db.insert_signal(conn, lead_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
 
             if nct_id:
-                db.upsert_study(
-                    conn,
-                    nct_id=nct_id,
-                    account_id=account_id,
-                    brief_title=study_blob.get("brief_title") or "",
-                    overall_status=study_blob.get("overall_status") or "",
-                    phases=study_blob.get("phases") or [],
-                    last_update_posted=study_blob.get("last_update_posted"),
-                    study_url=study_blob.get("study_url"),
-                    raw=study_blob.get("raw") or {},
-                )
+                db.upsert_study(conn, nct_id, lead_id,
+                                brief_title=blob.get("brief_title") or "",
+                                overall_status=blob.get("overall_status") or "",
+                                phases=blob.get("phases") or [],
+                                last_update_posted=blob.get("last_update_posted"),
+                                sponsor_class=blob.get("sponsor_class"),
+                                study_url=blob.get("study_url"),
+                                raw=blob.get("raw") or {})
             ingested += 1
 
-    print(f"[daily] ingested trial signals: {ingested}")
-    conn.close()
+            # Fix #2: add INDUSTRY collaborators as accounts
+            if include_collabs:
+                for c in (sig.payload.get("collaborators") or []):
+                    cname = (c.get("name") or "").strip()
+                    cclass = (c.get("class") or "").upper()
+                    if not cname or cclass != "INDUSTRY":
+                        continue
+                    collab_name = normalize_account_name(cname, aliases)
+                    collab_id = db.upsert_account(conn, collab_name, modality_tags=["car-t","t-cell engager"])
+                    db.insert_signal(conn, collab_id, "trial_collaborator", sig.source, sig.title, sig.evidence_url, sig.published_at,
+                                     {"nct_id": nct_id, "lead_sponsor": lead_name, "lead_sponsor_class": lead_class})
+                    collab_ingested += 1
 
+    print(f"[daily] ingested lead-sponsor trial signals: {ingested}")
+    if include_collabs:
+        print(f"[daily] ingested industry-collaborator signals: {collab_ingested}")
+    conn.close()
 
 def run_weekly(cfg: AppConfig) -> None:
     conn = db.connect()
@@ -75,20 +78,30 @@ def run_weekly(cfg: AppConfig) -> None:
 
     aliases = cfg.aliases()
     keywords = [k.lower() for k in cfg.job_keywords()]
-    companies = cfg.companies_list()
-
     ingested = 0
-    for c in companies:
+
+    for c in cfg.companies_list():
         name = c.get("name")
         if not name:
             continue
         account_name = normalize_account_name(name, aliases)
+        account_id = db.upsert_account(conn, account_name, modality_tags=["car-t","t-cell engager"])
         ats = (c.get("ats") or "").lower().strip()
 
-        account_id = db.upsert_account(conn, account_name, modality_tags=["car-t", "t-cell engager"])
-
         try:
-            if ats == "greenhouse":
+            if ats == "workday":
+                tenant, wd_host, site = c.get("tenant"), c.get("wd_host"), c.get("site")
+                if not tenant or not wd_host or not site:
+                    continue
+                jobs = workday.fetch_jobs(tenant, site, wd_host)
+                for j in jobs:
+                    title = (j.get("title") or j.get("externalTitle") or "")
+                    if any(k in title.lower() for k in keywords):
+                        sig = workday.normalize_job(j, account_name, tenant, site, wd_host)
+                        db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                        ingested += 1
+
+            elif ats == "greenhouse":
                 token = c.get("greenhouse_board_token")
                 if not token:
                     continue
@@ -112,44 +125,25 @@ def run_weekly(cfg: AppConfig) -> None:
                         db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
                         ingested += 1
 
-            elif ats == "workday":
-                tenant = c.get("tenant")
-                wd_host = c.get("wd_host")  # e.g., wd1, wd3, wd5
-                site = c.get("site")        # e.g., PfizerCareers
-                if not tenant or not wd_host or not site:
-                    continue
-                jobs = workday.fetch_jobs(tenant=tenant, site=site, wd_host=wd_host, limit=50, max_pages=20)
-                for j in jobs:
-                    title = (j.get("title") or j.get("externalTitle") or "")
-                    if any(k in title.lower() for k in keywords):
-                        sig = workday.normalize_job(j, account_name, tenant=tenant, site=site, wd_host=wd_host)
-                        db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                        ingested += 1
-
         except Exception as e:
             print(f"[weekly] WARN: failed jobs ingest for {account_name}: {e}")
 
     print(f"[weekly] ingested job signals: {ingested}")
-
     update_scores_and_export(conn, cfg)
     conn.close()
 
-
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
-    accounts = db.fetch_accounts(conn)
     watchlist = cfg.company_names_set()
-
-    rows_out: List[Dict[str, Any]] = []
     cur = conn.cursor()
 
-    for a in accounts:
+    rows_out: List[Dict[str, Any]] = []
+    watch_rows: List[Dict[str, Any]] = []
+
+    for a in db.fetch_accounts(conn):
         account_id = int(a["account_id"])
         company = a["name"]
 
-        cur.execute(
-            "SELECT * FROM studies WHERE account_id=? ORDER BY COALESCE(last_update_posted,'') DESC",
-            (account_id,),
-        )
+        cur.execute("SELECT * FROM studies WHERE account_id=? ORDER BY COALESCE(last_update_posted,'') DESC", (account_id,))
         trials = [dict(r) for r in cur.fetchall()]
         for t in trials:
             try:
@@ -157,53 +151,36 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             except Exception:
                 t["phases"] = []
 
-        cur.execute(
-            "SELECT * FROM signals WHERE account_id=? AND signal_type='job_posting' ORDER BY COALESCE(published_at, created_at) DESC",
-            (account_id,),
-        )
+        cur.execute("SELECT * FROM signals WHERE account_id=? AND signal_type='job_posting' ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
         job_sigs = [dict(r) for r in cur.fetchall()]
 
-        scores = compute_scores(
-            account=dict(a),
-            trials=trials,
-            job_signals=job_sigs,
-            config=cfg.config,
-            company_in_watchlist=(company in watchlist),
-        )
+        scores = compute_scores(trials, job_sigs, cfg.config, company_in_watchlist=(company in watchlist))
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
-        cur.execute(
-            "SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC",
-            (account_id,),
-        )
+        cur.execute("SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
         all_sigs = [dict(r) for r in cur.fetchall()]
-        evidence_links: List[str] = []
-        for s in all_sigs[:6]:
-            if s.get("evidence_url"):
-                evidence_links.append(s["evidence_url"])
 
-        rows_out.append(
-            {
-                "company": company,
-                "total_score": scores["total"],
-                "fit_score": scores["fit"],
-                "urgency_score": scores["urgency"],
-                "access_score": scores["access"],
-                "trigger_summary": summarize_triggers(all_sigs),
-                "evidence_links": evidence_links,
-            }
-        )
+        evidence = [s["evidence_url"] for s in all_sigs[:8] if s.get("evidence_url")]
+        row = {
+            "company": company,
+            "total_score": scores["total"],
+            "fit_score": scores["fit"],
+            "urgency_score": scores["urgency"],
+            "access_score": scores["access"],
+            "trigger_summary": summarize_triggers(all_sigs),
+            "evidence_links": evidence,
+        }
+        rows_out.append(row)
+        if company in watchlist:
+            watch_rows.append(row)
 
     rows_out.sort(key=lambda r: r["total_score"], reverse=True)
+    watch_rows.sort(key=lambda r: r["total_score"], reverse=True)
 
-    export_top_accounts(
-        rows=rows_out,
-        out_csv=cfg.export_csv_path(),
-        out_json=cfg.export_json_path(),
-        top_n=cfg.export_top_n(),
-    )
-    print(f"[export] wrote {cfg.export_csv_path()} and {cfg.export_json_path()}")
+    export_ranked(rows_out, cfg.export_csv_path(), cfg.export_json_path(), top_n=cfg.export_top_n())
+    export_watchlist(watch_rows, cfg.export_watchlist_csv_path(), cfg.export_watchlist_json_path())
 
+    print(f"[export] wrote ranked + watchlist exports")
 
 def run_export_only(cfg: AppConfig) -> None:
     conn = db.connect()
@@ -211,21 +188,17 @@ def run_export_only(cfg: AppConfig) -> None:
     update_scores_and_export(conn, cfg)
     conn.close()
 
-
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Trigger Radar")
-    ap.add_argument("--mode", choices=["daily", "weekly", "export-only"], required=True)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--mode", choices=["daily","weekly","export-only"], required=True)
     args = ap.parse_args()
-
     cfg = AppConfig.load()
-
     if args.mode == "daily":
         run_daily(cfg)
     elif args.mode == "weekly":
         run_weekly(cfg)
-    elif args.mode == "export-only":
+    else:
         run_export_only(cfg)
-
 
 if __name__ == "__main__":
     main()
