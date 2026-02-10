@@ -23,15 +23,30 @@ def within_days(published_at: str | None, window_days: int) -> bool:
     now = dt.datetime.now(dt.timezone.utc)
     return (now - d) <= dt.timedelta(days=window_days)
 
-def _lower(x: str | None) -> str:
-    return (x or "").lower()
+def _norm(s: str | None) -> str:
+    t = (s or "").lower()
+    # Normalize unicode hyphens to ASCII hyphen, then also create a space-normalized variant for matching
+    for ch in ["‐", "‑", "‒", "–", "—", "−"]:
+        t = t.replace(ch, "-")
+    return t
 
 def fit_from_trial_title(title: str | None) -> Tuple[int, str]:
-    t = _lower(title)
-    if any(term in t for term in ["car-t", "tcr-t", "chimeric antigen receptor"]):
+    t = _norm(title)
+    t_space = t.replace("-", " ")
+
+    if any(term in t_space for term in ["car t", "tcr t", "chimeric antigen receptor"]):
         return 3, "trial title contains CAR-T/TCR-T/chimeric antigen receptor"
-    if "t-cell engager" in t or "t cell engager" in t:
-        return 3, "trial title contains T-cell engager"
+    if "car-t" in t or "tcr-t" in t:
+        return 3, "trial title contains CAR-T/TCR-T"
+
+    # T-cell engagers: capture common phrasing variants ("t cell-engaging antibody", "t-cell engaging", etc.)
+    if any(phrase in t_space for phrase in ["t cell engager", "t cell engaging", "t cell redirecting"]):
+        return 3, "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting"
+    if "t-cell engager" in t or "t-cell-engaging" in t or "t-cell engaging" in t:
+        return 3, "trial title indicates T-cell engager / T-cell engaging"
+    if "t cell-engaging" in t or "t cell engaging" in t:
+        return 3, "trial title indicates T-cell engaging antibody"
+
     if "bispecific" in t and "cd3" in t:
         return 3, "trial title contains bispecific + CD3"
     if "cd3" in t:
@@ -71,7 +86,7 @@ def compute_scores(
     company_in_watchlist: bool,
 ) -> Dict[str, Any]:
     # ----- Fit -----
-    best_fit = 1
+    best_fit = 0
     fit_reason = "no trials"
     best_fit_trial = None
     for t in trials[:50]:
@@ -80,10 +95,17 @@ def compute_scores(
             best_fit = s
             fit_reason = reason
             best_fit_trial = t
+        # If all trials are score=1, still keep the first as "best" for debugging
+        if best_fit_trial is None:
+            best_fit_trial = t
+            best_fit = s
+            fit_reason = reason
+    if not trials:
+        best_fit = 1
 
-    # ----- Urgency (trial vs jobs) -----
+    # ----- Urgency -----
     high_urgency_phases = config.get("ctg", {}).get("high_urgency_phases", [])
-    best_trial_urg = 0
+    best_trial_urg = -1
     trial_urg_reason = "no trials"
     best_urg_trial = None
     for t in trials[:50]:
@@ -92,22 +114,26 @@ def compute_scores(
             best_trial_urg = s
             trial_urg_reason = reason
             best_urg_trial = t
+    if not trials:
+        best_trial_urg = 0
 
     job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
     spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
     relevant_recent_jobs = sum(1 for j in job_signals if within_days(j.get("published_at"), job_window))
     job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
 
-    if best_trial_urg >= job_urg:
+    if trials and best_trial_urg >= job_urg:
         urgency = float(best_trial_urg)
         urgency_reason = trial_urg_reason
         urgency_source = "trial"
-        best_urg_driver = best_urg_trial
-    else:
+    elif job_urg > 0:
         urgency = float(job_urg)
         urgency_reason = job_urg_reason
         urgency_source = "jobs"
-        best_urg_driver = None
+    else:
+        urgency = 0.0
+        urgency_reason = "no trials and no relevant jobs"
+        urgency_source = "none"
 
     # ----- Access -----
     acc_cfg = config.get("scoring", {}).get("access", {})
@@ -118,11 +144,11 @@ def compute_scores(
     )
     access = float(access_points)
 
-    # ----- Weighted total -----
+    # ----- Total -----
     w = config.get("scoring", {}).get("weights", {})
     total = float(best_fit) * float(w.get("fit", 1.0)) + float(urgency) * float(w.get("urgency", 1.0)) + float(access) * float(w.get("access", 1.0))
 
-    # ----- Tiebreakers -----
+    # ----- Bonuses -----
     tb = config.get("scoring", {}).get("tiebreakers", {})
     recent_days = int(tb.get("recent_trial_update_days", 90))
     recent_bonus = float(tb.get("recent_trial_bonus", 0.5))
