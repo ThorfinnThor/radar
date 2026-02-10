@@ -21,6 +21,7 @@ def export_ranked(rows: List[Dict[str, Any]], out_csv: str, out_json: str, top_n
         w = csv.DictWriter(f, fieldnames=[
             "rank","company","total_score","fit_score","urgency_score","access_score",
             "trial_count","best_fit_trial_title","best_fit_trial_status","best_fit_trial_phases","best_fit_trial_last_update",
+            "best_urgency_trial_title","best_urgency_trial_status","best_urgency_trial_phases","best_urgency_trial_last_update",
             "recent_job_hits","fit_reason","urgency_reason","urgency_source","access_reason","bonus_recent_trial","bonus_multi_trial",
             "trigger_summary","evidence_links","target_roles","job_hit_keywords","job_hit_titles"
         ])
@@ -38,6 +39,10 @@ def export_ranked(rows: List[Dict[str, Any]], out_csv: str, out_json: str, top_n
                 "best_fit_trial_status": r.get("best_fit_trial_status"),
                 "best_fit_trial_phases": json.dumps(r.get("best_fit_trial_phases")) if r.get("best_fit_trial_phases") is not None else None,
                 "best_fit_trial_last_update": r.get("best_fit_trial_last_update"),
+                "best_urgency_trial_title": r.get("best_urgency_trial_title"),
+                "best_urgency_trial_status": r.get("best_urgency_trial_status"),
+                "best_urgency_trial_phases": json.dumps(r.get("best_urgency_trial_phases")) if r.get("best_urgency_trial_phases") is not None else None,
+                "best_urgency_trial_last_update": r.get("best_urgency_trial_last_update"),
                 "recent_job_hits": r.get("recent_job_hits"),
                 "fit_reason": r.get("fit_reason"),
                 "urgency_reason": r.get("urgency_reason"),
@@ -63,6 +68,7 @@ def export_watchlist(rows: List[Dict[str, Any]], out_csv: str, out_json: str) ->
         w = csv.DictWriter(f, fieldnames=[
             "company","total_score","fit_score","urgency_score","access_score",
             "trial_count","best_fit_trial_title","best_fit_trial_status","best_fit_trial_phases","best_fit_trial_last_update",
+            "best_urgency_trial_title","best_urgency_trial_status","best_urgency_trial_phases","best_urgency_trial_last_update",
             "recent_job_hits","fit_reason","urgency_reason","urgency_source","access_reason","bonus_recent_trial","bonus_multi_trial",
             "trigger_summary","evidence_links","target_roles","job_hit_keywords","job_hit_titles"
         ])
@@ -79,6 +85,10 @@ def export_watchlist(rows: List[Dict[str, Any]], out_csv: str, out_json: str) ->
                 "best_fit_trial_status": r.get("best_fit_trial_status"),
                 "best_fit_trial_phases": json.dumps(r.get("best_fit_trial_phases")) if r.get("best_fit_trial_phases") is not None else None,
                 "best_fit_trial_last_update": r.get("best_fit_trial_last_update"),
+                "best_urgency_trial_title": r.get("best_urgency_trial_title"),
+                "best_urgency_trial_status": r.get("best_urgency_trial_status"),
+                "best_urgency_trial_phases": json.dumps(r.get("best_urgency_trial_phases")) if r.get("best_urgency_trial_phases") is not None else None,
+                "best_urgency_trial_last_update": r.get("best_urgency_trial_last_update"),
                 "recent_job_hits": r.get("recent_job_hits"),
                 "fit_reason": r.get("fit_reason"),
                 "urgency_reason": r.get("urgency_reason"),
