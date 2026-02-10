@@ -1,11 +1,26 @@
 # Companies to monitor for job postings via public ATS feeds.
-# Add as many as you want; job collection only runs for these.
+# Supported ATS values: greenhouse, lever, workday
+#
+# Workday (myworkdayjobs.com) fields:
+#   tenant: the subdomain prefix (e.g., "pfizer" from https://pfizer.wd1.myworkdayjobs.com/PfizerCareers)
+#   wd_host: "wd1" / "wd3" / "wd5" etc. (the middle part)
+#   site: the path after the domain (e.g., "PfizerCareers")
 
 companies:
-  # - name: "Example Bio"
-  #   ats: "greenhouse"
-  #   greenhouse_board_token: "examplebio"
+  - name: "AstraZeneca"
+    ats: "workday"
+    tenant: "astrazeneca"
+    wd_host: "wd3"
+    site: "Careers"
 
-  # - name: "Another Bio"
-  #   ats: "lever"
-  #   lever_account: "anotherbio"
+  - name: "GSK"
+    ats: "workday"
+    tenant: "gsk"
+    wd_host: "wd5"
+    site: "GSKCareers"
+
+  - name: "Pfizer"
+    ats: "workday"
+    tenant: "pfizer"
+    wd_host: "wd1"
+    site: "PfizerCareers"
