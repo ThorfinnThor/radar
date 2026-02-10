@@ -1,6 +1,91 @@
 {
   "generated_rows": [
     {
+      "company": "AstraZeneca",
+      "total_score": 9.1,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 2.0,
+      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of AZD0486 Monotherapy or in Combination With Other Anti-Cancer Agents for Mature B-Cell Malignancies | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06542250",
+        "https://clinicaltrials.gov/study/NCT06564038",
+        "https://clinicaltrials.gov/study/NCT05877599",
+        "https://clinicaltrials.gov/study/NCT06218914",
+        "https://clinicaltrials.gov/study/NCT06005493",
+        "https://clinicaltrials.gov/study/NCT07215585",
+        "https://clinicaltrials.gov/study/NCT07201558"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      ],
+      "trial_count": 7,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "company on watchlist / ATS known",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.6,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 7,
+        "best_fit_trial": {
+          "nct_id": "NCT06542250",
+          "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06542250",
+          "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "company on watchlist / ATS known"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.6,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
       "company": "Pfizer",
       "total_score": 8.1,
       "fit_score": 2.0,
@@ -108,7 +193,7 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-11-19",
-      "fit_reason": "trial title contains T-cell engager",
+      "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -142,7 +227,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "trial title contains T-cell engager",
+          "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -228,6 +313,83 @@
         "bonuses": {
           "recent_trial_bonus": 0.5,
           "multi_trial_bonus": 0.3,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+      "total_score": 7.65,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Study to Evaluate the Safety, Effectiveness and Tolerable Dose of Arlocabtagene Autoleucel (BMS-986393) in Novel Combinations in Participants With Relapsed and/or Refractory Multiple Myeloma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06297226",
+        "https://clinicaltrials.gov/study/NCT06121843"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 2,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.15,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 2,
+        "best_fit_trial": {
+          "nct_id": "NCT06297226",
+          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06297226",
+          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.15,
           "any_recent_trial_update": true
         },
         "weights": {
@@ -547,6 +709,84 @@
       }
     },
     {
+      "company": "Lion TCR Pte. Ltd.",
+      "total_score": 7.3,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Autologous HBV-TCR T Cell Therapy (LioCyx-M) for the Treatment of Hepatocellular Carcinoma | trial_candidate: Study of HBV-TCR T Cells (LioCyx-M) as Monotherapy or as Combination With Lenvatinib for HBV-related HCC | trial_candidate: Redirected HBV-Specific T Cells in Patients With HBV-related HCC (SAFE-T-HBV)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06961617",
+        "https://clinicaltrials.gov/study/NCT05195294",
+        "https://clinicaltrials.gov/study/NCT04745403"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 3,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Autologous HBV-TCR T Cell Therapy (LioCyx-M) for the Treatment of Hepatocellular Carcinoma",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2025-05-08",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.3,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 3,
+        "best_fit_trial": {
+          "nct_id": "NCT06961617",
+          "brief_title": "Autologous HBV-TCR T Cell Therapy (LioCyx-M) for the Treatment of Hepatocellular Carcinoma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2025-05-08"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06961617",
+          "brief_title": "Autologous HBV-TCR T Cell Therapy (LioCyx-M) for the Treatment of Hepatocellular Carcinoma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2025-05-08"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.3,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
       "company": "SCG Cell Therapy Pte. Ltd.",
       "total_score": 7.3,
       "fit_score": 3.0,
@@ -694,79 +934,6 @@
           "recent_trial_bonus": 0.0,
           "multi_trial_bonus": 0.15,
           "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "AstraZeneca",
-      "total_score": 7.1,
-      "fit_score": 1.0,
-      "urgency_score": 3.0,
-      "access_score": 2.0,
-      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of AZD0486 Monotherapy or in Combination With Other Anti-Cancer Agents for Mature B-Cell Malignancies | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06542250",
-        "https://clinicaltrials.gov/study/NCT06564038",
-        "https://clinicaltrials.gov/study/NCT05877599",
-        "https://clinicaltrials.gov/study/NCT06218914",
-        "https://clinicaltrials.gov/study/NCT06005493",
-        "https://clinicaltrials.gov/study/NCT07215585",
-        "https://clinicaltrials.gov/study/NCT07201558"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 7,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.6,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 7,
-        "best_fit_trial": null,
-        "best_urgency_trial": {
-          "nct_id": "NCT06542250",
-          "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1",
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-02-10"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "company on watchlist / ATS known"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.6,
-          "any_recent_trial_update": true
         },
         "weights": {
           "fit": 1.0,
@@ -1182,11 +1349,14 @@
       ],
       "trial_count": 12,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-06",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1196,7 +1366,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 12,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT05828511",
+          "brief_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-06"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT05828511",
           "brief_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
@@ -1213,7 +1392,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1291,6 +1470,152 @@
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
           "urgency_reason": "trial status NOT_YET_RECRUITING",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Shanghai Cell Therapy Group Co.,Ltd",
+      "total_score": 6.0,
+      "fit_score": 3.0,
+      "urgency_score": 2.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: An Exploratory Study on the Treatment of Advanced Solid Tumors by Fast CAR T Cells",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06249256"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "An Exploratory Study on the Treatment of Advanced Solid Tumors by Fast CAR T Cells",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_fit_trial_last_update": "2024-02-08",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT06249256",
+          "brief_title": "An Exploratory Study on the Treatment of Advanced Solid Tumors by Fast CAR T Cells",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "EARLY_PHASE1"
+          ],
+          "last_update_posted": "2024-02-08"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06249256",
+          "brief_title": "An Exploratory Study on the Treatment of Advanced Solid Tumors by Fast CAR T Cells",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "EARLY_PHASE1"
+          ],
+          "last_update_posted": "2024-02-08"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "A2 Biotherapeutics Inc.",
+      "total_score": 6.0,
+      "fit_score": 3.0,
+      "urgency_score": 2.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT04981119"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [],
+      "best_fit_trial_last_update": "2025-11-03",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT04981119",
+          "brief_title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+          "overall_status": "RECRUITING",
+          "phases": [],
+          "last_update_posted": "2025-11-03"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT04981119",
+          "brief_title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+          "overall_status": "RECRUITING",
+          "phases": [],
+          "last_update_posted": "2025-11-03"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -1480,11 +1805,13 @@
       ],
       "trial_count": 4,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Preliminary Efficacy of YK012",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-02-05",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1494,7 +1821,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 4,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06565689",
+          "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Preliminary Efficacy of YK012",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-02-05"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06565689",
           "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Preliminary Efficacy of YK012",
@@ -1510,7 +1845,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1548,11 +1883,13 @@
       ],
       "trial_count": 3,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Long-term Study for Participants Previously Treated With Ciltacabtagene Autoleucel",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE4"
+      ],
+      "best_fit_trial_last_update": "2026-01-16",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1562,7 +1899,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 3,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT05201781",
+          "brief_title": "A Long-term Study for Participants Previously Treated With Ciltacabtagene Autoleucel",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE4"
+          ],
+          "last_update_posted": "2026-01-16"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT03399799",
           "brief_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
@@ -1578,7 +1923,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1616,11 +1961,13 @@
       ],
       "trial_count": 3,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-04",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1630,7 +1977,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 3,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT05660967",
+          "brief_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-04"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT05660967",
           "brief_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
@@ -1646,7 +2001,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1684,11 +2039,13 @@
       ],
       "trial_count": 3,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "Evaluation of Xaluritamig in High-Risk, Biochemically Recurrent, Non-metastatic Castrate-sensitive Prostate Cancer",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-26",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1698,7 +2055,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 3,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06555796",
+          "brief_title": "Evaluation of Xaluritamig in High-Risk, Biochemically Recurrent, Non-metastatic Castrate-sensitive Prostate Cancer",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-26"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06555796",
           "brief_title": "Evaluation of Xaluritamig in High-Risk, Biochemically Recurrent, Non-metastatic Castrate-sensitive Prostate Cancer",
@@ -1714,7 +2079,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1722,73 +2087,6 @@
         "bonuses": {
           "recent_trial_bonus": 0.5,
           "multi_trial_bonus": 0.3,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
-      "total_score": 5.65,
-      "fit_score": 1.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Study to Evaluate the Safety, Effectiveness and Tolerable Dose of Arlocabtagene Autoleucel (BMS-986393) in Novel Combinations in Participants With Relapsed and/or Refractory Multiple Myeloma",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06297226",
-        "https://clinicaltrials.gov/study/NCT06121843"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 2,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.15,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 2,
-        "best_fit_trial": null,
-        "best_urgency_trial": {
-          "nct_id": "NCT06297226",
-          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-02-10"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.15,
           "any_recent_trial_update": true
         },
         "weights": {
@@ -1818,11 +2116,14 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "MB-dNPM1-TCR.1 in Relapsed/Refractory AML",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-12-23",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1832,7 +2133,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 2,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06424340",
+          "brief_title": "MB-dNPM1-TCR.1 in Relapsed/Refractory AML",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-12-23"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06424340",
           "brief_title": "MB-dNPM1-TCR.1 in Relapsed/Refractory AML",
@@ -1849,7 +2159,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1886,11 +2196,13 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study of Gammagard Liquid (Immune Globulin Infusion, 10%) to Prevent Infections in Adults With Multiple Myeloma",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE3"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1900,7 +2212,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 2,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06980480",
+          "brief_title": "A Study of Gammagard Liquid (Immune Globulin Infusion, 10%) to Prevent Infections in Adults With Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE3"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT05020015",
           "brief_title": "A Study of TAK-007 in Adults With Relapsed or Refractory (r/r) B-cell Non-Hodgkin Lymphoma (NHL)",
@@ -1916,7 +2236,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -1953,11 +2273,14 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "Phase 1/2 Study of IMC-R117C in Selected Advanced Cancers",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-01-28",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -1967,7 +2290,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 2,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06840119",
+          "brief_title": "Phase 1/2 Study of IMC-R117C in Selected Advanced Cancers",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-01-28"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06840119",
           "brief_title": "Phase 1/2 Study of IMC-R117C in Selected Advanced Cancers",
@@ -1984,7 +2316,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2021,11 +2353,13 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "DAREON\u2122-5: A Study to Test Whether Different Doses of BI 764532 Help People With Small Cell Lung Cancer or Other Neuroendocrine Cancers",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-06",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2035,7 +2369,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 2,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT05882058",
+          "brief_title": "DAREON\u2122-5: A Study to Test Whether Different Doses of BI 764532 Help People With Small Cell Lung Cancer or Other Neuroendocrine Cancers",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-06"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT05882058",
           "brief_title": "DAREON\u2122-5: A Study to Test Whether Different Doses of BI 764532 Help People With Small Cell Lung Cancer or Other Neuroendocrine Cancers",
@@ -2051,7 +2393,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2087,11 +2429,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "AB-3028, a Programmable Circuit T Cell Therapy in Patients With Castration Resistant Prostate Cancer (CRPC)",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-01-12",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2101,7 +2446,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT07285694",
+          "brief_title": "AB-3028, a Programmable Circuit T Cell Therapy in Patients With Castration Resistant Prostate Cancer (CRPC)",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-01-12"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT07285694",
           "brief_title": "AB-3028, a Programmable Circuit T Cell Therapy in Patients With Castration Resistant Prostate Cancer (CRPC)",
@@ -2118,7 +2472,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2154,11 +2508,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-01-15",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2168,7 +2525,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06359041",
+          "brief_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-01-15"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06359041",
           "brief_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
@@ -2185,7 +2551,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2221,11 +2587,13 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-28",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2235,7 +2603,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06308978",
+          "brief_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-28"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06308978",
           "brief_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
@@ -2251,7 +2627,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2287,11 +2663,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "Open-label, Multi-center, Phase I/II Study to Assess Safety, Disease Progression and Cellular Kinetics Following YTB323 Administration in Participants With Non-active Progressive Multiple Sclerosis (PMS)",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-11-20",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2301,7 +2680,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT06675864",
+          "brief_title": "Open-label, Multi-center, Phase I/II Study to Assess Safety, Disease Progression and Cellular Kinetics Following YTB323 Administration in Participants With Non-active Progressive Multiple Sclerosis (PMS)",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-11-20"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT06675864",
           "brief_title": "Open-label, Multi-center, Phase I/II Study to Assess Safety, Disease Progression and Cellular Kinetics Following YTB323 Administration in Participants With Non-active Progressive Multiple Sclerosis (PMS)",
@@ -2318,7 +2706,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2356,11 +2744,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-06",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2370,7 +2761,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT03933735",
+          "brief_title": "A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-06"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT03933735",
           "brief_title": "A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma",
@@ -2387,7 +2787,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2424,11 +2824,13 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2438,7 +2840,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT07101328",
+          "brief_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT07101328",
           "brief_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
@@ -2454,7 +2864,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2490,11 +2900,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study in Participants With Advanced Cancers Associated With Expression of DLL3 (MK-6070-001/HPN328-4001)",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-02",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2504,7 +2917,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT04471727",
+          "brief_title": "A Study in Participants With Advanced Cancers Associated With Expression of DLL3 (MK-6070-001/HPN328-4001)",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-02"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT04471727",
           "brief_title": "A Study in Participants With Advanced Cancers Associated With Expression of DLL3 (MK-6070-001/HPN328-4001)",
@@ -2521,7 +2943,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2557,11 +2979,14 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "A Study of CM336 in Patients With Relapsed or Refractory Autoimmune Cytopenia",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-12-17",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2571,7 +2996,16 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT07175493",
+          "brief_title": "A Study of CM336 in Patients With Relapsed or Refractory Autoimmune Cytopenia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-12-17"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT07175493",
           "brief_title": "A Study of CM336 in Patients With Relapsed or Refractory Autoimmune Cytopenia",
@@ -2588,7 +3022,7 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
@@ -2624,11 +3058,13 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
+      "best_fit_trial_title": "OM336 in Seropositive Autoimmune Diseases",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2025-11-14",
+      "fit_reason": "no strong wedge keywords in trial titles",
       "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -2638,7 +3074,15 @@
       "job_hit_keywords": [],
       "score_details": {
         "trial_count": 1,
-        "best_fit_trial": null,
+        "best_fit_trial": {
+          "nct_id": "NCT07229144",
+          "brief_title": "OM336 in Seropositive Autoimmune Diseases",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2025-11-14"
+        },
         "best_urgency_trial": {
           "nct_id": "NCT07229144",
           "brief_title": "OM336 in Seropositive Autoimmune Diseases",
@@ -2654,207 +3098,8 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
+          "fit_reason": "no strong wedge keywords in trial titles",
           "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Incyte Corporation",
-      "total_score": 5.5,
-      "fit_score": 1.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study to Evaluate INCA036873 in Participants With Advanced Solid Tumors and Hematological Malignancies",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07195916"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": null,
-        "best_urgency_trial": {
-          "nct_id": "NCT07195916",
-          "brief_title": "A Study to Evaluate INCA036873 in Participants With Advanced Solid Tumors and Hematological Malignancies",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-02-10"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "MacroGenics",
-      "total_score": 5.5,
-      "fit_score": 1.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of MGD024 in Patients With Relapsed or Refractory Hematologic Malignancies",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05362773"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": null,
-        "best_urgency_trial": {
-          "nct_id": "NCT05362773",
-          "brief_title": "A Study of MGD024 in Patients With Relapsed or Refractory Hematologic Malignancies",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-01-13"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Lyell Immunopharma, Inc.",
-      "total_score": 5.5,
-      "fit_score": 1.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: Study of LYL314 in Aggressive Large B-Cell Lymphoma",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05826535"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": null,
-        "best_urgency_trial": {
-          "nct_id": "NCT05826535",
-          "brief_title": "Study of LYL314 in Aggressive Large B-Cell Lymphoma",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1",
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-01-13"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
