@@ -24,10 +24,6 @@ def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages:
     return jobs
 
 def _job_detail_url(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[str]:
-    # external_path example: "/Careers/job/Location/Title_JR-0000"
-    # Workday detail endpoint uses the segment after "/job/"
-    # We'll extract the part after "/job/" and call:
-    #   https://{tenant}.{wd_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/job/{slug}
     if not external_path or "/job/" not in external_path:
         return None
     slug = external_path.split("/job/", 1)[1].lstrip("/")
@@ -58,14 +54,12 @@ def normalize_job(job: Dict[str, Any], company_name: str, tenant: str, site: str
 
     posted_on = job.get("postedOn") or job.get("postedDate")
 
-    # Best-effort detail fetch to capture description text (optional)
     detail = fetch_job_detail(tenant, site, wd_host, external_path) if external_path else None
     description = ""
     if isinstance(detail, dict):
-        # Workday details often include "jobPostingInfo" with "jobDescription" or "externalDescription"
         jpi = detail.get("jobPostingInfo") or {}
-        description = (jpi.get("jobDescription") or jpi.get("externalDescription") or "") if isinstance(jpi, dict) else ""
-        # Sometimes description lives under "jobDescription" top-level
+        if isinstance(jpi, dict):
+            description = jpi.get("jobDescription") or jpi.get("externalDescription") or ""
         if not description:
             description = detail.get("jobDescription") or ""
 
@@ -74,8 +68,7 @@ def normalize_job(job: Dict[str, Any], company_name: str, tenant: str, site: str
         "posted_on": posted_on,
         "external_path": external_path,
         "detail": detail,
-        "text_blob": f"{title}
-{description}".strip(),
+        "text_blob": f"{title}\n{description}".strip(),
     }
 
     return NormalizedSignal(
