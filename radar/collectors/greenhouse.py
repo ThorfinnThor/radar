@@ -29,8 +29,7 @@ def normalize_job(job: Dict[str, Any], company_name: str, board_token: str, sour
         content = detail.get("content") or ""
     payload = dict(job)
     payload["detail"] = detail
-    payload["text_blob"] = f"{title}
-{content}".strip()
+    payload["text_blob"] = f"{title}\n{content}".strip()
     return NormalizedSignal(
         account_name=company_name,
         signal_type="job_posting",
