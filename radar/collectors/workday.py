@@ -3,7 +3,8 @@ from __future__ import annotations
 import json
 import os
 import subprocess
-from typing import Any, Dict, List, Optional
+from pathlib import Path
+from typing import Any, Dict, List
 
 from radar.models import NormalizedSignal
 
@@ -11,15 +12,18 @@ def _node_bin() -> str:
     return os.environ.get("NODE_BIN", "node")
 
 def _script_path() -> str:
-    # scripts/workday_scrape.mjs relative to repo root; in package context, use this file's location
-    here = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))  # .../radar/collectors/ -> repo/radar
-    repo = os.path.dirname(here)
-    return os.path.join(repo, "scripts", "workday_scrape.mjs")
+    # repo layout in Actions: <workspace>/<repo>/<repo>/...
+    # this file: <repo_root>/radar/collectors/workday.py
+    repo_root = Path(__file__).resolve().parents[2]  # .../<repo>/<repo>
+    return str(repo_root / "scripts" / "workday_scrape.mjs")
 
 def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages: int = 20) -> List[Dict[str, Any]]:
     """Fetch Workday job postings using the bundled Node scraper (more tenant-compatible)."""
     host = f"{tenant}.{wd_host}.myworkdayjobs.com"
     script = _script_path()
+    if not os.path.exists(script):
+        raise RuntimeError(f"Workday node scraper missing at {script}. Make sure scripts/workday_scrape.mjs exists in repo root.")
+
     cmd = [
         _node_bin(),
         script,
@@ -34,24 +38,25 @@ def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages:
     try:
         p = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=180)
     except subprocess.CalledProcessError as e:
-        out = (e.stderr or e.stdout or "")[:500]
+        out = ((e.stderr or "") + "\n" + (e.stdout or ""))[:800]
         raise RuntimeError(f"Workday node scraper failed: {out}") from e
     except subprocess.TimeoutExpired as e:
         raise RuntimeError("Workday node scraper timed out") from e
 
     data = json.loads(p.stdout)
     jobs = data.get("jobs") or []
-    # Convert to a structure that normalize_job expects (keep keys we need)
+
     postings: List[Dict[str, Any]] = []
+    disc = data.get("discovered") or {}
     for j in jobs:
         postings.append({
             "title": j.get("title"),
             "postedOn": j.get("postedOn"),
             "externalPath": j.get("externalPath"),
             "_description": j.get("description") or "",
-            "_origin": (data.get("discovered") or {}).get("origin"),
-            "_tenant2": (data.get("discovered") or {}).get("tenant"),
-            "_site2": (data.get("discovered") or {}).get("site"),
+            "_origin": disc.get("origin"),
+            "_tenant2": disc.get("tenant"),
+            "_site2": disc.get("site"),
         })
     return postings
 
