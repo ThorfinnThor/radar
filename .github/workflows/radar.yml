@@ -3,7 +3,15 @@ name: Trigger Radar
 on:
   schedule:
     - cron: "10 6 * * *"
-  workflow_dispatch: {}
+    - cron: "20 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "What to run"
+        required: true
+        default: "weekly"
+        type: choice
+        options: [daily, weekly, both]
 
 permissions:
   contents: write
@@ -18,24 +26,35 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug trigger
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "schedule=${{ github.event.schedule }}"
+          echo "run_mode=${{ github.event.inputs.run_mode }}"
+
       - name: Daily ingest + export
+        if: >
+          (github.event_name == 'schedule' && github.event.schedule == '10 6 * * *') ||
+          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'daily' || github.event.inputs.run_mode == 'both'))
         run: |
           python -m radar.main --mode daily
           python -m radar.main --mode export-only
 
-      - name: Weekly jobs ingest on Mondays (UTC)
+      - name: Weekly jobs ingest + export
+        if: >
+          (github.event_name == 'schedule' && github.event.schedule == '20 6 * * 1') ||
+          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'weekly' || github.event.inputs.run_mode == 'both'))
         run: |
-          DOW=$(date -u +%u)
-          if [ "$DOW" -eq 1 ]; then
-            python -m radar.main --mode weekly
-          else
-            echo "Skipping weekly jobs ingest (not Monday UTC)"
-          fi
+          python -m radar.main --mode weekly
 
       - name: Commit exports
         run: |
