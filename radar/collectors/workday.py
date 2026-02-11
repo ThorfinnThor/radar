@@ -1,6 +1,6 @@
 from __future__ import annotations
 import requests
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from radar.models import NormalizedSignal
 
 def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages: int = 20) -> List[Dict[str, Any]]:
@@ -23,22 +23,67 @@ def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages:
         offset += limit
     return jobs
 
+def _job_detail_url(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[str]:
+    # external_path example: "/Careers/job/Location/Title_JR-0000"
+    # Workday detail endpoint uses the segment after "/job/"
+    # We'll extract the part after "/job/" and call:
+    #   https://{tenant}.{wd_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/job/{slug}
+    if not external_path or "/job/" not in external_path:
+        return None
+    slug = external_path.split("/job/", 1)[1].lstrip("/")
+    if not slug:
+        return None
+    return f"https://{tenant}.{wd_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/job/{slug}"
+
+def fetch_job_detail(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[Dict[str, Any]]:
+    url = _job_detail_url(tenant, site, wd_host, external_path)
+    if not url:
+        return None
+    try:
+        r = requests.get(url, headers={"Accept": "application/json"}, timeout=60)
+        if r.status_code != 200:
+            return None
+        return r.json()
+    except Exception:
+        return None
+
 def normalize_job(job: Dict[str, Any], company_name: str, tenant: str, site: str, wd_host: str, source: str = "workday") -> NormalizedSignal:
-    title = job.get("title") or job.get("externalTitle") or job.get("postedTitle")
-    external_path = job.get("externalPath") or job.get("externalUrl")
+    title = job.get("title") or job.get("externalTitle") or job.get("postedTitle") or ""
+
+    external_path = job.get("externalPath") or ""
     if isinstance(external_path, str) and external_path.startswith("/"):
         evidence_url = f"https://{tenant}.{wd_host}.myworkdayjobs.com{external_path}"
-    elif isinstance(external_path, str) and external_path.startswith("http"):
-        evidence_url = external_path
     else:
         evidence_url = f"https://{tenant}.{wd_host}.myworkdayjobs.com/{site}"
+
     posted_on = job.get("postedOn") or job.get("postedDate")
+
+    # Best-effort detail fetch to capture description text (optional)
+    detail = fetch_job_detail(tenant, site, wd_host, external_path) if external_path else None
+    description = ""
+    if isinstance(detail, dict):
+        # Workday details often include "jobPostingInfo" with "jobDescription" or "externalDescription"
+        jpi = detail.get("jobPostingInfo") or {}
+        description = (jpi.get("jobDescription") or jpi.get("externalDescription") or "") if isinstance(jpi, dict) else ""
+        # Sometimes description lives under "jobDescription" top-level
+        if not description:
+            description = detail.get("jobDescription") or ""
+
+    payload = {
+        "title": title,
+        "posted_on": posted_on,
+        "external_path": external_path,
+        "detail": detail,
+        "text_blob": f"{title}
+{description}".strip(),
+    }
+
     return NormalizedSignal(
         account_name=company_name,
         signal_type="job_posting",
         source=source,
-        title=title,
+        title=title or None,
         evidence_url=evidence_url,
         published_at=str(posted_on) if posted_on is not None else None,
-        payload=job,
+        payload=payload,
     )

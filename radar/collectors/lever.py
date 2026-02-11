@@ -10,12 +10,17 @@ def fetch_jobs(lever_account: str) -> List[Dict[str, Any]]:
     return r.json()
 
 def normalize_job(job: Dict[str, Any], company_name: str, source: str = "lever") -> NormalizedSignal:
+    title = job.get("text") or ""
+    description = job.get("description") or ""
+    payload = dict(job)
+    payload["text_blob"] = f"{title}
+{description}".strip()
     return NormalizedSignal(
         account_name=company_name,
         signal_type="job_posting",
         source=source,
-        title=job.get("text"),
+        title=title or None,
         evidence_url=job.get("hostedUrl"),
         published_at=str(job.get("createdAt") or job.get("updatedAt") or ""),
-        payload=job,
+        payload=payload,
     )

@@ -169,41 +169,28 @@ def run_weekly(cfg: AppConfig) -> None:
     db.migrate(conn)
 
     aliases = cfg.aliases()
-    keywords = [k.lower() for k in cfg.job_keywords()]
-    ingested = 0
+    companies = cfg.companies_list()
 
-    for c in cfg.companies_list():
+    ingested = 0
+    for c in companies:
         name = c.get("name")
         if not name:
             continue
         account_name = normalize_account_name(name, aliases)
-        account_id = db.upsert_account(conn, account_name, modality_tags=["car-t","t-cell engager"])
         ats = (c.get("ats") or "").lower().strip()
 
-        try:
-            if ats == "workday":
-                tenant, wd_host, site = c.get("tenant"), c.get("wd_host"), c.get("site")
-                if not tenant or not wd_host or not site:
-                    continue
-                jobs = workday.fetch_jobs(tenant, site, wd_host)
-                for j in jobs:
-                    title = (j.get("title") or j.get("externalTitle") or "")
-                    if any(k in title.lower() for k in keywords):
-                        sig = workday.normalize_job(j, account_name, tenant, site, wd_host)
-                        db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                        ingested += 1
+        account_id = db.upsert_account(conn, account_name, modality_tags=["car-t", "t-cell engager"])
 
-            elif ats == "greenhouse":
+        try:
+            if ats == "greenhouse":
                 token = c.get("greenhouse_board_token")
                 if not token:
                     continue
                 jobs = greenhouse.fetch_jobs(token)
                 for j in jobs:
-                    title = (j.get("title") or "")
-                    if any(k in title.lower() for k in keywords):
-                        sig = greenhouse.normalize_job(j, account_name)
-                        db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                        ingested += 1
+                    sig = greenhouse.normalize_job(j, account_name, board_token=token)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
 
             elif ats == "lever":
                 token = c.get("lever_account")
@@ -211,18 +198,30 @@ def run_weekly(cfg: AppConfig) -> None:
                     continue
                 jobs = lever.fetch_jobs(token)
                 for j in jobs:
-                    title = (j.get("text") or "")
-                    if any(k in title.lower() for k in keywords):
-                        sig = lever.normalize_job(j, account_name)
-                        db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                        ingested += 1
+                    sig = lever.normalize_job(j, account_name)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
+
+            elif ats == "workday":
+                tenant = c.get("tenant")
+                wd_host = c.get("wd_host")
+                site = c.get("site")
+                if not tenant or not wd_host or not site:
+                    continue
+                jobs = workday.fetch_jobs(tenant=tenant, site=site, wd_host=wd_host, limit=50, max_pages=20)
+                for j in jobs:
+                    sig = workday.normalize_job(j, account_name, tenant=tenant, site=site, wd_host=wd_host)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
 
         except Exception as e:
             print(f"[weekly] WARN: failed jobs ingest for {account_name}: {e}")
 
-    print(f"[weekly] ingested job signals: {ingested}")
+    print(f"[weekly] ingested job postings (all): {ingested}")
+
     update_scores_and_export(conn, cfg)
     conn.close()
+
 
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()

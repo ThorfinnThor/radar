@@ -23,6 +23,23 @@ def within_days(published_at: str | None, window_days: int) -> bool:
     now = dt.datetime.now(dt.timezone.utc)
     return (now - d) <= dt.timedelta(days=window_days)
 
+
+def _normalize_text(s: str | None) -> str:
+    t = (s or "").lower()
+    for ch in ["\u2010","\u2011","\u2012","\u2013","\u2014","\u2212"]:
+        t = t.replace(ch, "-")
+    t = t.replace("-", " ")
+    t = " ".join(t.split())
+    return t
+
+def _match_keywords(text: str, keywords: List[str]) -> List[str]:
+    text_n = _normalize_text(text)
+    hits = []
+    for k in keywords:
+        k_n = _normalize_text(k)
+        if k_n and k_n in text_n:
+            hits.append(k)
+    return hits
 def _norm(s: str | None) -> str:
     t = (s or "").lower()
     # Normalize unicode hyphens to ASCII hyphen, then also create a space-normalized variant for matching
@@ -125,7 +142,24 @@ def compute_scores(
 
     job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
     spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
-    relevant_recent_jobs = sum(1 for j in job_signals if within_days(j.get("published_at"), job_window))
+    keywords = (config.get('jobs', {}) or {}).get('job_keywords', [])
+    relevant_recent_jobs = 0
+    for j in job_signals:
+        if not within_days(j.get('published_at'), job_window):
+            continue
+        blob = ''
+        # job signals may include a prepared text_blob in payload_json (preferred)
+        try:
+            pj = j.get('payload_json')
+            if pj:
+                import json as _json
+                pobj = _json.loads(pj)
+                blob = pobj.get('text_blob') or ''
+        except Exception:
+            blob = ''
+        blob = blob or (j.get('title') or '')
+        if _match_keywords(blob, keywords):
+            relevant_recent_jobs += 1
     job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
 
     if trials and best_trial_urg >= job_urg:
