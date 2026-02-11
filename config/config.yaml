@@ -55,7 +55,6 @@ jobs:
     - "bispecific"
   recent_window_days: 45
   spike_threshold: 2
-  run_on_daily: true
 
 normalization:
   aliases: {}

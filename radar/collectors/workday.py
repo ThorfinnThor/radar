@@ -3,14 +3,31 @@ import requests
 from typing import Any, Dict, List, Optional
 from radar.models import NormalizedSignal
 
+# Workday job boards often return 400 unless requests look like browser traffic (Origin/Referer/User-Agent).
+BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+
+def _headers(origin: str, referer: str) -> Dict[str, str]:
+    return {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Origin": origin,
+        "Referer": referer,
+        "User-Agent": BROWSER_UA,
+    }
+
 def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages: int = 20) -> List[Dict[str, Any]]:
     base = f"https://{tenant}.{wd_host}.myworkdayjobs.com"
+    # Many sites use no locale prefix on the canonical landing page; keep it simple.
+    referer = f"{base}/{site}"
     url = f"{base}/wday/cxs/{tenant}/{site}/jobs"
+
     jobs: List[Dict[str, Any]] = []
     offset = 0
-    headers = {"Content-Type": "application/json", "Accept": "application/json"}
+    headers = _headers(origin=base, referer=referer)
+
     for _ in range(max_pages):
-        payload = {"limit": limit, "offset": offset, "searchText": "", "appliedFacets": {}}
+        payload = {"appliedFacets": {}, "limit": limit, "offset": offset, "searchText": ""}
         r = requests.post(url, headers=headers, json=payload, timeout=60)
         r.raise_for_status()
         data = r.json()
@@ -21,6 +38,7 @@ def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages:
         if len(postings) < limit:
             break
         offset += limit
+
     return jobs
 
 def _job_detail_url(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[str]:
@@ -35,8 +53,10 @@ def fetch_job_detail(tenant: str, site: str, wd_host: str, external_path: str) -
     url = _job_detail_url(tenant, site, wd_host, external_path)
     if not url:
         return None
+    base = f"https://{tenant}.{wd_host}.myworkdayjobs.com"
+    referer = f"{base}/{site}{external_path if external_path.startswith('/') else ''}"
     try:
-        r = requests.get(url, headers={"Accept": "application/json"}, timeout=60)
+        r = requests.get(url, headers=_headers(origin=base, referer=referer), timeout=60)
         if r.status_code != 200:
             return None
         return r.json()
