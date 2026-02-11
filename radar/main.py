@@ -33,6 +33,11 @@ def run_daily(cfg: AppConfig) -> None:
     conn = db.connect()
     db.migrate(conn)
 
+    if bool(cfg.config.get('jobs', {}).get('run_on_daily', False)):
+        j_ing = ingest_jobs(conn, cfg)
+        print(f"[daily] ingested job postings (all): {j_ing}")
+
+
     aliases = cfg.aliases()
     keep_statuses = {s.upper() for s in cfg.ctg_keep_statuses()}
     keep_classes = {s.upper() for s in cfg.ctg_keep_sponsor_classes()}
@@ -164,14 +169,15 @@ def run_daily(cfg: AppConfig) -> None:
         print(f"[daily] attributed non-industry leads to collaborators (synthetic studies): {collab_attributed}")
     conn.close()
 
-def run_weekly(cfg: AppConfig) -> None:
-    conn = db.connect()
-    db.migrate(conn)
+
+
+def ingest_jobs(conn, cfg: AppConfig) -> int:
+    """Ingest job postings for watchlist companies via their ATS."""
 
     aliases = cfg.aliases()
     companies = cfg.companies_list()
-
     ingested = 0
+
     for c in companies:
         name = c.get("name")
         if not name:
@@ -189,7 +195,16 @@ def run_weekly(cfg: AppConfig) -> None:
                 jobs = greenhouse.fetch_jobs(token)
                 for j in jobs:
                     sig = greenhouse.normalize_job(j, account_name, board_token=token)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    db.insert_signal(
+                        conn,
+                        account_id,
+                        sig.signal_type,
+                        sig.source,
+                        sig.title,
+                        sig.evidence_url,
+                        sig.published_at,
+                        sig.payload,
+                    )
                     ingested += 1
 
             elif ats == "lever":
@@ -199,7 +214,16 @@ def run_weekly(cfg: AppConfig) -> None:
                 jobs = lever.fetch_jobs(token)
                 for j in jobs:
                     sig = lever.normalize_job(j, account_name)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    db.insert_signal(
+                        conn,
+                        account_id,
+                        sig.signal_type,
+                        sig.source,
+                        sig.title,
+                        sig.evidence_url,
+                        sig.published_at,
+                        sig.payload,
+                    )
                     ingested += 1
 
             elif ats == "workday":
@@ -211,17 +235,32 @@ def run_weekly(cfg: AppConfig) -> None:
                 jobs = workday.fetch_jobs(tenant=tenant, site=site, wd_host=wd_host, limit=50, max_pages=20)
                 for j in jobs:
                     sig = workday.normalize_job(j, account_name, tenant=tenant, site=site, wd_host=wd_host)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    db.insert_signal(
+                        conn,
+                        account_id,
+                        sig.signal_type,
+                        sig.source,
+                        sig.title,
+                        sig.evidence_url,
+                        sig.published_at,
+                        sig.payload,
+                    )
                     ingested += 1
 
         except Exception as e:
-            print(f"[weekly] WARN: failed jobs ingest for {account_name}: {e}")
+            print(f"[jobs] WARN: failed jobs ingest for {account_name}: {e}")
 
+    return ingested
+
+def run_weekly(cfg: AppConfig) -> None:
+    conn = db.connect()
+    db.migrate(conn)
+
+    ingested = ingest_jobs(conn, cfg)
     print(f"[weekly] ingested job postings (all): {ingested}")
 
     update_scores_and_export(conn, cfg)
     conn.close()
-
 
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
