@@ -13,8 +13,7 @@ def normalize_job(job: Dict[str, Any], company_name: str, source: str = "lever")
     title = job.get("text") or ""
     description = job.get("description") or ""
     payload = dict(job)
-    payload["text_blob"] = f"{title}
-{description}".strip()
+    payload["text_blob"] = f"{title}\n{description}".strip()
     return NormalizedSignal(
         account_name=company_name,
         signal_type="job_posting",
