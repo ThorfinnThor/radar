@@ -9,8 +9,6 @@
  * Output: JSON array to stdout
  */
 
-import { fetch } from "undici";
-
 const UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 
 function arg(name, def = null) {
