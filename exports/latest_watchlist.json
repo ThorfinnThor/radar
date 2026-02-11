@@ -1,109 +1,19 @@
 {
   "watchlist_rows": [
     {
-      "company": "Pfizer",
-      "total_score": 9.1,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 2.0,
-      "trigger_summary": "trial_candidate: A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30) | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06215118",
-        "https://clinicaltrials.gov/study/NCT06152575",
-        "https://clinicaltrials.gov/study/NCT05020236",
-        "https://clinicaltrials.gov/study/NCT06057402",
-        "https://clinicaltrials.gov/study/NCT06974786",
-        "https://clinicaltrials.gov/study/NCT05090566",
-        "https://clinicaltrials.gov/study/NCT04649359",
-        "https://clinicaltrials.gov/study/NCT06421675"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 9,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2026-02-05",
-      "best_urgency_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2026-02-05",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.6,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 9,
-        "best_fit_trial": {
-          "nct_id": "NCT06215118",
-          "brief_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-02-05"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT06215118",
-          "brief_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-02-05"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "company on watchlist / ATS known"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.6,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
       "company": "AstraZeneca",
       "total_score": 9.1,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of AZD0486 Monotherapy or in Combination With Other Anti-Cancer Agents for Mature B-Cell Malignancies | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation",
+      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation | trial_candidate: Phase 1 Study to Investigate TCRTs KRAS Mutation in Unresectable, Advanced, and/or Metastatic Solid Tumors",
       "evidence_links": [
         "https://clinicaltrials.gov/study/NCT06542250",
-        "https://clinicaltrials.gov/study/NCT06564038",
         "https://clinicaltrials.gov/study/NCT05877599",
         "https://clinicaltrials.gov/study/NCT06218914",
-        "https://clinicaltrials.gov/study/NCT06005493",
         "https://clinicaltrials.gov/study/NCT07215585",
-        "https://clinicaltrials.gov/study/NCT07201558"
+        "https://clinicaltrials.gov/study/NCT04594642",
+        "https://clinicaltrials.gov/study/NCT06530849"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -112,7 +22,7 @@
         "Director, Bioassay / Potency / Analytical Development",
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
       ],
-      "trial_count": 7,
+      "trial_count": 5,
       "recent_job_hits": 0,
       "best_fit_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
       "best_fit_trial_status": "RECRUITING",
@@ -137,7 +47,7 @@
       "job_hit_titles": [],
       "job_hit_keywords": [],
       "score_details": {
-        "trial_count": 7,
+        "trial_count": 5,
         "best_fit_trial": {
           "nct_id": "NCT06542250",
           "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
@@ -166,6 +76,92 @@
         "reasons": {
           "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "company on watchlist / ATS known"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.6,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Pfizer",
+      "total_score": 9.1,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 2.0,
+      "trigger_summary": "trial_candidate: A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05623020",
+        "https://clinicaltrials.gov/study/NCT06152575",
+        "https://clinicaltrials.gov/study/NCT05020236",
+        "https://clinicaltrials.gov/study/NCT05675449",
+        "https://clinicaltrials.gov/study/NCT06421675"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 5,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE3"
+      ],
+      "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-26",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "company on watchlist / ATS known",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.6,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 5,
+        "best_fit_trial": {
+          "nct_id": "NCT05623020",
+          "brief_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE3"
+          ],
+          "last_update_posted": "2026-02-03"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05675449",
+          "brief_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-26"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "company on watchlist / ATS known"
         },

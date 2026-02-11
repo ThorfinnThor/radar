@@ -1,109 +1,19 @@
 {
   "generated_rows": [
     {
-      "company": "Pfizer",
-      "total_score": 9.1,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 2.0,
-      "trigger_summary": "trial_candidate: A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30) | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06215118",
-        "https://clinicaltrials.gov/study/NCT06152575",
-        "https://clinicaltrials.gov/study/NCT05020236",
-        "https://clinicaltrials.gov/study/NCT06057402",
-        "https://clinicaltrials.gov/study/NCT06974786",
-        "https://clinicaltrials.gov/study/NCT05090566",
-        "https://clinicaltrials.gov/study/NCT04649359",
-        "https://clinicaltrials.gov/study/NCT06421675"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 9,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2026-02-05",
-      "best_urgency_trial_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2026-02-05",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.6,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 9,
-        "best_fit_trial": {
-          "nct_id": "NCT06215118",
-          "brief_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-02-05"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT06215118",
-          "brief_title": "A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30)",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2026-02-05"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "company on watchlist / ATS known"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.6,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
       "company": "AstraZeneca",
       "total_score": 9.1,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of AZD0486 Monotherapy or in Combination With Other Anti-Cancer Agents for Mature B-Cell Malignancies | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation",
+      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation | trial_candidate: Phase 1 Study to Investigate TCRTs KRAS Mutation in Unresectable, Advanced, and/or Metastatic Solid Tumors",
       "evidence_links": [
         "https://clinicaltrials.gov/study/NCT06542250",
-        "https://clinicaltrials.gov/study/NCT06564038",
         "https://clinicaltrials.gov/study/NCT05877599",
         "https://clinicaltrials.gov/study/NCT06218914",
-        "https://clinicaltrials.gov/study/NCT06005493",
         "https://clinicaltrials.gov/study/NCT07215585",
-        "https://clinicaltrials.gov/study/NCT07201558"
+        "https://clinicaltrials.gov/study/NCT04594642",
+        "https://clinicaltrials.gov/study/NCT06530849"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -112,7 +22,7 @@
         "Director, Bioassay / Potency / Analytical Development",
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
       ],
-      "trial_count": 7,
+      "trial_count": 5,
       "recent_job_hits": 0,
       "best_fit_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
       "best_fit_trial_status": "RECRUITING",
@@ -137,7 +47,7 @@
       "job_hit_titles": [],
       "job_hit_keywords": [],
       "score_details": {
-        "trial_count": 7,
+        "trial_count": 5,
         "best_fit_trial": {
           "nct_id": "NCT06542250",
           "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
@@ -182,44 +92,44 @@
       }
     },
     {
-      "company": "Janssen Research & Development, LLC",
-      "total_score": 8.1,
+      "company": "Pfizer",
+      "total_score": 9.1,
       "fit_score": 3.0,
       "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Long-term Study for Participants Previously Treated With Ciltacabtagene Autoleucel | trial_candidate: Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "access_score": 2.0,
+      "trigger_summary": "trial_candidate: A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05201781",
-        "https://clinicaltrials.gov/study/NCT03399799",
-        "https://clinicaltrials.gov/study/NCT04634552",
-        "https://clinicaltrials.gov/study/NCT07029776",
-        "https://clinicaltrials.gov/study/NCT06348108"
+        "https://clinicaltrials.gov/study/NCT05623020",
+        "https://clinicaltrials.gov/study/NCT06152575",
+        "https://clinicaltrials.gov/study/NCT05020236",
+        "https://clinicaltrials.gov/study/NCT05675449",
+        "https://clinicaltrials.gov/study/NCT06421675"
       ],
       "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
         "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+        "Director, Bioassay / Potency / Analytical Development"
       ],
       "trial_count": 5,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
-      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+      "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE1"
+        "PHASE3"
       ],
-      "best_fit_trial_last_update": "2026-01-16",
-      "best_urgency_trial_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
-      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2026-01-16",
+      "best_urgency_trial_last_update": "2026-01-26",
       "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
-      "access_reason": "not on watchlist",
+      "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.5,
       "bonus_multi_trial": 0.6,
       "job_hit_titles": [],
@@ -227,22 +137,22 @@
       "score_details": {
         "trial_count": 5,
         "best_fit_trial": {
-          "nct_id": "NCT03399799",
-          "brief_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "nct_id": "NCT05623020",
+          "brief_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+          "overall_status": "RECRUITING",
           "phases": [
-            "PHASE1"
+            "PHASE3"
           ],
-          "last_update_posted": "2026-01-16"
+          "last_update_posted": "2026-02-03"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT03399799",
-          "brief_title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "nct_id": "NCT05675449",
+          "brief_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2026-01-16"
+          "last_update_posted": "2026-01-26"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -251,9 +161,9 @@
         },
         "reasons": {
           "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
-          "access_reason": "not on watchlist"
+          "access_reason": "company on watchlist / ATS known"
         },
         "bonuses": {
           "recent_trial_bonus": 0.5,
@@ -273,15 +183,15 @@
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment | trial_candidate: A Trial to Learn if Odronextamab Combined With Chemotherapy is Safe and Well-Tolerated and How Well it Works Compared to Rituximab Combined With Chemotherapy for Adult Participants With Follicular Lymphoma | trial_candidate: A Trial to Find Out if Odronextamab Combined With Lenalidomide is Safe and Works Better Than Rituximab Combined With Lenalidomide in Adult Participants With Follicular Lymphoma and Marginal Zone Lymphoma",
+      "trigger_summary": "trial_candidate: Phase 1/2 Study of Linvoseltamab in Adult Patients With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Trial to Learn How Effective and Safe Odronextamab is Compared to Standard of Care for Adult Participants With Previously Treated Aggressive B-cell Non-Hodgkin Lymphoma | trial_candidate: A Trial to Find Out if Odronextamab Combined With Lenalidomide is Safe and Works Better Than Rituximab Combined With Lenalidomide in Adult Participants With Follicular Lymphoma and Marginal Zone Lymphoma",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05828511",
-        "https://clinicaltrials.gov/study/NCT06097364",
+        "https://clinicaltrials.gov/study/NCT03761108",
+        "https://clinicaltrials.gov/study/NCT06230224",
         "https://clinicaltrials.gov/study/NCT06149286",
-        "https://clinicaltrials.gov/study/NCT06091865",
-        "https://clinicaltrials.gov/study/NCT06469281",
+        "https://clinicaltrials.gov/study/NCT02651662",
         "https://clinicaltrials.gov/study/NCT05730036",
         "https://clinicaltrials.gov/study/NCT06932562",
+        "https://clinicaltrials.gov/study/NCT05137054",
         "https://clinicaltrials.gov/study/NCT06787612"
       ],
       "target_roles": [
@@ -291,21 +201,21 @@
         "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
         "Director, Bioassay / Potency / Analytical Development"
       ],
-      "trial_count": 14,
+      "trial_count": 17,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "A Trial to Learn if Odronextamab Combined With Chemotherapy is Safe and Well-Tolerated and How Well it Works Compared to Rituximab Combined With Chemotherapy for Adult Participants With Follicular Lymphoma",
-      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_title": "A Trial to Learn How Effective and Safe Odronextamab is Compared to Standard of Care for Adult Participants With Previously Treated Aggressive B-cell Non-Hodgkin Lymphoma",
+      "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE3"
       ],
       "best_fit_trial_last_update": "2026-02-06",
-      "best_urgency_trial_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
+      "best_urgency_trial_title": "Phase 1/2 Study of Linvoseltamab in Adult Patients With Relapsed or Refractory Multiple Myeloma",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1",
         "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2026-02-06",
+      "best_urgency_trial_last_update": "2026-02-11",
       "fit_reason": "trial title contains known T-cell engager molecule",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
@@ -315,25 +225,25 @@
       "job_hit_titles": [],
       "job_hit_keywords": [],
       "score_details": {
-        "trial_count": 14,
+        "trial_count": 17,
         "best_fit_trial": {
-          "nct_id": "NCT06097364",
-          "brief_title": "A Trial to Learn if Odronextamab Combined With Chemotherapy is Safe and Well-Tolerated and How Well it Works Compared to Rituximab Combined With Chemotherapy for Adult Participants With Follicular Lymphoma",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "nct_id": "NCT06230224",
+          "brief_title": "A Trial to Learn How Effective and Safe Odronextamab is Compared to Standard of Care for Adult Participants With Previously Treated Aggressive B-cell Non-Hodgkin Lymphoma",
+          "overall_status": "RECRUITING",
           "phases": [
             "PHASE3"
           ],
           "last_update_posted": "2026-02-06"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT05828511",
-          "brief_title": "A Window of Opportunity Trial to Learn if Linvoseltamab is Safe and Well Tolerated, and How Well it Works in Adult Participants With Recently Diagnosed Multiple Myeloma Who Have Not Already Received Treatment",
+          "nct_id": "NCT03761108",
+          "brief_title": "Phase 1/2 Study of Linvoseltamab in Adult Patients With Relapsed or Refractory Multiple Myeloma",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2026-02-06"
+          "last_update_posted": "2026-02-11"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -359,18 +269,21 @@
       }
     },
     {
-      "company": "Genentech, Inc.",
+      "company": "Janssen Research & Development, LLC",
       "total_score": 8.1,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Testing Drug Treatments After CAR T-cell Therapy in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma | trial_collaborator: Glofitamab Plus Ibrutinib With Obinutuzumab for the Treatment of Patients With Mantle Cell Lymphoma, IGNITE MCL Trial | trial_collaborator: Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+      "trigger_summary": "trial_candidate: A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Study to Evaluate Efficacy and Safety of Ciltacabtagene Autoleucel | trial_candidate: A Study of JNJ-75229414 for Metastatic Castration-resistant Prostate Cancer Participants",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05633615",
-        "https://clinicaltrials.gov/study/NCT06357676",
-        "https://clinicaltrials.gov/study/NCT05464329",
-        "https://clinicaltrials.gov/study/NCT06252675",
-        "https://clinicaltrials.gov/study/NCT06249191"
+        "https://clinicaltrials.gov/study/NCT04557098",
+        "https://clinicaltrials.gov/study/NCT07149857",
+        "https://clinicaltrials.gov/study/NCT05022849",
+        "https://clinicaltrials.gov/study/NCT04634552",
+        "https://clinicaltrials.gov/study/NCT06095089",
+        "https://clinicaltrials.gov/study/NCT03399799",
+        "https://clinicaltrials.gov/study/NCT03145181",
+        "https://clinicaltrials.gov/study/NCT07029776"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -379,22 +292,22 @@
         "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
         "Director, Bioassay / Potency / Analytical Development"
       ],
-      "trial_count": 5,
+      "trial_count": 9,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Testing Drug Treatments After CAR T-cell Therapy in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma",
-      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_title": "A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
       "best_fit_trial_phases": [
         "PHASE2"
       ],
-      "best_fit_trial_last_update": "2026-02-02",
-      "best_urgency_trial_title": "Testing Drug Treatments After CAR T-cell Therapy in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma",
-      "best_urgency_trial_status": "RECRUITING",
+      "best_fit_trial_last_update": "2026-01-27",
+      "best_urgency_trial_title": "A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2026-02-02",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "best_urgency_trial_last_update": "2026-01-27",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -402,24 +315,24 @@
       "job_hit_titles": [],
       "job_hit_keywords": [],
       "score_details": {
-        "trial_count": 5,
+        "trial_count": 9,
         "best_fit_trial": {
-          "nct_id": "NCT05633615::collab::Genentech,_Inc.",
-          "brief_title": "Testing Drug Treatments After CAR T-cell Therapy in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma",
-          "overall_status": "RECRUITING",
+          "nct_id": "NCT04557098",
+          "brief_title": "A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
           "phases": [
             "PHASE2"
           ],
-          "last_update_posted": "2026-02-02"
+          "last_update_posted": "2026-01-27"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT05633615::collab::Genentech,_Inc.",
-          "brief_title": "Testing Drug Treatments After CAR T-cell Therapy in Patients With Relapsed/Refractory Diffuse Large B-cell Lymphoma",
-          "overall_status": "RECRUITING",
+          "nct_id": "NCT04557098",
+          "brief_title": "A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
           "phases": [
             "PHASE2"
           ],
-          "last_update_posted": "2026-02-02"
+          "last_update_posted": "2026-01-27"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -427,8 +340,8 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -450,38 +363,39 @@
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Refractory Advanced diGestive Neuroendocrine Carcinomas Treated With tARlatamab | trial_candidate: Evaluation of Xaluritamig in High-Risk, Biochemically Recurrent, Non-metastatic Castrate-sensitive Prostate Cancer | trial_candidate: Study of AMG 509 in Participants With Metastatic Castration-Resistant Prostate Cancer",
+      "trigger_summary": "trial_candidate: Study of AMG 509 in Participants With Metastatic Castration-Resistant Prostate Cancer | trial_candidate: First-Line Tarlatamab in Combination With Carboplatin, Etoposide, and PD-L1 Inhibitor in Subjects With Extensive Stage Small Cell Lung Cancer (ES-SCLC) | trial_candidate: Study Evaluating Safety, Tolerability and Pharmacokinetics (PK) of Tarlatamab in Adults With Small Cell Lung Cancer (SCLC)",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07061080",
-        "https://clinicaltrials.gov/study/NCT06555796",
         "https://clinicaltrials.gov/study/NCT04221542",
-        "https://clinicaltrials.gov/study/NCT06613100",
-        "https://clinicaltrials.gov/study/NCT03263572",
+        "https://clinicaltrials.gov/study/NCT05361395",
+        "https://clinicaltrials.gov/study/NCT03319940",
+        "https://clinicaltrials.gov/study/NCT06502977",
+        "https://clinicaltrials.gov/study/NCT06814496",
         "https://clinicaltrials.gov/study/NCT06816394"
       ],
       "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
         "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+        "Director, Bioassay / Potency / Analytical Development"
       ],
       "trial_count": 6,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+      "best_fit_trial_title": "Radiation Combined With BIspecific T-Cell Engager in DLL3 Expressing Tumors",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
+        "PHASE1",
         "PHASE2"
       ],
-      "best_fit_trial_last_update": "2025-11-10",
-      "best_urgency_trial_title": "Refractory Advanced diGestive Neuroendocrine Carcinomas Treated With tARlatamab",
+      "best_fit_trial_last_update": "2025-10-09",
+      "best_urgency_trial_title": "Study of AMG 509 in Participants With Metastatic Castration-Resistant Prostate Cancer",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2026-02-04",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "best_urgency_trial_last_update": "2026-01-08",
+      "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -491,22 +405,23 @@
       "score_details": {
         "trial_count": 6,
         "best_fit_trial": {
-          "nct_id": "NCT03263572::collab::Amgen",
-          "brief_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+          "nct_id": "NCT06814496::collab::Amgen",
+          "brief_title": "Radiation Combined With BIspecific T-Cell Engager in DLL3 Expressing Tumors",
           "overall_status": "RECRUITING",
           "phases": [
+            "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2025-11-10"
+          "last_update_posted": "2025-10-09"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT07061080::collab::Amgen",
-          "brief_title": "Refractory Advanced diGestive Neuroendocrine Carcinomas Treated With tARlatamab",
+          "nct_id": "NCT04221542",
+          "brief_title": "Study of AMG 509 in Participants With Metastatic Castration-Resistant Prostate Cancer",
           "overall_status": "RECRUITING",
           "phases": [
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2026-02-04"
+          "last_update_posted": "2026-01-08"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -514,8 +429,8 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -532,189 +447,18 @@
       }
     },
     {
-      "company": "CARsgen Therapeutics Co., Ltd.",
-      "total_score": 7.95,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus | trial_collaborator: Safety, Efficacy and Cellular Metabolic Dynamics of ct1192 in Patients With Moderate to Severe Refractory SLE | trial_collaborator: A Study of CT0596 in Plasma Cell Leukemia",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07339332",
-        "https://clinicaltrials.gov/study/NCT07031713",
-        "https://clinicaltrials.gov/study/NCT06988059",
-        "https://clinicaltrials.gov/study/NCT05911217"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 4,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "EARLY_PHASE1"
-      ],
-      "best_fit_trial_last_update": "2026-01-14",
-      "best_urgency_trial_title": "Safety, Efficacy and Cellular Metabolic Dynamics of ct1192 in Patients With Moderate to Severe Refractory SLE",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2025-11-24",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.44999999999999996,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 4,
-        "best_fit_trial": {
-          "nct_id": "NCT07339332::collab::CARsgen_Therapeutics_Co.,_Ltd.",
-          "brief_title": "A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "EARLY_PHASE1"
-          ],
-          "last_update_posted": "2026-01-14"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT07031713::collab::CARsgen_Therapeutics_Co.,_Ltd.",
-          "brief_title": "Safety, Efficacy and Cellular Metabolic Dynamics of ct1192 in Patients With Moderate to Severe Refractory SLE",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2025-11-24"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.44999999999999996,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Genmab",
-      "total_score": 7.95,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma | trial_candidate: GEN1047 for Solid Tumors - First in Human (FIH) Trial | trial_candidate: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05660967",
-        "https://clinicaltrials.gov/study/NCT05180474",
-        "https://clinicaltrials.gov/study/NCT04623541",
-        "https://clinicaltrials.gov/study/NCT06536049"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 4,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
-      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2026-02-04",
-      "best_urgency_trial_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
-      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2026-02-04",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.44999999999999996,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 4,
-        "best_fit_trial": {
-          "nct_id": "NCT05660967",
-          "brief_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-02-04"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05660967",
-          "brief_title": "Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-02-04"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.44999999999999996,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
       "company": "AbbVie",
       "total_score": 7.95,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Venetoclax, Dasatinib, Prednisone, Rituximab and Blinatumomab for the Treatment of Newly Diagnosed or Relapsed Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia or Mixed Phenotype Acute Leukemia | trial_candidate: A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma | trial_collaborator: Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
+      "trigger_summary": "trial_collaborator: Venetoclax, Dasatinib, Prednisone, Rituximab and Blinatumomab for the Treatment of Newly Diagnosed or Relapsed Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia or Mixed Phenotype Acute Leukemia | trial_candidate: A Study of TNB-383B in Participants With Relapsed or Refractory Multiple Myeloma | trial_collaborator: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
       "evidence_links": [
         "https://clinicaltrials.gov/study/NCT04872790",
         "https://clinicaltrials.gov/study/NCT03933735",
-        "https://clinicaltrials.gov/study/NCT05660967",
         "https://clinicaltrials.gov/study/NCT04623541",
         "https://clinicaltrials.gov/study/NCT07097363",
-        "https://clinicaltrials.gov/study/NCT06536049"
+        "https://clinicaltrials.gov/study/NCT06672705"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -789,16 +533,186 @@
       }
     },
     {
-      "company": "Takeda",
+      "company": "CARsgen Therapeutics Co., Ltd.",
       "total_score": 7.8,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of Gammagard Liquid (Immune Globulin Infusion, 10%) to Prevent Infections in Adults With Multiple Myeloma | trial_collaborator: Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia | trial_candidate: A Study of TAK-007 in Adults With Relapsed or Refractory (r/r) B-cell Non-Hodgkin Lymphoma (NHL)",
+      "trigger_summary": "trial_collaborator: A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus | trial_candidate: Study to Evaluate the Efficacy, Safety and Pharmacokinetics of CT041 Autologous CAR T-cell Injection | trial_candidate: Anti-GPRC5D CAR-T Cells (CT071) in Participants With RRMM or RRpPCL",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06980480",
-        "https://clinicaltrials.gov/study/NCT03263572",
-        "https://clinicaltrials.gov/study/NCT05020015"
+        "https://clinicaltrials.gov/study/NCT07339332",
+        "https://clinicaltrials.gov/study/NCT04581473",
+        "https://clinicaltrials.gov/study/NCT06333509"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 3,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "EARLY_PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-14",
+      "best_urgency_trial_title": "Study to Evaluate the Efficacy, Safety and Pharmacokinetics of CT041 Autologous CAR T-cell Injection",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-06-05",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.3,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 3,
+        "best_fit_trial": {
+          "nct_id": "NCT07339332::collab::CARsgen_Therapeutics_Co.,_Ltd.",
+          "brief_title": "A Clinical Study Exploring the Safety, Efficacy and Cell Metabolic Dynamics of Universal CD19 / 20 Car-t Cell Injection in Moderate to Severe Refractory Systemic Lupus Erythematosus",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "EARLY_PHASE1"
+          ],
+          "last_update_posted": "2026-01-14"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT04581473",
+          "brief_title": "Study to Evaluate the Efficacy, Safety and Pharmacokinetics of CT041 Autologous CAR T-cell Injection",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-06-05"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.3,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Chongqing Precision Biotech Co., Ltd",
+      "total_score": 7.8,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Study of CEA Targeting CAR-T (PTC13) in the Treatment of CEA-Positive Advanced Malignant Solid Tumors | trial_candidate: Clinical Trial of CD123-targeted CAR-NK Therapy for Relapse/refractory AML or BPDCN | trial_candidate: Clinical Study of CEA Targeting Chimeric Antigen Receptor T Lymphocytes\uff08CAR-T\uff09 for CEA Positive Advanced Malignant Solid Tumors",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06821048",
+        "https://clinicaltrials.gov/study/NCT06690827",
+        "https://clinicaltrials.gov/study/NCT06126406"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 3,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Study of CEA Targeting CAR-T (PTC13) in the Treatment of CEA-Positive Advanced Malignant Solid Tumors",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-23",
+      "best_urgency_trial_title": "Study of CEA Targeting CAR-T (PTC13) in the Treatment of CEA-Positive Advanced Malignant Solid Tumors",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-23",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.3,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 3,
+        "best_fit_trial": {
+          "nct_id": "NCT06821048::collab::Chongqing_Precision_Biotech_Co.,_Ltd",
+          "brief_title": "Study of CEA Targeting CAR-T (PTC13) in the Treatment of CEA-Positive Advanced Malignant Solid Tumors",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-23"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06821048::collab::Chongqing_Precision_Biotech_Co.,_Ltd",
+          "brief_title": "Study of CEA Targeting CAR-T (PTC13) in the Treatment of CEA-Positive Advanced Malignant Solid Tumors",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-23"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.3,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Genmab",
+      "total_score": 7.8,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome | trial_candidate: GEN1047 for Solid Tumors - First in Human (FIH) Trial | trial_collaborator: Epcoritamab for the Treatment of Relapsed or Refractory Post Transplant Lymphoproliferative Disorders",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT04623541",
+        "https://clinicaltrials.gov/study/NCT05180474",
+        "https://clinicaltrials.gov/study/NCT06672705"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -809,20 +723,22 @@
       ],
       "trial_count": 3,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+      "best_fit_trial_title": "Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
+        "PHASE1",
         "PHASE2"
       ],
-      "best_fit_trial_last_update": "2025-11-10",
-      "best_urgency_trial_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+      "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
+        "PHASE1",
         "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2025-11-10",
+      "best_urgency_trial_last_update": "2026-02-03",
       "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -832,22 +748,24 @@
       "score_details": {
         "trial_count": 3,
         "best_fit_trial": {
-          "nct_id": "NCT03263572::collab::Takeda",
-          "brief_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+          "nct_id": "NCT04623541",
+          "brief_title": "Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
           "overall_status": "RECRUITING",
           "phases": [
+            "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2025-11-10"
+          "last_update_posted": "2026-02-03"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT03263572::collab::Takeda",
-          "brief_title": "Blinatumomab, Methotrexate, Cytarabine, and Ponatinib in Treating Patients With Philadelphia Chromosome-Positive, or BCR-ABL Positive, or Relapsed/Refractory, Acute Lymphoblastic Leukemia",
+          "nct_id": "NCT04623541",
+          "brief_title": "Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
           "overall_status": "RECRUITING",
           "phases": [
+            "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2025-11-10"
+          "last_update_posted": "2026-02-03"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -856,7 +774,7 @@
         },
         "reasons": {
           "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -878,11 +796,11 @@
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease | trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Rheumatoid Arthritis | trial_candidate: A Study of CLN-978 in Patients With Relapsed or Refractory (R/R) B Cell Non-Hodgkin Lymphoma (B-NHL)",
+      "trigger_summary": "trial_candidate: CLN-049 in Patients With Relapsed/Refractory Acute Myeloid Leukemia (AML) or Myelodysplastic Syndrome (MDS) | trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease | trial_candidate: A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Rheumatoid Arthritis",
       "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05143996",
         "https://clinicaltrials.gov/study/NCT07041099",
-        "https://clinicaltrials.gov/study/NCT06994143",
-        "https://clinicaltrials.gov/study/NCT05879744"
+        "https://clinicaltrials.gov/study/NCT06994143"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -899,12 +817,12 @@
         "PHASE1"
       ],
       "best_fit_trial_last_update": "2025-11-19",
-      "best_urgency_trial_title": "A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease",
+      "best_urgency_trial_title": "CLN-049 in Patients With Relapsed/Refractory Acute Myeloid Leukemia (AML) or Myelodysplastic Syndrome (MDS)",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2025-11-19",
+      "best_urgency_trial_last_update": "2026-01-16",
       "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -925,13 +843,13 @@
           "last_update_posted": "2025-11-19"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT07041099",
-          "brief_title": "A Study of CLN-978, a Subcutaneously Administered CD19-directed T Cell Engager, in Subjects With Sjogren's Disease",
+          "nct_id": "NCT05143996",
+          "brief_title": "CLN-049 in Patients With Relapsed/Refractory Acute Myeloid Leukemia (AML) or Myelodysplastic Syndrome (MDS)",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-11-19"
+          "last_update_posted": "2026-01-16"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1041,15 +959,15 @@
       }
     },
     {
-      "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+      "company": "Allorunning Therapeutics",
       "total_score": 7.65,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma | trial_candidate: A Study to Evaluate the Safety, Effectiveness and Tolerable Dose of Arlocabtagene Autoleucel (BMS-986393) in Novel Combinations in Participants With Relapsed and/or Refractory Multiple Myeloma",
+      "trigger_summary": "trial_collaborator: A Clinical Study of of RN1701 Injection in the Treatment of Relapsed/Refractory B-Cell Lymphomas | trial_collaborator: A Clinical Study of Allogenic CD19-CAR-T in the Treatment of R/R B-Cell Hematologic Malignancies",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06297226",
-        "https://clinicaltrials.gov/study/NCT06121843"
+        "https://clinicaltrials.gov/study/NCT07316920",
+        "https://clinicaltrials.gov/study/NCT07316907"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -1060,20 +978,20 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_title": "A Clinical Study of Allogenic CD19-CAR-T in the Treatment of R/R B-Cell Hematologic Malignancies",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_fit_trial_last_update": "2026-02-10",
-      "best_urgency_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-      "best_urgency_trial_status": "RECRUITING",
+      "best_fit_trial_last_update": "2026-01-05",
+      "best_urgency_trial_title": "A Clinical Study of of RN1701 Injection in the Treatment of Relapsed/Refractory B-Cell Lymphomas",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
       "best_urgency_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2026-02-10",
+      "best_urgency_trial_last_update": "2026-01-06",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -1083,22 +1001,22 @@
       "score_details": {
         "trial_count": 2,
         "best_fit_trial": {
-          "nct_id": "NCT06297226",
-          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-          "overall_status": "RECRUITING",
+          "nct_id": "NCT07316907::collab::Allorunning_Therapeutics",
+          "brief_title": "A Clinical Study of Allogenic CD19-CAR-T in the Treatment of R/R B-Cell Hematologic Malignancies",
+          "overall_status": "NOT_YET_RECRUITING",
           "phases": [
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2026-02-10"
+          "last_update_posted": "2026-01-05"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT06297226",
-          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-          "overall_status": "RECRUITING",
+          "nct_id": "NCT07316920::collab::Allorunning_Therapeutics",
+          "brief_title": "A Clinical Study of of RN1701 Injection in the Treatment of Relapsed/Refractory B-Cell Lymphomas",
+          "overall_status": "NOT_YET_RECRUITING",
           "phases": [
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2026-02-10"
+          "last_update_posted": "2026-01-06"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1107,7 +1025,94 @@
         },
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.15,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Hebei Taihe Chunyu Biotechnology Co., Ltd",
+      "total_score": 7.65,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Multicenter, Single-Arm Exploratory Phase I Clinical Study (Assessment of Safety and Efficacy) of Fully Human BAFF-R Chimeric Antigen Receptor T-Cell Injection in Relapsed/Refractory BAFF-R-Positive B-Cell Lymphoma | trial_collaborator: The Application of CAR-T Cell Therapy in Relapsed and Refractory Malignant Hematologic Tumors",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07259070",
+        "https://clinicaltrials.gov/study/NCT06911710"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 2,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Multicenter, Single-Arm Exploratory Phase I Clinical Study (Assessment of Safety and Efficacy) of Fully Human BAFF-R Chimeric Antigen Receptor T-Cell Injection in Relapsed/Refractory BAFF-R-Positive B-Cell Lymphoma",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-12-02",
+      "best_urgency_trial_title": "Multicenter, Single-Arm Exploratory Phase I Clinical Study (Assessment of Safety and Efficacy) of Fully Human BAFF-R Chimeric Antigen Receptor T-Cell Injection in Relapsed/Refractory BAFF-R-Positive B-Cell Lymphoma",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-12-02",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.15,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 2,
+        "best_fit_trial": {
+          "nct_id": "NCT07259070::collab::Hebei_Taihe_Chunyu_Biotechnology_Co.,_Ltd",
+          "brief_title": "Multicenter, Single-Arm Exploratory Phase I Clinical Study (Assessment of Safety and Efficacy) of Fully Human BAFF-R Chimeric Antigen Receptor T-Cell Injection in Relapsed/Refractory BAFF-R-Positive B-Cell Lymphoma",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-12-02"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07259070::collab::Hebei_Taihe_Chunyu_Biotechnology_Co.,_Ltd",
+          "brief_title": "Multicenter, Single-Arm Exploratory Phase I Clinical Study (Assessment of Safety and Efficacy) of Fully Human BAFF-R Chimeric Antigen Receptor T-Cell Injection in Relapsed/Refractory BAFF-R-Positive B-Cell Lymphoma",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-12-02"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -1129,10 +1134,10 @@
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study Comparing Anitocabtagene Autoleucel to Standard of Care Therapy in Participants With Relapsed/ Refractory Multiple Myeloma | trial_collaborator: Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+      "trigger_summary": "trial_collaborator: GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma | trial_collaborator: Axi-cel in CNS Lymphoma",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06413498",
-        "https://clinicaltrials.gov/study/NCT06104592"
+        "https://clinicaltrials.gov/study/NCT05650749",
+        "https://clinicaltrials.gov/study/NCT04608487"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -1143,20 +1148,20 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+      "best_fit_trial_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_fit_trial_last_update": "2026-01-08",
-      "best_urgency_trial_title": "Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+      "best_fit_trial_last_update": "2025-12-29",
+      "best_urgency_trial_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2026-01-08",
+      "best_urgency_trial_last_update": "2025-12-29",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -1166,22 +1171,22 @@
       "score_details": {
         "trial_count": 2,
         "best_fit_trial": {
-          "nct_id": "NCT06104592::collab::Kite,_A_Gilead_Company",
-          "brief_title": "Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+          "nct_id": "NCT05650749::collab::Kite,_A_Gilead_Company",
+          "brief_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
           "overall_status": "RECRUITING",
           "phases": [
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2026-01-08"
+          "last_update_posted": "2025-12-29"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT06104592::collab::Kite,_A_Gilead_Company",
-          "brief_title": "Single-Arm Comprehensive Ablative Bridging Irradiation I Prior to CD19 CAR-T In High-Risk R/R LBCL",
+          "nct_id": "NCT05650749::collab::Kite,_A_Gilead_Company",
+          "brief_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
           "overall_status": "RECRUITING",
           "phases": [
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2026-01-08"
+          "last_update_posted": "2025-12-29"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1190,7 +1195,7 @@
         },
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -1207,99 +1212,15 @@
       }
     },
     {
-      "company": "Hebei Senlang Biotechnology Inc., Ltd.",
+      "company": "Miltenyi Biomedicine GmbH",
       "total_score": 7.65,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL. | trial_candidate: Assessment of Senl_B19 CAR-T Cells in Relapsed/Refractory CD19+ B-ALL",
+      "trigger_summary": "trial_collaborator: CD19 Chimeric Antigen Receptor (CAR) T Cells in Adults With Relapsed/Refractory CD19 Positive Acute Lymphoblastic Leukemia | trial_candidate: MB-dNPM1-TCR.1 in Relapsed/Refractory AML",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07244380",
-        "https://clinicaltrials.gov/study/NCT07244406"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 2,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
-      "best_fit_trial_status": "NOT_YET_RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2025-11-24",
-      "best_urgency_trial_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
-      "best_urgency_trial_status": "NOT_YET_RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2025-11-24",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.15,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 2,
-        "best_fit_trial": {
-          "nct_id": "NCT07244380",
-          "brief_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
-          "overall_status": "NOT_YET_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-11-24"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT07244380",
-          "brief_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
-          "overall_status": "NOT_YET_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-11-24"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.15,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Eli Lilly and Company",
-      "total_score": 7.65,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 ) | trial_collaborator: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome | trial_collaborator: Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07101328",
-        "https://clinicaltrials.gov/study/NCT04623541",
-        "https://clinicaltrials.gov/study/NCT06252675"
+        "https://clinicaltrials.gov/study/NCT07361029",
+        "https://clinicaltrials.gov/study/NCT06424340"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -1310,20 +1231,20 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
+      "best_fit_trial_title": "CD19 Chimeric Antigen Receptor (CAR) T Cells in Adults With Relapsed/Refractory CD19 Positive Acute Lymphoblastic Leukemia",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_fit_trial_last_update": "2025-10-22",
-      "best_urgency_trial_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
-      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_last_update": "2026-01-22",
+      "best_urgency_trial_title": "CD19 Chimeric Antigen Receptor (CAR) T Cells in Adults With Relapsed/Refractory CD19 Positive Acute Lymphoblastic Leukemia",
+      "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2026-02-10",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
+      "best_urgency_trial_last_update": "2026-01-22",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -1333,22 +1254,22 @@
       "score_details": {
         "trial_count": 2,
         "best_fit_trial": {
-          "nct_id": "NCT06252675::collab::Eli_Lilly_and_Company",
-          "brief_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
+          "nct_id": "NCT07361029::collab::Miltenyi_Biomedicine_GmbH",
+          "brief_title": "CD19 Chimeric Antigen Receptor (CAR) T Cells in Adults With Relapsed/Refractory CD19 Positive Acute Lymphoblastic Leukemia",
           "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-10-22"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT07101328",
-          "brief_title": "A Study of LY4152199 in Participants With Previously Treated B-cell Cancers (BAF_FRontier-1 )",
-          "overall_status": "NOT_YET_RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2026-02-10"
+          "last_update_posted": "2026-01-22"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07361029::collab::Miltenyi_Biomedicine_GmbH",
+          "brief_title": "CD19 Chimeric Antigen Receptor (CAR) T Cells in Adults With Relapsed/Refractory CD19 Positive Acute Lymphoblastic Leukemia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-22"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1356,8 +1277,91 @@
           "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1']",
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.15,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
+      "total_score": 7.65,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Clinical Study of UTAA07 Injection in the Treatment of Hematologic and Lymphatic Systemic Malignancies | trial_collaborator: Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07338604",
+        "https://clinicaltrials.gov/study/NCT05445011"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 2,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2022-07-06",
+      "best_urgency_trial_title": "Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2022-07-06",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.15,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 2,
+        "best_fit_trial": {
+          "nct_id": "NCT05445011::collab::PersonGen_BioTherapeutics_(Suzhou)_Co.,_Ltd.",
+          "brief_title": "Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2022-07-06"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05445011::collab::PersonGen_BioTherapeutics_(Suzhou)_Co.,_Ltd.",
+          "brief_title": "Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2022-07-06"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -1457,14 +1461,14 @@
       }
     },
     {
-      "company": "Carina Biotech Limited",
+      "company": "Beam Therapeutics Inc.",
       "total_score": 7.5,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
+      "trigger_summary": "trial_collaborator: Anti-CD7 CAR-T Cells in Relapsed/Refractory T-Cell Acute Lymphoblastic Leukemia or Lymphoma",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05759728"
+        "https://clinicaltrials.gov/study/NCT06934382"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -1475,104 +1479,18 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2026-01-13",
-      "best_urgency_trial_title": "A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2026-01-13",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.5,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT05759728",
-          "brief_title": "A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1",
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-01-13"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05759728",
-          "brief_title": "A Study of CNA3103 (LGR5-targeted, Autologous CAR-T Cells) Administered to Subjects With Metastatic Colorectal Cancer",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1",
-            "PHASE2"
-          ],
-          "last_update_posted": "2026-01-13"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.5,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": true
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Chongqing Precision Biotech Co., Ltd",
-      "total_score": 7.5,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07250386"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
+      "best_fit_trial_title": "Anti-CD7 CAR-T Cells in Relapsed/Refractory T-Cell Acute Lymphoblastic Leukemia or Lymphoma",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE1"
       ],
-      "best_fit_trial_last_update": "2025-11-26",
-      "best_urgency_trial_title": "A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
+      "best_fit_trial_last_update": "2025-12-26",
+      "best_urgency_trial_title": "Anti-CD7 CAR-T Cells in Relapsed/Refractory T-Cell Acute Lymphoblastic Leukemia or Lymphoma",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2025-11-26",
+      "best_urgency_trial_last_update": "2025-12-26",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1584,22 +1502,22 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT07250386::collab::Chongqing_Precision_Biotech_Co.,_Ltd",
-          "brief_title": "A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
+          "nct_id": "NCT06934382::collab::Beam_Therapeutics_Inc.",
+          "brief_title": "Anti-CD7 CAR-T Cells in Relapsed/Refractory T-Cell Acute Lymphoblastic Leukemia or Lymphoma",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-11-26"
+          "last_update_posted": "2025-12-26"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT07250386::collab::Chongqing_Precision_Biotech_Co.,_Ltd",
-          "brief_title": "A Study of CEA-Targeted CAR-T Therapy in Patients With CEA-Positive Advanced Solid Tumors",
+          "nct_id": "NCT06934382::collab::Beam_Therapeutics_Inc.",
+          "brief_title": "Anti-CD7 CAR-T Cells in Relapsed/Refractory T-Cell Acute Lymphoblastic Leukemia or Lymphoma",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-11-26"
+          "last_update_posted": "2025-12-26"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1625,14 +1543,14 @@
       }
     },
     {
-      "company": "Ucello Therapeutics Co., Limited",
+      "company": "Gilead Sciences",
       "total_score": 7.5,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+      "trigger_summary": "trial_collaborator: GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT07139509"
+        "https://clinicaltrials.gov/study/NCT05650749"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -1643,18 +1561,18 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+      "best_fit_trial_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE1"
       ],
-      "best_fit_trial_last_update": "2025-11-25",
-      "best_urgency_trial_title": "Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+      "best_fit_trial_last_update": "2025-12-29",
+      "best_urgency_trial_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2025-11-25",
+      "best_urgency_trial_last_update": "2025-12-29",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -1666,22 +1584,22 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT07139509::collab::Ucello_Therapeutics_Co.,_Limited",
-          "brief_title": "Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+          "nct_id": "NCT05650749::collab::Gilead_Sciences",
+          "brief_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-11-25"
+          "last_update_posted": "2025-12-29"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT07139509::collab::Ucello_Therapeutics_Co.,_Limited",
-          "brief_title": "Allogeneic UCB-derived, Dual-targeting BCMA/CD19 CAR-T for Relapsed/Refractory Multiple Myeloma",
+          "nct_id": "NCT05650749::collab::Gilead_Sciences",
+          "brief_title": "GPC2 CAR T Cells for Relapsed or Refractory Neuroblastoma and Metastatic Retinoblastoma",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-11-25"
+          "last_update_posted": "2025-12-29"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1707,14 +1625,178 @@
       }
     },
     {
-      "company": "Johnson & Johnson",
+      "company": "Tcelltech Inc.",
       "total_score": 7.5,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+      "trigger_summary": "trial_candidate: Phase I Study of TX103 CAR-T Cells in Participants With Advanced Solid Tumors",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05972135"
+        "https://clinicaltrials.gov/study/NCT07231081"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Phase I Study of TX103 CAR-T Cells in Participants With Advanced Solid Tumors",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2025-11-17",
+      "best_urgency_trial_title": "Phase I Study of TX103 CAR-T Cells in Participants With Advanced Solid Tumors",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2025-11-17",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT07231081",
+          "brief_title": "Phase I Study of TX103 CAR-T Cells in Participants With Advanced Solid Tumors",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2025-11-17"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07231081",
+          "brief_title": "Phase I Study of TX103 CAR-T Cells in Participants With Advanced Solid Tumors",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2025-11-17"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "T-MAXIMUM Pharmaceutical Inc",
+      "total_score": 7.5,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: The GLIOMAX Study: MT027 Allogeneic CAR-T for Recurrent Glioma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07386002"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "The GLIOMAX Study: MT027 Allogeneic CAR-T for Recurrent Glioma",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "The GLIOMAX Study: MT027 Allogeneic CAR-T for Recurrent Glioma",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT07386002",
+          "brief_title": "The GLIOMAX Study: MT027 Allogeneic CAR-T for Recurrent Glioma",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07386002",
+          "brief_title": "The GLIOMAX Study: MT027 Allogeneic CAR-T for Recurrent Glioma",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Genentech, Inc.",
+      "total_score": 7.5,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05464329"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -1725,18 +1807,182 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+      "best_fit_trial_title": "Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-08",
+      "best_urgency_trial_title": "Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-08",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT05464329::collab::Genentech,_Inc.",
+          "brief_title": "Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-08"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05464329::collab::Genentech,_Inc.",
+          "brief_title": "Mosunetuzumab in Combination With Platinum-Based Salvage Chemotherapy in Patients With Relapsed/Refractory Aggressive B Cell Lymphoma",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-08"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+      "total_score": 7.5,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT06297226"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE2"
       ],
-      "best_fit_trial_last_update": "2026-01-20",
-      "best_urgency_trial_title": "Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+      "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2026-01-20",
+      "best_urgency_trial_last_update": "2026-02-10",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT06297226",
+          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06297226",
+          "brief_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Janssen Pharmaceuticals",
+      "total_score": 7.5,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Teclistamab-Daratumumab in AL Amyloidosis",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07110844"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Teclistamab-Daratumumab in AL Amyloidosis",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-11-19",
+      "best_urgency_trial_title": "Teclistamab-Daratumumab in AL Amyloidosis",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-11-19",
       "fit_reason": "trial title contains known T-cell engager molecule",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
       "urgency_source": "trial",
@@ -1748,22 +1994,22 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT05972135::collab::Johnson_&_Johnson",
-          "brief_title": "Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+          "nct_id": "NCT07110844::collab::Janssen_Pharmaceuticals",
+          "brief_title": "Teclistamab-Daratumumab in AL Amyloidosis",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE2"
           ],
-          "last_update_posted": "2026-01-20"
+          "last_update_posted": "2025-11-19"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT05972135::collab::Johnson_&_Johnson",
-          "brief_title": "Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+          "nct_id": "NCT07110844::collab::Janssen_Pharmaceuticals",
+          "brief_title": "Teclistamab-Daratumumab in AL Amyloidosis",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE2"
           ],
-          "last_update_posted": "2026-01-20"
+          "last_update_posted": "2025-11-19"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1789,14 +2035,14 @@
       }
     },
     {
-      "company": "Imugene Limited",
+      "company": "Janssen Pharmaceutical K.K.",
       "total_score": 7.5,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of onCARlytics (CF33-CD19) in Combination With Blinatumomab in Adults With Advanced or Metastatic Solid Tumors (OASIS)",
+      "trigger_summary": "trial_candidate: A Study of Teclistamab in Japanese Participants With Relapsed or Refractory Multiple Myeloma",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06063317"
+        "https://clinicaltrials.gov/study/NCT04696809"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
@@ -1807,20 +2053,22 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study of onCARlytics (CF33-CD19) in Combination With Blinatumomab in Adults With Advanced or Metastatic Solid Tumors (OASIS)",
+      "best_fit_trial_title": "A Study of Teclistamab in Japanese Participants With Relapsed or Refractory Multiple Myeloma",
       "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE1"
+        "PHASE1",
+        "PHASE2"
       ],
-      "best_fit_trial_last_update": "2025-12-18",
-      "best_urgency_trial_title": "A Study of onCARlytics (CF33-CD19) in Combination With Blinatumomab in Adults With Advanced or Metastatic Solid Tumors (OASIS)",
+      "best_fit_trial_last_update": "2026-01-16",
+      "best_urgency_trial_title": "A Study of Teclistamab in Japanese Participants With Relapsed or Refractory Multiple Myeloma",
       "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
       "best_urgency_trial_phases": [
-        "PHASE1"
+        "PHASE1",
+        "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2025-12-18",
+      "best_urgency_trial_last_update": "2026-01-16",
       "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.5,
@@ -1830,22 +2078,24 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT06063317",
-          "brief_title": "A Study of onCARlytics (CF33-CD19) in Combination With Blinatumomab in Adults With Advanced or Metastatic Solid Tumors (OASIS)",
+          "nct_id": "NCT04696809",
+          "brief_title": "A Study of Teclistamab in Japanese Participants With Relapsed or Refractory Multiple Myeloma",
           "overall_status": "ACTIVE_NOT_RECRUITING",
           "phases": [
-            "PHASE1"
+            "PHASE1",
+            "PHASE2"
           ],
-          "last_update_posted": "2025-12-18"
+          "last_update_posted": "2026-01-16"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT06063317",
-          "brief_title": "A Study of onCARlytics (CF33-CD19) in Combination With Blinatumomab in Adults With Advanced or Metastatic Solid Tumors (OASIS)",
+          "nct_id": "NCT04696809",
+          "brief_title": "A Study of Teclistamab in Japanese Participants With Relapsed or Refractory Multiple Myeloma",
           "overall_status": "ACTIVE_NOT_RECRUITING",
           "phases": [
-            "PHASE1"
+            "PHASE1",
+            "PHASE2"
           ],
-          "last_update_posted": "2025-12-18"
+          "last_update_posted": "2026-01-16"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -1854,7 +2104,89 @@
         },
         "reasons": {
           "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "C4 Therapeutics, Inc.",
+      "total_score": 7.5,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study to Learn About the Effects of Cemsidomide in Combination With Elranatamab in Relapsed/Refractory Multiple Myeloma Subjects",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07280013"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study to Learn About the Effects of Cemsidomide in Combination With Elranatamab in Relapsed/Refractory Multiple Myeloma Subjects",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2026-01-29",
+      "best_urgency_trial_title": "A Study to Learn About the Effects of Cemsidomide in Combination With Elranatamab in Relapsed/Refractory Multiple Myeloma Subjects",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-29",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT07280013",
+          "brief_title": "A Study to Learn About the Effects of Cemsidomide in Combination With Elranatamab in Relapsed/Refractory Multiple Myeloma Subjects",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-29"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07280013",
+          "brief_title": "A Study to Learn About the Effects of Cemsidomide in Combination With Elranatamab in Relapsed/Refractory Multiple Myeloma Subjects",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-29"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -1944,6 +2276,92 @@
           "recent_trial_bonus": 0.5,
           "multi_trial_bonus": 0.0,
           "any_recent_trial_update": true
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "SCG Cell Therapy Pte. Ltd.",
+      "total_score": 7.3,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma | trial_candidate: A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related | trial_candidate: Phase 1/2 Study of Autologous SCG142 TCR T Cells in Patients With HPV16/52-positive Carcinoma",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05417932",
+        "https://clinicaltrials.gov/study/NCT06617000",
+        "https://clinicaltrials.gov/study/NCT06505551"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 3,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2024-09-27",
+      "best_urgency_trial_title": "A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-02-18",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.3,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 3,
+        "best_fit_trial": {
+          "nct_id": "NCT06617000",
+          "brief_title": "A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2024-09-27"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05417932",
+          "brief_title": "A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-02-18"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.3,
+          "any_recent_trial_update": false
         },
         "weights": {
           "fit": 1.0,
@@ -2123,101 +2541,15 @@
       }
     },
     {
-      "company": "SCG Cell Therapy Pte. Ltd.",
-      "total_score": 7.3,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma | trial_candidate: A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related | trial_candidate: Phase 1/2 Study of Autologous SCG142 TCR T Cells in Patients With HPV16/52-positive Carcinoma",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05417932",
-        "https://clinicaltrials.gov/study/NCT06617000",
-        "https://clinicaltrials.gov/study/NCT06505551"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 3,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2024-09-27",
-      "best_urgency_trial_title": "A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2025-02-18",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.3,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 3,
-        "best_fit_trial": {
-          "nct_id": "NCT06617000",
-          "brief_title": "A Study of SCG101 TCR-T Cell Therpay in the Treatment of Subjects With Hepatitis B Virus-Related",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2024-09-27"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05417932",
-          "brief_title": "A Study of SCG101 in the Treatment of Subjects With Hepatitis B Virus-Related Hepatocellular Carcinoma",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1",
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-02-18"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.3,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Yake Biotechnology Ltd.",
+      "company": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
       "total_score": 7.15,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases | trial_collaborator: Safety and Efficacy of CAR-T Cell Therapy for Relapsed/refractory Neuroblastoma and Desmoplastic Small Round Cell Tumors: a Single-arm, Open-label Trial.",
+      "trigger_summary": "trial_candidate: Clinical Study of IM96 CAR-T Cell Therapy in Patients With Advanced Colorectal Cancer | trial_candidate: Assessment of Safety and Efficacy of IM19 for Recurrent or Refractory (R/R) Non-Hodgkin's Lymphoma(NHL) Patients",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05827835",
-        "https://clinicaltrials.gov/study/NCT06836505"
+        "https://clinicaltrials.gov/study/NCT06718738",
+        "https://clinicaltrials.gov/study/NCT04440436"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -2228,22 +2560,20 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases",
+      "best_fit_trial_title": "Clinical Study of IM96 CAR-T Cell Therapy in Patients With Advanced Colorectal Cancer",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
-        "PHASE1",
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_fit_trial_last_update": "2025-08-13",
-      "best_urgency_trial_title": "CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases",
+      "best_fit_trial_last_update": "2024-12-05",
+      "best_urgency_trial_title": "Clinical Study of IM96 CAR-T Cell Therapy in Patients With Advanced Colorectal Cancer",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
-        "PHASE1",
-        "PHASE2"
+        "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2025-08-13",
+      "best_urgency_trial_last_update": "2024-12-05",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
@@ -2253,24 +2583,22 @@
       "score_details": {
         "trial_count": 2,
         "best_fit_trial": {
-          "nct_id": "NCT05827835::collab::Yake_Biotechnology_Ltd.",
-          "brief_title": "CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases",
+          "nct_id": "NCT06718738",
+          "brief_title": "Clinical Study of IM96 CAR-T Cell Therapy in Patients With Advanced Colorectal Cancer",
           "overall_status": "RECRUITING",
           "phases": [
-            "PHASE1",
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2025-08-13"
+          "last_update_posted": "2024-12-05"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT05827835::collab::Yake_Biotechnology_Ltd.",
-          "brief_title": "CD7 CAR-T Bridging to alloHSCT for R/R CD7+Malignant Hematologic Diseases",
+          "nct_id": "NCT06718738",
+          "brief_title": "Clinical Study of IM96 CAR-T Cell Therapy in Patients With Advanced Colorectal Cancer",
           "overall_status": "RECRUITING",
           "phases": [
-            "PHASE1",
-            "PHASE2"
+            "PHASE1"
           ],
-          "last_update_posted": "2025-08-13"
+          "last_update_posted": "2024-12-05"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -2279,7 +2607,7 @@
         },
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -2296,15 +2624,15 @@
       }
     },
     {
-      "company": "Carbiogene Therapeutics Co. Ltd.",
+      "company": "Shanghai Ming Ju Biotechnology Co., Ltd.",
       "total_score": 7.15,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma | trial_candidate: Clinical Study of Anti-ILT3 CAR-T Therapy for R/R AML(M4/M5)",
+      "trigger_summary": "trial_collaborator: Relmacabtagene Autoleucel for the Treatment of Systemic Sclerosis | trial_collaborator: MAGE-A4-directed TCR-T in the Treatment Amongst Subjects With Advanced Solid Tumors",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06461624",
-        "https://clinicaltrials.gov/study/NCT04803929"
+        "https://clinicaltrials.gov/study/NCT06414135",
+        "https://clinicaltrials.gov/study/NCT06170294"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -2315,18 +2643,18 @@
       ],
       "trial_count": 2,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma",
+      "best_fit_trial_title": "MAGE-A4-directed TCR-T in the Treatment Amongst Subjects With Advanced Solid Tumors",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE1"
       ],
-      "best_fit_trial_last_update": "2024-11-06",
-      "best_urgency_trial_title": "Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma",
+      "best_fit_trial_last_update": "2023-12-14",
+      "best_urgency_trial_title": "Relmacabtagene Autoleucel for the Treatment of Systemic Sclerosis",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2024-11-06",
+      "best_urgency_trial_last_update": "2024-08-15",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
@@ -2338,22 +2666,22 @@
       "score_details": {
         "trial_count": 2,
         "best_fit_trial": {
-          "nct_id": "NCT06461624::collab::Carbiogene_Therapeutics_Co._Ltd.",
-          "brief_title": "Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma",
+          "nct_id": "NCT06170294::collab::Shanghai_Ming_Ju_Biotechnology_Co.,_Ltd.",
+          "brief_title": "MAGE-A4-directed TCR-T in the Treatment Amongst Subjects With Advanced Solid Tumors",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2024-11-06"
+          "last_update_posted": "2023-12-14"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT06461624::collab::Carbiogene_Therapeutics_Co._Ltd.",
-          "brief_title": "Clinical Trial of Autologous GPC3 CAR-T Cells (CBG166) Therapy for Advanced Hepatocellular Carcinoma",
+          "nct_id": "NCT06414135::collab::Shanghai_Ming_Ju_Biotechnology_Co.,_Ltd.",
+          "brief_title": "Relmacabtagene Autoleucel for the Treatment of Systemic Sclerosis",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2024-11-06"
+          "last_update_posted": "2024-08-15"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -2363,6 +2691,93 @@
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
           "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.15,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Hebei Senlang Biotechnology Inc., Ltd.",
+      "total_score": 7.15,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_candidate: Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases | trial_candidate: CD7 CAR-T in Adults With Relapsed or Refractory T-LBL/ALL Clinical Study",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT07161193",
+        "https://clinicaltrials.gov/study/NCT06136364"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 2,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases",
+      "best_fit_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2025-09-08",
+      "best_urgency_trial_title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases",
+      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2025-09-08",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.15,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 2,
+        "best_fit_trial": {
+          "nct_id": "NCT07161193",
+          "brief_title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-09-08"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT07161193",
+          "brief_title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases",
+          "overall_status": "NOT_YET_RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2025-09-08"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -2462,96 +2877,14 @@
       }
     },
     {
-      "company": "Takara Bio Inc.",
+      "company": "Cabaletta Bio",
       "total_score": 7.0,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
+      "trigger_summary": "trial_candidate: RESET-SSc: An Open-Label Study to Evaluate the Safety and Efficacy of CABA-201, a CD19-CAR T Cell Therapy, in Subjects With Systemic Sclerosis",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05963217"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2025-07-02",
-      "best_urgency_trial_title": "Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2025-07-02",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT05963217::collab::Takara_Bio_Inc.",
-          "brief_title": "Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2025-07-02"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05963217::collab::Takara_Bio_Inc.",
-          "brief_title": "Study of TBI-2001(Autologous CD19 Specific Chimeric Antigen Receptor (CAR) Gene-transduced T Lymphocytes) for Relapsed or Refractory CD19+ B-cell Lymphoma, CLL/SLL",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2025-07-02"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Beijing Yongtai Ruike Biotechnology Company Ltd",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06179524"
+        "https://clinicaltrials.gov/study/NCT06328777"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -2562,351 +2895,22 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
+      "best_fit_trial_title": "RESET-SSc: An Open-Label Study to Evaluate the Safety and Efficacy of CABA-201, a CD19-CAR T Cell Therapy, in Subjects With Systemic Sclerosis",
       "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2025-01-13",
-      "best_urgency_trial_title": "CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2025-01-13",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT06179524",
-          "brief_title": "CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-01-13"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT06179524",
-          "brief_title": "CAR-T-19 Injection in the Treatment of CD19-positive Relapsed/Refractory B-ALL",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-01-13"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Bristol-Myers Squibb",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: A Study to Learn About the Effects of the Combination of Elranatamab (PF-06863135) and Iberdomide in Patients With Relapsed or Refractory Multiple Myeloma (MagnetisMM-30) | trial_collaborator: Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06215118",
-        "https://clinicaltrials.gov/study/NCT04205409"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies",
-      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2025-11-03",
-      "best_urgency_trial_title": "Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies",
-      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2025-11-03",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT04205409::collab::Bristol-Myers_Squibb",
-          "brief_title": "Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-11-03"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT04205409::collab::Bristol-Myers_Squibb",
-          "brief_title": "Nivolumab for Relapsed, Refractory, or Detectable Disease Post Chimeric Antigen Receptor T-cell Treatment in Patients With Hematologic Malignancies",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-11-03"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "UTC Therapeutics Inc.",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05528887"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2022-09-06",
-      "best_urgency_trial_title": "Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2022-09-06",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT05528887::collab::UTC_Therapeutics_Inc.",
-          "brief_title": "Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2022-09-06"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05528887::collab::UTC_Therapeutics_Inc.",
-          "brief_title": "Study of CAR-T Cell Therapy in the Treatment of Relapsed/Refractory Hematological Malignancies",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2022-09-06"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Bio4T2 LLC",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06072989"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2023-10-10",
-      "best_urgency_trial_title": "Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2023-10-10",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT06072989::collab::Bio4T2_LLC",
-          "brief_title": "Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2023-10-10"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT06072989::collab::Bio4T2_LLC",
-          "brief_title": "Repeat Intravenous Infusions of B4T2-001 CAR-T Without Lymphodepleting Chemotherapy for Solid Tumors",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2023-10-10"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Kyverna Therapeutics",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06590545"
-      ],
-      "target_roles": [
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
-      "best_fit_trial_status": "NOT_YET_RECRUITING",
       "best_fit_trial_phases": [
         "PHASE1",
         "PHASE2"
       ],
-      "best_fit_trial_last_update": "2024-09-19",
-      "best_urgency_trial_title": "Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
-      "best_urgency_trial_status": "NOT_YET_RECRUITING",
+      "best_fit_trial_last_update": "2025-09-29",
+      "best_urgency_trial_title": "RESET-SSc: An Open-Label Study to Evaluate the Safety and Efficacy of CABA-201, a CD19-CAR T Cell Therapy, in Subjects With Systemic Sclerosis",
+      "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1",
         "PHASE2"
       ],
-      "best_urgency_trial_last_update": "2024-09-19",
+      "best_urgency_trial_last_update": "2025-09-29",
       "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
@@ -2916,24 +2920,24 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT06590545::collab::Kyverna_Therapeutics",
-          "brief_title": "Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
-          "overall_status": "NOT_YET_RECRUITING",
+          "nct_id": "NCT06328777",
+          "brief_title": "RESET-SSc: An Open-Label Study to Evaluate the Safety and Efficacy of CABA-201, a CD19-CAR T Cell Therapy, in Subjects With Systemic Sclerosis",
+          "overall_status": "RECRUITING",
           "phases": [
             "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2024-09-19"
+          "last_update_posted": "2025-09-29"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT06590545::collab::Kyverna_Therapeutics",
-          "brief_title": "Anti-CD 19 CAR-T Cell Therapy in Patients with ANCA Vasculitis",
-          "overall_status": "NOT_YET_RECRUITING",
+          "nct_id": "NCT06328777",
+          "brief_title": "RESET-SSc: An Open-Label Study to Evaluate the Safety and Efficacy of CABA-201, a CD19-CAR T Cell Therapy, in Subjects With Systemic Sclerosis",
+          "overall_status": "RECRUITING",
           "phases": [
             "PHASE1",
             "PHASE2"
           ],
-          "last_update_posted": "2024-09-19"
+          "last_update_posted": "2025-09-29"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -2942,171 +2946,7 @@
         },
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status NOT_YET_RECRUITING and phase in ['PHASE1', 'PHASE2']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Nkarta, Inc.",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_candidate: NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05020678"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
-      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE1"
-      ],
-      "best_fit_trial_last_update": "2024-12-24",
-      "best_urgency_trial_title": "NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
-      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE1"
-      ],
-      "best_urgency_trial_last_update": "2024-12-24",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT05020678",
-          "brief_title": "NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2024-12-24"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT05020678",
-          "brief_title": "NKX019, Intravenous Allogeneic Chimeric Antigen Receptor Natural Killer Cells (CAR NK), in Adults With B-cell Cancers",
-          "overall_status": "ACTIVE_NOT_RECRUITING",
-          "phases": [
-            "PHASE1"
-          ],
-          "last_update_posted": "2024-12-24"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
-          "urgency_source": "trial",
-          "access_reason": "not on watchlist"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "Adaptive Biotechnologies",
-      "total_score": 7.0,
-      "fit_score": 3.0,
-      "urgency_score": 3.0,
-      "access_score": 1.0,
-      "trigger_summary": "trial_collaborator: Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-      "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT06252675"
-      ],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
-      ],
-      "trial_count": 1,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-      "best_fit_trial_status": "RECRUITING",
-      "best_fit_trial_phases": [
-        "PHASE2"
-      ],
-      "best_fit_trial_last_update": "2025-10-22",
-      "best_urgency_trial_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-      "best_urgency_trial_status": "RECRUITING",
-      "best_urgency_trial_phases": [
-        "PHASE2"
-      ],
-      "best_urgency_trial_last_update": "2025-10-22",
-      "fit_reason": "trial title contains known T-cell engager molecule",
-      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
-      "urgency_source": "trial",
-      "access_reason": "not on watchlist",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 1,
-        "best_fit_trial": {
-          "nct_id": "NCT06252675::collab::Adaptive_Biotechnologies",
-          "brief_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-10-22"
-        },
-        "best_urgency_trial": {
-          "nct_id": "NCT06252675::collab::Adaptive_Biotechnologies",
-          "brief_title": "Glofitamab With Pirtobrutinib for Relapsed or Refractory Mantle Cell Lymphoma",
-          "overall_status": "RECRUITING",
-          "phases": [
-            "PHASE2"
-          ],
-          "last_update_posted": "2025-10-22"
-        },
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "trial title contains known T-cell engager molecule",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
@@ -3287,14 +3127,14 @@
       }
     },
     {
-      "company": "TCRCure Biopharma Ltd.",
+      "company": "Chiome Bioscience Inc.",
       "total_score": 7.0,
       "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 1.0,
-      "trigger_summary": "trial_candidate: NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+      "trigger_summary": "trial_candidate: A Phase I, First in Human Study of CBA-1535, T Cell Engager(5T4/CD3/5T4) in Patients With Advanced Solid Tumors.",
       "evidence_links": [
-        "https://clinicaltrials.gov/study/NCT05881525"
+        "https://clinicaltrials.gov/study/NCT07016997"
       ],
       "target_roles": [
         "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
@@ -3305,19 +3145,19 @@
       ],
       "trial_count": 1,
       "recent_job_hits": 0,
-      "best_fit_trial_title": "NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+      "best_fit_trial_title": "A Phase I, First in Human Study of CBA-1535, T Cell Engager(5T4/CD3/5T4) in Patients With Advanced Solid Tumors.",
       "best_fit_trial_status": "RECRUITING",
       "best_fit_trial_phases": [
         "PHASE1"
       ],
-      "best_fit_trial_last_update": "2025-07-16",
-      "best_urgency_trial_title": "NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+      "best_fit_trial_last_update": "2025-06-12",
+      "best_urgency_trial_title": "A Phase I, First in Human Study of CBA-1535, T Cell Engager(5T4/CD3/5T4) in Patients With Advanced Solid Tumors.",
       "best_urgency_trial_status": "RECRUITING",
       "best_urgency_trial_phases": [
         "PHASE1"
       ],
-      "best_urgency_trial_last_update": "2025-07-16",
-      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "best_urgency_trial_last_update": "2025-06-12",
+      "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
       "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
       "urgency_source": "trial",
       "access_reason": "not on watchlist",
@@ -3328,22 +3168,186 @@
       "score_details": {
         "trial_count": 1,
         "best_fit_trial": {
-          "nct_id": "NCT05881525",
-          "brief_title": "NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+          "nct_id": "NCT07016997",
+          "brief_title": "A Phase I, First in Human Study of CBA-1535, T Cell Engager(5T4/CD3/5T4) in Patients With Advanced Solid Tumors.",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-07-16"
+          "last_update_posted": "2025-06-12"
         },
         "best_urgency_trial": {
-          "nct_id": "NCT05881525",
-          "brief_title": "NY-ESO-1 TCR-T Cells for NY-ESO-1 Positive Subjects With Advanced Solid Tumors",
+          "nct_id": "NCT07016997",
+          "brief_title": "A Phase I, First in Human Study of CBA-1535, T Cell Engager(5T4/CD3/5T4) in Patients With Advanced Solid Tumors.",
           "overall_status": "RECRUITING",
           "phases": [
             "PHASE1"
           ],
-          "last_update_posted": "2025-07-16"
+          "last_update_posted": "2025-06-12"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Pharmacyclics LLC.",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Ibrutinib and Blinatumomab in Treating Patients With Relapsed or Refractory B Acute Lymphoblastic Leukemia",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT02997761"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Ibrutinib and Blinatumomab in Treating Patients With Relapsed or Refractory B Acute Lymphoblastic Leukemia",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2024-05-29",
+      "best_urgency_trial_title": "Ibrutinib and Blinatumomab in Treating Patients With Relapsed or Refractory B Acute Lymphoblastic Leukemia",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2024-05-29",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT02997761::collab::Pharmacyclics_LLC.",
+          "brief_title": "Ibrutinib and Blinatumomab in Treating Patients With Relapsed or Refractory B Acute Lymphoblastic Leukemia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2024-05-29"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT02997761::collab::Pharmacyclics_LLC.",
+          "brief_title": "Ibrutinib and Blinatumomab in Treating Patients With Relapsed or Refractory B Acute Lymphoblastic Leukemia",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE2"
+          ],
+          "last_update_posted": "2024-05-29"
+        },
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 0
+        },
+        "reasons": {
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE2']",
+          "urgency_source": "trial",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Celldex Therapeutics",
+      "total_score": 7.0,
+      "fit_score": 3.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "trial_collaborator: Personalized TCR-T: Study of Adoptively Transferred T-cell Receptor Gene-engineered T Cells (TCR-T)",
+      "evidence_links": [
+        "https://clinicaltrials.gov/study/NCT05349890"
+      ],
+      "target_roles": [
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 1,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "Personalized TCR-T: Study of Adoptively Transferred T-cell Receptor Gene-engineered T Cells (TCR-T)",
+      "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1"
+      ],
+      "best_fit_trial_last_update": "2024-11-25",
+      "best_urgency_trial_title": "Personalized TCR-T: Study of Adoptively Transferred T-cell Receptor Gene-engineered T Cells (TCR-T)",
+      "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2024-11-25",
+      "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
+      "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 1,
+        "best_fit_trial": {
+          "nct_id": "NCT05349890::collab::Celldex_Therapeutics",
+          "brief_title": "Personalized TCR-T: Study of Adoptively Transferred T-cell Receptor Gene-engineered T Cells (TCR-T)",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2024-11-25"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05349890::collab::Celldex_Therapeutics",
+          "brief_title": "Personalized TCR-T: Study of Adoptively Transferred T-cell Receptor Gene-engineered T Cells (TCR-T)",
+          "overall_status": "ACTIVE_NOT_RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2024-11-25"
         },
         "jobs": {
           "recent_window_days": 45,
@@ -3352,7 +3356,7 @@
         },
         "reasons": {
           "fit_reason": "trial title contains CAR-T/TCR-T/chimeric antigen receptor",
-          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_reason": "trial status ACTIVE_NOT_RECRUITING and phase in ['PHASE1']",
           "urgency_source": "trial",
           "access_reason": "not on watchlist"
         },
