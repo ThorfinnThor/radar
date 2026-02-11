@@ -40,6 +40,59 @@ def _match_keywords(text: str, keywords: List[str]) -> List[str]:
         if k_n and k_n in text_n:
             hits.append(k)
     return hits
+
+def _job_blob_from_signal(signal: Dict[str, Any]) -> str:
+    blob = ""
+    pj = signal.get("payload_json")
+    if pj:
+        try:
+            import json as _json
+            pobj = _json.loads(pj)
+            blob = pobj.get("text_blob") or ""
+        except Exception:
+            blob = ""
+    if not blob:
+        blob = signal.get("title") or ""
+    return blob
+
+def job_match_stats(
+    job_signals: List[Dict[str, Any]],
+    keywords: List[str],
+    window_days: int = 45,
+    max_examples: int = 3,
+) -> Dict[str, Any]:
+    """Compute auditable job matching stats for a company."""
+    recent_total = 0
+    matched_total = 0
+    matched_keywords: set[str] = set()
+    examples: List[Dict[str, Any]] = []
+
+    for j in job_signals:
+        if not within_days(j.get("published_at"), window_days):
+            continue
+        recent_total += 1
+        blob = _job_blob_from_signal(j)
+        hits = _match_keywords(blob, keywords)
+        if not hits:
+            continue
+        matched_total += 1
+        for h in hits:
+            matched_keywords.add(h)
+        if len(examples) < max_examples:
+            examples.append({
+                "title": j.get("title"),
+                "evidence_url": j.get("evidence_url"),
+                "published_at": j.get("published_at"),
+                "matched_keywords": hits,
+            })
+
+    return {
+        "recent_job_total": recent_total,
+        "recent_job_hits": matched_total,  # hits == matched jobs
+        "job_hit_keywords": sorted(matched_keywords),
+        "job_hit_titles": [e.get("title") for e in examples if e.get("title")],
+        "job_hit_examples": examples,
+    }
 def _norm(s: str | None) -> str:
     t = (s or "").lower()
     # Normalize unicode hyphens to ASCII hyphen, then also create a space-normalized variant for matching
@@ -141,26 +194,14 @@ def compute_scores(
         best_trial_urg = 0
 
     job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
-    spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
-    keywords = (config.get('jobs', {}) or {}).get('job_keywords', [])
-    relevant_recent_jobs = 0
-    for j in job_signals:
-        if not within_days(j.get('published_at'), job_window):
-            continue
-        blob = ''
-        # job signals may include a prepared text_blob in payload_json (preferred)
-        try:
-            pj = j.get('payload_json')
-            if pj:
-                import json as _json
-                pobj = _json.loads(pj)
-                blob = pobj.get('text_blob') or ''
-        except Exception:
-            blob = ''
-        blob = blob or (j.get('title') or '')
-        if _match_keywords(blob, keywords):
-            relevant_recent_jobs += 1
-    job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
+spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
+keywords = (config.get("jobs", {}) or {}).get("job_keywords", [])
+
+jm = job_match_stats(job_signals, keywords, window_days=job_window, max_examples=3)
+relevant_recent_jobs = int(jm.get("recent_job_hits") or 0)
+
+job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
+
 
     if trials and best_trial_urg >= job_urg:
         urgency = float(best_trial_urg)

@@ -365,7 +365,6 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
         job_sigs = [dict(r) for r in cur.fetchall()]
 
         scores = compute_scores(trials, job_sigs, cfg.config, company_in_watchlist=(company in watchlist))
-        hit = _job_hit_details(job_sigs, keywords, window_days=job_window)
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
         cur.execute("SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
@@ -398,8 +397,8 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             "access_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("access_reason"),
             "bonus_recent_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("recent_trial_bonus"),
             "bonus_multi_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("multi_trial_bonus"),
-            "job_hit_titles": hit.get("job_hit_titles"),
-            "job_hit_keywords": hit.get("job_hit_keywords"),
+            "job_hit_titles": scores.get("job_hit_titles"),
+            "job_hit_keywords": scores.get("job_hit_keywords"),
             "score_details": scores.get("details"),
             "target_roles": roles,
         }
