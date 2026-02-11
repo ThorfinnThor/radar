@@ -2,21 +2,30 @@
   "generated_rows": [
     {
       "company": "AstraZeneca",
-      "total_score": 3.0,
+      "total_score": 6.0,
       "fit_score": 1.0,
-      "urgency_score": 0.0,
+      "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "",
-      "evidence_links": [],
+      "trigger_summary": "job_posting: (Senior) Finance Manager - Deal Finance China | job_posting: Area Manager - CVRM - HN | job_posting: Area Manager - ONCO - HN",
+      "evidence_links": [
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/China/Manager---Deal-Finance_R-245732",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---CVRM---HN_R-245280-1",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---ONCO---HN_R-245806",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/India---Bangalore/Associate-Director-Study-Data-Manager_R-244066",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Gaithersburg---MD/Associate-Director--R-I-Clinical-Regulatory-Writing--CReW-_R-245681-1",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/South-Korea---Seoul/Associate-Manager-P-R_R-245793",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Austria---Vienna/Brand-Manager--Breakthrough-Launch---CVRM--m-w-d-_R-245311",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Poland---Warsaw/Buying-Content-Specialist_R-245814-1"
+      ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+        "Director, CMC / Analytical Development (Cell Therapy/Biologics)",
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Director, Computational Biology / Systems Immunology"
       ],
       "trial_count": 0,
-      "recent_job_hits": 0,
+      "recent_job_hits": 110,
       "best_fit_trial_title": null,
       "best_fit_trial_status": null,
       "best_fit_trial_phases": null,
@@ -26,73 +35,23 @@
       "best_urgency_trial_phases": null,
       "best_urgency_trial_last_update": null,
       "fit_reason": "no trials",
-      "urgency_reason": "no trials and no relevant jobs",
-      "urgency_source": "none",
+      "urgency_reason": "110 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
       "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 0,
-        "best_fit_trial": null,
-        "best_urgency_trial": null,
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "no trials and no relevant jobs",
-          "urgency_source": "none",
-          "access_reason": "company on watchlist / ATS known"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "GSK",
-      "total_score": 3.0,
-      "fit_score": 1.0,
-      "urgency_score": 0.0,
-      "access_score": 2.0,
-      "trigger_summary": "",
-      "evidence_links": [],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      "job_hit_titles": [
+        "Brand Manager, Breakthrough Launch \u2013 CVRM (m/w/d)",
+        "Medical Representative - Respiratory and Immunology Inhaled (North Central Bulgaria)",
+        "Safety Evidence Synthesis Manager"
       ],
-      "trial_count": 0,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "best_urgency_trial_title": null,
-      "best_urgency_trial_status": null,
-      "best_urgency_trial_phases": null,
-      "best_urgency_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "no trials and no relevant jobs",
-      "urgency_source": "none",
-      "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
+      "job_hit_keywords": [
+        "analytical development",
+        "biomarker",
+        "car-t",
+        "cell therapy",
+        "translational"
+      ],
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -100,12 +59,12 @@
         "jobs": {
           "recent_window_days": 45,
           "spike_threshold": 2,
-          "relevant_recent_jobs": 0
+          "relevant_recent_jobs": 110
         },
         "reasons": {
           "fit_reason": "no trials",
-          "urgency_reason": "no trials and no relevant jobs",
-          "urgency_source": "none",
+          "urgency_reason": "110 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
           "access_reason": "company on watchlist / ATS known"
         },
         "bonuses": {
@@ -122,6 +81,379 @@
     },
     {
       "company": "Pfizer",
+      "total_score": 6.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 2.0,
+      "trigger_summary": "job_posting: Area Business Manager, Rare Cardiac Disease - Albany, NY | job_posting: Area Business Manager, Rare Cardiac Disease - Mid-Atlantic | job_posting: Area Business Manager, Rare Cardiac Disease - North",
+      "evidence_links": [
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Albany--NY_4951117-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Virginia---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Mid-Atlantic_4951121-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Minnesota---Remote/Area-Business-Manager--Rare-Cardiac-Disease---North_4951102-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Southern-California_4951110",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---North-Carolina---Rocky-Mount/Aseptic-Service-Worker_4950731-3",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Intern_4951569-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Trainee_4951568",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Cardiovascular-Health-and-Science-Professional--HSP----Murrieta--CA_4951058-1"
+      ],
+      "target_roles": [
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 14,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "14 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "company on watchlist / ATS known",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Supply Operations Quality Market Manager",
+        "Medical Review Manager",
+        "Werkstudent:in (m/w/d) im Bereich Marketing Onkologie"
+      ],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 14
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "14 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "company on watchlist / ATS known"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Immatics",
+      "total_score": 5.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "job_posting: Medical Monitor* | job_posting: (Senior) Manager Clinical Sciences | job_posting: (Senior) Clinical Statistical Programmer \u2013 SAS*",
+      "evidence_links": [
+        "https://immatics.wd3.myworkdayjobs.com/Immatics_External/job/Remote-Work-Germany/Medical-Monitor-_JR100625",
+        "https://immatics.wd3.myworkdayjobs.com/Immatics_External/job/Munich/XMLNAME--Senior--Manager-Clinical-Sciences_JR100609",
+        "https://immatics.wd3.myworkdayjobs.com/Immatics_External/job/Remote-Work-Germany/XMLNAME--Senior--Clinical-Statistical-Programmer---SAS-_JR100596-1",
+        "https://immatics.wd3.myworkdayjobs.com/Immatics_External/job/Tuebingen-Germany/Director-Clinical-Sciences_JR100553",
+        "https://immatics.wd3.myworkdayjobs.com/Immatics_External/job/Tuebingen-Germany/Senior-Manager-Clinical-Quality-Assurance-_JR100525-1"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 5,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "5 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Medical Monitor*",
+        "(Senior) Manager Clinical Sciences",
+        "(Senior) Clinical Statistical Programmer \u2013 SAS*"
+      ],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 5
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "5 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Johnson & Johnson",
+      "total_score": 5.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "job_posting: [Innovative Medicine] Sr. Product Manager | job_posting: [Legal] Legal Director, Innovative Medicine | job_posting: [Vision Care] Sales Director, Vision Care Korea",
+      "evidence_links": [
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Seoul-Korea-Republic-of/XMLNAME--Innovative-Medicine--Sr-Product-Manager_R-054572",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Chiyoda-Tokyo-Japan/XMLNAME--Legal--Legal-Director--Innovative-Medicine_R-054782-1",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Seoul-Korea-Republic-of/XMLNAME--Vision-Care--Sales-Director--Vision-Care-Korea_R-057676-1",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Cleveland-Ohio-United-States/Account-Executive-I---Advanced-Surgical-Instruments--ASI----Cleveland--OH---Johnson---Johnson-MedTech---Surgery_R-054385-1",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Daytona-Beach-Florida-United-States/Advanced-Surgical-Consultant---Daytona--FL---Johnson---Johnson-MedTech---Heart-Recovery_R-056587-1",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Atlanta-Georgia-United-States/ASC-Senior-Account-Manager--Atlanta--GA-_R-055028-1",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/New-York-New-York-United-States/Associate-Account-Executive---New-York--NY---Johnson---Johnson-MedTech--Vision_R-058194",
+        "https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Associate-Quality-Engineer_R-057285"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 34,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "34 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Manufacturing Engineer I",
+        "Dir, SubX Technology Business Leader",
+        "ASC Senior Account Manager (Atlanta, GA)"
+      ],
+      "job_hit_keywords": [
+        "car-t",
+        "cell therapy",
+        "translational"
+      ],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 34
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "34 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Novartis",
+      "total_score": 5.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "job_posting: Associate Director Congress Operations | job_posting: Associate Director Engineering (m/f/d) | job_posting: Country Promotion Manager | Immunology",
+      "evidence_links": [
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Dublin-NOCC/Associate-Director-Congress-Operations_REQ-10063733-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Schaftenau/Associate-Director-Engineering--m-f-d-_REQ-10071712-2",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Warsaw/Country-Promotion-Manager---Immunology_REQ-10070419-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Barcelona-Gran-Va/Data--Analytics-and-Tool-Manager_REQ-10070090-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Digital-Finance---Manager--Analytics-Operations-_REQ-10071638-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/East-Hanover/Director--CRM-Product-Owner--3-positions-_REQ-10069506-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Basel-City/Director--Emerging-Therapeutic-Strategies_REQ-10071789-1",
+        "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/London-The-Westworks/Director--Regulatory-Affairs--Medical-Devices-_REQ-10064222-1"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 24,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "24 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Production Support Engineer (m/f/d)",
+        "Spare Part Coordinator (m/f/d)",
+        "Data, Analytics and Tool Manager"
+      ],
+      "job_hit_keywords": [
+        "biomarker",
+        "cell therapy",
+        "translational"
+      ],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 24
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "24 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "Roche",
+      "total_score": 5.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 1.0,
+      "trigger_summary": "job_posting: 2026 Summer Intern - Computational Science and Informatics | job_posting: 2026 Summer Intern - ML modeling of DNA sequencing error, Roche Diagnostics | job_posting: 2026 Summer Intern - Research & Early Development / Integrated Circuit",
+      "evidence_links": [
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Santa-Clara/XMLNAME-2026-Summer-Intern---Computational-Science-and-Informatics_202601-102578",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Santa-Clara/XMLNAME-2026-Summer-Intern---ML-modeling-of-DNA-sequencing-error--Roche-Diagnostics_202601-102596",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Santa-Clara/XMLNAME-2026-Summer-Intern---Research---Early-Development---Integrated-Circuit_202601-100761",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Vienna/Business-Internship--m-f-d-_202601-102407-3",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/South-San-Francisco/Business-Manager--Clinical-Operations_202602-103608",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/United-Kingdom/Core-Lab-Solutions-Sales-Specialist---Pathology-Territory---North-and-South-Yorkshire_202601-102176-1",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Vienna/Customer-Service-Specialist_202602-103561",
+        "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Budapest/Digital-Campaign-Specialist--DIA-CGM-_202508-120622"
+      ],
+      "target_roles": [
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Director, CMC / Analytical Development (Cell Therapy/Biologics)",
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Director, Computational Biology / Systems Immunology"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 37,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "37 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "not on watchlist",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Patient Journey Partner",
+        "Inclusion & Belonging Country Partner Switzerland",
+        "Digital Campaign Specialist (DIA CGM)"
+      ],
+      "job_hit_keywords": [
+        "analytical development",
+        "biomarker"
+      ],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 37
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "37 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "not on watchlist"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "GSK",
       "total_score": 3.0,
       "fit_score": 1.0,
       "urgency_score": 0.0,

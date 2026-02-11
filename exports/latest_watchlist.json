@@ -2,21 +2,30 @@
   "watchlist_rows": [
     {
       "company": "AstraZeneca",
-      "total_score": 3.0,
+      "total_score": 6.0,
       "fit_score": 1.0,
-      "urgency_score": 0.0,
+      "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "",
-      "evidence_links": [],
+      "trigger_summary": "job_posting: (Senior) Finance Manager - Deal Finance China | job_posting: Area Manager - CVRM - HN | job_posting: Area Manager - ONCO - HN",
+      "evidence_links": [
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/China/Manager---Deal-Finance_R-245732",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---CVRM---HN_R-245280-1",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---ONCO---HN_R-245806",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/India---Bangalore/Associate-Director-Study-Data-Manager_R-244066",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Gaithersburg---MD/Associate-Director--R-I-Clinical-Regulatory-Writing--CReW-_R-245681-1",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/South-Korea---Seoul/Associate-Manager-P-R_R-245793",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Austria---Vienna/Brand-Manager--Breakthrough-Launch---CVRM--m-w-d-_R-245311",
+        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Poland---Warsaw/Buying-Content-Specialist_R-245814-1"
+      ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+        "Director, CMC / Analytical Development (Cell Therapy/Biologics)",
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Director, Computational Biology / Systems Immunology"
       ],
       "trial_count": 0,
-      "recent_job_hits": 0,
+      "recent_job_hits": 110,
       "best_fit_trial_title": null,
       "best_fit_trial_status": null,
       "best_fit_trial_phases": null,
@@ -26,73 +35,23 @@
       "best_urgency_trial_phases": null,
       "best_urgency_trial_last_update": null,
       "fit_reason": "no trials",
-      "urgency_reason": "no trials and no relevant jobs",
-      "urgency_source": "none",
+      "urgency_reason": "110 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
       "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
-      "score_details": {
-        "trial_count": 0,
-        "best_fit_trial": null,
-        "best_urgency_trial": null,
-        "jobs": {
-          "recent_window_days": 45,
-          "spike_threshold": 2,
-          "relevant_recent_jobs": 0
-        },
-        "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "no trials and no relevant jobs",
-          "urgency_source": "none",
-          "access_reason": "company on watchlist / ATS known"
-        },
-        "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
-        },
-        "weights": {
-          "fit": 1.0,
-          "urgency": 1.0,
-          "access": 1.0
-        }
-      }
-    },
-    {
-      "company": "GSK",
-      "total_score": 3.0,
-      "fit_score": 1.0,
-      "urgency_score": 0.0,
-      "access_score": 2.0,
-      "trigger_summary": "",
-      "evidence_links": [],
-      "target_roles": [
-        "Director/VP, Translational Medicine (Oncology/Immunology)",
-        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-        "Director, Bioassay / Potency / Analytical Development",
-        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+      "job_hit_titles": [
+        "Brand Manager, Breakthrough Launch \u2013 CVRM (m/w/d)",
+        "Medical Representative - Respiratory and Immunology Inhaled (North Central Bulgaria)",
+        "Safety Evidence Synthesis Manager"
       ],
-      "trial_count": 0,
-      "recent_job_hits": 0,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "best_urgency_trial_title": null,
-      "best_urgency_trial_status": null,
-      "best_urgency_trial_phases": null,
-      "best_urgency_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "no trials and no relevant jobs",
-      "urgency_source": "none",
-      "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
+      "job_hit_keywords": [
+        "analytical development",
+        "biomarker",
+        "car-t",
+        "cell therapy",
+        "translational"
+      ],
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -100,12 +59,12 @@
         "jobs": {
           "recent_window_days": 45,
           "spike_threshold": 2,
-          "relevant_recent_jobs": 0
+          "relevant_recent_jobs": 110
         },
         "reasons": {
           "fit_reason": "no trials",
-          "urgency_reason": "no trials and no relevant jobs",
-          "urgency_source": "none",
+          "urgency_reason": "110 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
           "access_reason": "company on watchlist / ATS known"
         },
         "bonuses": {
@@ -122,6 +81,79 @@
     },
     {
       "company": "Pfizer",
+      "total_score": 6.0,
+      "fit_score": 1.0,
+      "urgency_score": 3.0,
+      "access_score": 2.0,
+      "trigger_summary": "job_posting: Area Business Manager, Rare Cardiac Disease - Albany, NY | job_posting: Area Business Manager, Rare Cardiac Disease - Mid-Atlantic | job_posting: Area Business Manager, Rare Cardiac Disease - North",
+      "evidence_links": [
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Albany--NY_4951117-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Virginia---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Mid-Atlantic_4951121-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Minnesota---Remote/Area-Business-Manager--Rare-Cardiac-Disease---North_4951102-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Southern-California_4951110",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---North-Carolina---Rocky-Mount/Aseptic-Service-Worker_4950731-3",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Intern_4951569-1",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Trainee_4951568",
+        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Cardiovascular-Health-and-Science-Professional--HSP----Murrieta--CA_4951058-1"
+      ],
+      "target_roles": [
+        "Director, Process Development / MSAT (Cell Therapy)",
+        "Director/VP, Translational Medicine (Oncology/Immunology)",
+        "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development"
+      ],
+      "trial_count": 0,
+      "recent_job_hits": 14,
+      "best_fit_trial_title": null,
+      "best_fit_trial_status": null,
+      "best_fit_trial_phases": null,
+      "best_fit_trial_last_update": null,
+      "best_urgency_trial_title": null,
+      "best_urgency_trial_status": null,
+      "best_urgency_trial_phases": null,
+      "best_urgency_trial_last_update": null,
+      "fit_reason": "no trials",
+      "urgency_reason": "14 relevant jobs in window (>=3)",
+      "urgency_source": "jobs",
+      "access_reason": "company on watchlist / ATS known",
+      "bonus_recent_trial": 0.0,
+      "bonus_multi_trial": 0.0,
+      "job_hit_titles": [
+        "Supply Operations Quality Market Manager",
+        "Medical Review Manager",
+        "Werkstudent:in (m/w/d) im Bereich Marketing Onkologie"
+      ],
+      "job_hit_keywords": [],
+      "score_details": {
+        "trial_count": 0,
+        "best_fit_trial": null,
+        "best_urgency_trial": null,
+        "jobs": {
+          "recent_window_days": 45,
+          "spike_threshold": 2,
+          "relevant_recent_jobs": 14
+        },
+        "reasons": {
+          "fit_reason": "no trials",
+          "urgency_reason": "14 relevant jobs in window (>=3)",
+          "urgency_source": "jobs",
+          "access_reason": "company on watchlist / ATS known"
+        },
+        "bonuses": {
+          "recent_trial_bonus": 0.0,
+          "multi_trial_bonus": 0.0,
+          "any_recent_trial_update": false
+        },
+        "weights": {
+          "fit": 1.0,
+          "urgency": 1.0,
+          "access": 1.0
+        }
+      }
+    },
+    {
+      "company": "GSK",
       "total_score": 3.0,
       "fit_score": 1.0,
       "urgency_score": 0.0,
