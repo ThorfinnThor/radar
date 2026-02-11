@@ -2,8 +2,21 @@ name: Trigger Radar
 
 on:
   schedule:
+    # Daily run (06:10 UTC)
     - cron: "10 6 * * *"
-  workflow_dispatch: {}
+    # Weekly run (Mondays 06:20 UTC)
+    - cron: "20 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "What to run"
+        required: true
+        default: "daily"
+        type: choice
+        options:
+          - daily
+          - weekly
+          - both
 
 permissions:
   contents: write
@@ -23,28 +36,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Daily: ingest trials (and jobs if your daily path does that) + export
       - name: Daily ingest + export
+        if: >
+          (github.event_name == 'schedule' && github.event.schedule == '10 6 * * *') ||
+          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'daily' || github.event.inputs.run_mode == 'both'))
         run: |
           python -m radar.main --mode daily
           python -m radar.main --mode export-only
 
-      - name: Weekly jobs ingest on Mondays (UTC)
+      # Weekly: jobs ingest + export (weekly mode already exports)
+      - name: Weekly jobs ingest + export
+        if: >
+          (github.event_name == 'schedule' && github.event.schedule == '20 6 * * 1') ||
+          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'weekly' || github.event.inputs.run_mode == 'both'))
         run: |
-          DOW=$(date -u +%u)
-          if [ "$DOW" -eq 1 ]; then
-            python -m radar.main --mode weekly
-          else
-            echo "Skipping weekly jobs ingest (not Monday UTC)"
-          fi
+          python -m radar.main --mode weekly
 
       - name: Commit exports
         run: |
           git config user.name "trigger-radar-bot"
           git config user.email "trigger-radar-bot@users.noreply.github.com"
+
           git add exports/latest_top40.csv exports/latest_top40.json exports/latest_watchlist.csv exports/latest_watchlist.json || true
+
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
           fi
+
           git commit -m "Update trigger radar exports"
           git push
