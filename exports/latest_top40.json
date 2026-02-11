@@ -40,18 +40,8 @@
       "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Brand Manager, Breakthrough Launch \u2013 CVRM (m/w/d)",
-        "Medical Representative - Respiratory and Immunology Inhaled (North Central Bulgaria)",
-        "Safety Evidence Synthesis Manager"
-      ],
-      "job_hit_keywords": [
-        "analytical development",
-        "biomarker",
-        "car-t",
-        "cell therapy",
-        "translational"
-      ],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -119,12 +109,8 @@
       "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Supply Operations Quality Market Manager",
-        "Medical Review Manager",
-        "Werkstudent:in (m/w/d) im Bereich Marketing Onkologie"
-      ],
-      "job_hit_keywords": [],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -189,12 +175,8 @@
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Medical Monitor*",
-        "(Senior) Manager Clinical Sciences",
-        "(Senior) Clinical Statistical Programmer \u2013 SAS*"
-      ],
-      "job_hit_keywords": [],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -262,16 +244,8 @@
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Manufacturing Engineer I",
-        "Dir, SubX Technology Business Leader",
-        "ASC Senior Account Manager (Atlanta, GA)"
-      ],
-      "job_hit_keywords": [
-        "car-t",
-        "cell therapy",
-        "translational"
-      ],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -339,16 +313,8 @@
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Production Support Engineer (m/f/d)",
-        "Spare Part Coordinator (m/f/d)",
-        "Data, Analytics and Tool Manager"
-      ],
-      "job_hit_keywords": [
-        "biomarker",
-        "cell therapy",
-        "translational"
-      ],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -416,15 +382,8 @@
       "access_reason": "not on watchlist",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [
-        "Patient Journey Partner",
-        "Inclusion & Belonging Country Partner Switzerland",
-        "Digital Campaign Specialist (DIA CGM)"
-      ],
-      "job_hit_keywords": [
-        "analytical development",
-        "biomarker"
-      ],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
@@ -483,8 +442,8 @@
       "access_reason": "company on watchlist / ATS known",
       "bonus_recent_trial": 0.0,
       "bonus_multi_trial": 0.0,
-      "job_hit_titles": [],
-      "job_hit_keywords": [],
+      "job_hit_titles": null,
+      "job_hit_keywords": null,
       "score_details": {
         "trial_count": 0,
         "best_fit_trial": null,
