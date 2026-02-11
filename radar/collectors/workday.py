@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-import re
+from typing import Any, Dict, List, Optional
+from urllib.parse import urlencode
+
 import requests
-from typing import Any, Dict, List, Optional, Tuple
-from urllib.parse import urlparse
 
 from radar.models import NormalizedSignal
 
@@ -12,83 +12,66 @@ UA = (
     "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 )
 
-def _browser_headers(origin: str, referer: str) -> Dict[str, str]:
-    return {
-        "Accept": "application/json, text/plain, */*",
-        "Content-Type": "application/json;charset=UTF-8",
-        "Origin": origin,
-        "Referer": referer,
-        "User-Agent": UA,
-        "Accept-Language": "en-US,en;q=0.9",
-        "X-Requested-With": "XMLHttpRequest",
+def _headers(has_body: bool) -> Dict[str, str]:
+    h = {
+        "user-agent": UA,
+        "accept": "application/json,text/plain,*/*",
+        "accept-language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
     }
+    if has_body:
+        h["content-type"] = "application/json"
+    return h
 
-def _discover_cxs_base(landing_url: str, timeout: int = 60) -> Optional[Tuple[str, str]]:
-    """Return (cxs_base, origin) where cxs_base is:
-       https://<host>/wday/cxs/<tenant>/<site>
-    """
+def _base(host: str, tenant: str, site: str) -> str:
+    return f"https://{host}/wday/cxs/{tenant}/{site}"
+
+def _try_json(method: str, url: str, *, body: Optional[Dict[str, Any]] = None, timeout: int = 60) -> Optional[Dict[str, Any]]:
     try:
-        r = requests.get(
-            landing_url,
-            headers={"User-Agent": UA, "Accept": "text/html"},
-            timeout=timeout,
-            allow_redirects=True,
-        )
-        if r.status_code != 200:
+        if method == "GET":
+            r = requests.get(url, headers=_headers(False), timeout=timeout)
+        else:
+            r = requests.post(url, headers=_headers(True), json=body, timeout=timeout)
+        if not r.ok:
             return None
-
-        final = r.url
-        host = urlparse(final).netloc
-        origin = f"https://{host}"
-        html = r.text
-
-        # Absolute API URL in HTML
-        m = re.search(r"https://[^\s\"']+/wday/cxs/[^\s\"']+/[^\s\"']+", html)
-        if m:
-            u = m.group(0).split("?")[0].rstrip("/")
-            u = re.sub(r"/jobs/?$", "", u)
-            return (u, origin)
-
-        # Relative API path in HTML
-        m2 = re.search(r"/wday/cxs/([^/]+)/([^/\"'\?]+)", html)
-        if m2:
-            tenant2, site2 = m2.group(1), m2.group(2)
-            return (f"{origin}/wday/cxs/{tenant2}/{site2}", origin)
-
-        return None
+        return r.json()
     except Exception:
         return None
 
-def discover_cxs_base(tenant: str, site: str, wd_host: str) -> Tuple[str, str]:
-    """Best-effort discovery of the correct CXS base.
-    Falls back to provided tenant/site if discovery fails.
-    """
-    base_host = f"https://{tenant}.{wd_host}.myworkdayjobs.com"
-    candidates = [
-        f"{base_host}/{site}",
-        f"{base_host}/en-US/{site}",
-        f"{base_host}/en-us/{site}",
-    ]
-    for u in candidates:
-        got = _discover_cxs_base(u)
-        if got:
-            return got[0], got[1]
-    return f"{base_host}/wday/cxs/{tenant}/{site}", base_host
+def _get_page(list_url: str, offset: int, limit: int, search_text: str) -> Optional[Dict[str, Any]]:
+    # Variant A: GET with query params
+    urlA = f"{list_url}?{urlencode({'offset': offset, 'limit': limit, 'searchText': search_text})}"
+    a = _try_json("GET", urlA)
+    if a and a.get("jobPostings"):
+        return a
 
-def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages: int = 20) -> List[Dict[str, Any]]:
-    cxs_base, origin = discover_cxs_base(tenant=tenant, site=site, wd_host=wd_host)
-    jobs_url = f"{cxs_base}/jobs"
-    referer = f"{origin}/{site}"
-    headers = _browser_headers(origin=origin, referer=referer)
+    # Variant B: POST with JSON body
+    b = _try_json("POST", list_url, body={"appliedFacets": {}, "searchText": search_text, "limit": limit, "offset": offset})
+    if b and b.get("jobPostings"):
+        return b
+
+    # Variant C: POST with "query" instead of searchText (some tenants)
+    c = _try_json("POST", list_url, body={"appliedFacets": {}, "query": search_text, "limit": limit, "offset": offset})
+    if c and c.get("jobPostings"):
+        return c
+
+    return None
+
+def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages: int = 20, search_text: str = "") -> List[Dict[str, Any]]:
+    # host matches your config pattern: <tenant>.<wd_host>.myworkdayjobs.com
+    host = f"{tenant}.{wd_host}.myworkdayjobs.com"
+    base = _base(host, tenant, site)
+    list_url = f"{base}/jobs"
 
     jobs: List[Dict[str, Any]] = []
     offset = 0
     for _ in range(max_pages):
-        payload = {"limit": limit, "offset": offset, "searchText": "", "appliedFacets": {}}
-        r = requests.post(jobs_url, headers=headers, json=payload, timeout=60)
-        r.raise_for_status()
-        data = r.json()
-        postings = data.get("jobPostings") or []
+        page = _get_page(list_url, offset=offset, limit=limit, search_text=search_text)
+        if not page:
+            # raise a helpful error with status/body from a direct POST attempt
+            r = requests.post(list_url, headers=_headers(True), json={"appliedFacets": {}, "searchText": search_text, "limit": limit, "offset": offset}, timeout=60)
+            msg = (r.text or "")[:300]
+            raise requests.HTTPError(f"Workday CXS failed: HTTP {r.status_code} {list_url} :: {msg}")
+        postings = page.get("jobPostings") or []
         if not postings:
             break
         jobs.extend(postings)
@@ -97,22 +80,22 @@ def fetch_jobs(tenant: str, site: str, wd_host: str, limit: int = 50, max_pages:
         offset += limit
     return jobs
 
-def _job_detail_url(cxs_base: str, external_path: str) -> Optional[str]:
+def _detail_url(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[str]:
+    # external_path e.g. "/Careers/job/Location/Title_JR-0000"
     if not external_path or "/job/" not in external_path:
         return None
     slug = external_path.split("/job/", 1)[1].lstrip("/")
     if not slug:
         return None
-    return f"{cxs_base}/job/{slug}"
+    host = f"{tenant}.{wd_host}.myworkdayjobs.com"
+    return f"https://{host}/wday/cxs/{tenant}/{site}/job/{slug}"
 
-def fetch_job_detail(cxs_base: str, origin: str, site: str, external_path: str) -> Optional[Dict[str, Any]]:
-    url = _job_detail_url(cxs_base, external_path)
+def fetch_job_detail(tenant: str, site: str, wd_host: str, external_path: str) -> Optional[Dict[str, Any]]:
+    url = _detail_url(tenant, site, wd_host, external_path)
     if not url:
         return None
-    referer = f"{origin}/{site}"
-    headers = _browser_headers(origin=origin, referer=referer)
     try:
-        r = requests.get(url, headers=headers, timeout=60)
+        r = requests.get(url, headers=_headers(False), timeout=60)
         if r.status_code != 200:
             return None
         return r.json()
@@ -123,16 +106,15 @@ def normalize_job(job: Dict[str, Any], company_name: str, tenant: str, site: str
     title = job.get("title") or job.get("externalTitle") or job.get("postedTitle") or ""
 
     external_path = job.get("externalPath") or ""
+    host = f"{tenant}.{wd_host}.myworkdayjobs.com"
     if isinstance(external_path, str) and external_path.startswith("/"):
-        evidence_url = f"https://{tenant}.{wd_host}.myworkdayjobs.com{external_path}"
+        evidence_url = f"https://{host}{external_path}"
     else:
-        evidence_url = f"https://{tenant}.{wd_host}.myworkdayjobs.com/{site}"
+        evidence_url = f"https://{host}/{site}"
 
     posted_on = job.get("postedOn") or job.get("postedDate")
 
-    cxs_base, origin = discover_cxs_base(tenant=tenant, site=site, wd_host=wd_host)
-    detail = fetch_job_detail(cxs_base=cxs_base, origin=origin, site=site, external_path=external_path) if external_path else None
-
+    detail = fetch_job_detail(tenant, site, wd_host, external_path) if external_path else None
     description = ""
     if isinstance(detail, dict):
         jpi = detail.get("jobPostingInfo") or {}
