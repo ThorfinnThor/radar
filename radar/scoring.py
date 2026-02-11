@@ -194,13 +194,13 @@ def compute_scores(
         best_trial_urg = 0
 
     job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
-spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
-keywords = (config.get("jobs", {}) or {}).get("job_keywords", [])
+    spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
+    keywords = (config.get("jobs", {}) or {}).get("job_keywords", [])
 
-jm = job_match_stats(job_signals, keywords, window_days=job_window, max_examples=3)
-relevant_recent_jobs = int(jm.get("recent_job_hits") or 0)
+    jm = job_match_stats(job_signals, keywords, window_days=job_window, max_examples=3)
+    relevant_recent_jobs = int(jm.get("recent_job_hits") or 0)
 
-job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
+    job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
 
 
     if trials and best_trial_urg >= job_urg:
