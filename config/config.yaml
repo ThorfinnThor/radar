@@ -33,6 +33,8 @@ ctg:
     - blinatumomab
 
 jobs:
+  # If present, ingest job postings from this JSON file (created by you).
+  public_jobs_json_path: public/jobs.json
   # Job relevance is computed from title + (when available) full description text.
   match_on_description: true
   job_keywords:

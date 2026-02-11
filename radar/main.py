@@ -256,11 +256,82 @@ def run_weekly(cfg: AppConfig) -> None:
     conn = db.connect()
     db.migrate(conn)
 
-    ingested = ingest_jobs(conn, cfg)
+    aliases = cfg.aliases()
+    companies = cfg.companies_list()
+
+    ingested = 0
+
+    # 1) Ingest public jobs JSON if present (recommended)
+    public_jobs_path = (cfg.config.get("jobs", {}) or {}).get("public_jobs_json_path", "public/jobs.json")
+    if public_jobs_path and os.path.exists(public_jobs_path):
+        try:
+            from radar.collectors import jobs_json as jobs_json_collector
+            sigs = jobs_json_collector.ingest_jobs_json(public_jobs_path)
+            for sig in sigs:
+                acct = normalize_account_name(sig.account_name, aliases)
+                account_id = db.upsert_account(conn, acct, modality_tags=["car-t", "t-cell engager"])
+                db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                ingested += 1
+            print(f"[weekly] ingested job postings from {public_jobs_path}: {len(sigs)}")
+        except Exception as e:
+            print(f"[weekly] WARN: failed ingest public jobs JSON {public_jobs_path}: {e}")
+    else:
+        print(f"[weekly] public jobs JSON not found at {public_jobs_path} (skip)")
+
+    # 2) Optional: also ingest from ATS sources defined in companies.yaml
+    for c in companies:
+        name = c.get("name")
+        if not name:
+            continue
+        account_name = normalize_account_name(name, aliases)
+        ats = (c.get("ats") or "").lower().strip()
+
+        if not ats:
+            continue
+
+        account_id = db.upsert_account(conn, account_name, modality_tags=["car-t", "t-cell engager"])
+
+        try:
+            if ats == "greenhouse":
+                token = c.get("greenhouse_board_token")
+                if not token:
+                    continue
+                jobs = greenhouse.fetch_jobs(token)
+                for j in jobs:
+                    sig = greenhouse.normalize_job(j, account_name, board_token=token)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
+
+            elif ats == "lever":
+                token = c.get("lever_account")
+                if not token:
+                    continue
+                jobs = lever.fetch_jobs(token)
+                for j in jobs:
+                    sig = lever.normalize_job(j, account_name)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
+
+            elif ats == "workday":
+                tenant = c.get("tenant")
+                wd_host = c.get("wd_host")
+                site = c.get("site")
+                if not tenant or not wd_host or not site:
+                    continue
+                jobs = workday.fetch_jobs(tenant=tenant, site=site, wd_host=wd_host, limit=50, max_pages=20)
+                for j in jobs:
+                    sig = workday.normalize_job(j, account_name, tenant=tenant, site=site, wd_host=wd_host)
+                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                    ingested += 1
+
+        except Exception as e:
+            print(f"[weekly] WARN: failed jobs ingest for {account_name}: {e}")
+
     print(f"[weekly] ingested job postings (all): {ingested}")
 
     update_scores_and_export(conn, cfg)
     conn.close()
+
 
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
