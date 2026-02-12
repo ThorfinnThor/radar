@@ -1,18 +1,6 @@
 companies:
   - name: "AstraZeneca"
-    ats: "workday"
-    tenant: "astrazeneca"
-    wd_host: "wd3"
-    site: "Careers"
 
   - name: "GSK"
-    ats: "workday"
-    tenant: "gsk"
-    wd_host: "wd5"
-    site: "GSKCareers"
 
   - name: "Pfizer"
-    ats: "workday"
-    tenant: "pfizer"
-    wd_host: "wd1"
-    site: "PfizerCareers"

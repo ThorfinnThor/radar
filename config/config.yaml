@@ -32,32 +32,6 @@ ctg:
     - odronextamab
     - blinatumomab
 
-jobs:
-  # If present, ingest job postings from this JSON file (created by you).
-  public_jobs_json_path: public/jobs.json
-  # Job relevance is computed from title + (when available) full description text.
-  match_on_description: true
-  job_keywords:
-    - "biomarker"
-    - "translational"
-    - "immune monitoring"
-    - "flow cytometry"
-    - "spectral cytometry"
-    - "cytometry"
-    - "potency"
-    - "bioassay"
-    - "analytical development"
-    - "comparability"
-    - "systems immunology"
-    - "single-cell"
-    - "cell therapy"
-    - "immunotherapy"
-    - "car-t"
-    - "cd3"
-    - "bispecific"
-  recent_window_days: 45
-  spike_threshold: 2
-  run_on_daily: true
 
 normalization:
   aliases: {}
@@ -82,3 +56,33 @@ exports:
   out_json: "exports/latest_top40.json"
   watchlist_csv: "exports/latest_watchlist.csv"
   watchlist_json: "exports/latest_watchlist.json"
+
+sec:
+  # IMPORTANT: SEC requires a descriptive User-Agent containing contact info.
+  # Set env var SEC_USER_AGENT, e.g. "trigger-radar (you@company.com)"
+  user_agent_env: "SEC_USER_AGENT"
+  keywords:
+    - "CAR-T"
+    - "chimeric antigen receptor"
+    - "T cell engager"
+    - "CD3"
+    - "bispecific"
+    - "TCR-T"
+    - "cell therapy"
+  recent_window_days: 90
+  max_filings_per_company: 5
+  min_keyword_hits: 1
+  request_delay_s: 0.25
+
+patents:
+  keywords:
+    - "CAR-T"
+    - "chimeric antigen receptor"
+    - "T cell engager"
+    - "CD3"
+    - "bispecific"
+    - "TCR-T"
+    - "cell therapy"
+  recent_window_days: 365
+  max_patents_per_company: 10
+  request_delay_s: 0.25

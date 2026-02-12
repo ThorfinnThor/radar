@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 import csv, json
 from pathlib import Path
 from typing import Any, Dict, List
@@ -9,103 +10,77 @@ def summarize_triggers(signals: List[Dict[str, Any]], max_items: int = 3) -> str
     for s in signals[:max_items]:
         st = s.get("signal_type")
         title = (s.get("title") or "").strip()
-        parts.append(f"{st}: {title}" if title else f"{st}")
+        if title:
+            parts.append(f"{st}: {title[:110]}")
+        else:
+            parts.append(f"{st}")
     return " | ".join(parts)
 
-def export_ranked(rows: List[Dict[str, Any]], out_csv: str, out_json: str, top_n: int = 40) -> None:
-    Path(out_csv).parent.mkdir(parents=True, exist_ok=True)
-    Path(out_json).parent.mkdir(parents=True, exist_ok=True)
-    top = rows[:top_n]
-
-    with open(out_csv, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=[
-            "rank","company","total_score","fit_score","urgency_score","access_score",
-            "trial_count","best_fit_trial_title","best_fit_trial_status","best_fit_trial_phases","best_fit_trial_last_update",
-            "best_urgency_trial_title","best_urgency_trial_status","best_urgency_trial_phases","best_urgency_trial_last_update",
-            "recent_job_hits","recent_job_total","job_hit_examples","fit_reason","urgency_reason","urgency_source","access_reason","bonus_recent_trial","bonus_multi_trial",
-            "trigger_summary","evidence_links","target_roles","job_hit_keywords","job_hit_titles"
-        ])
-        w.writeheader()
-        for i, r in enumerate(top, start=1):
-            w.writerow({
-                "rank": i,
-                "company": r["company"],
-                "total_score": f"{r['total_score']:.2f}",
-                "fit_score": r["fit_score"],
-                "urgency_score": r["urgency_score"],
-                "access_score": r["access_score"],
-                "trial_count": r.get("trial_count"),
-                "best_fit_trial_title": r.get("best_fit_trial_title"),
-                "best_fit_trial_status": r.get("best_fit_trial_status"),
-                "best_fit_trial_phases": json.dumps(r.get("best_fit_trial_phases")) if r.get("best_fit_trial_phases") is not None else None,
-                "best_fit_trial_last_update": r.get("best_fit_trial_last_update"),
-                "best_urgency_trial_title": r.get("best_urgency_trial_title"),
-                "best_urgency_trial_status": r.get("best_urgency_trial_status"),
-                "best_urgency_trial_phases": json.dumps(r.get("best_urgency_trial_phases")) if r.get("best_urgency_trial_phases") is not None else None,
-                "best_urgency_trial_last_update": r.get("best_urgency_trial_last_update"),
-                "recent_job_hits": r.get("recent_job_hits"),
-                "recent_job_total": r.get("recent_job_total"),
-                "job_hit_examples": json.dumps(r.get("job_hit_examples")) if r.get("job_hit_examples") is not None else None,
-                "fit_reason": r.get("fit_reason"),
-                "urgency_reason": r.get("urgency_reason"),
-                "urgency_source": r.get("urgency_source"),
-                "access_reason": r.get("access_reason"),
-                "bonus_recent_trial": r.get("bonus_recent_trial"),
-                "bonus_multi_trial": r.get("bonus_multi_trial"),
-                "trigger_summary": r["trigger_summary"],
-                "evidence_links": " ; ".join(r["evidence_links"]),
-                "target_roles": " | ".join(r.get("target_roles") or DEFAULT_ROLE_TITLES),
-                "job_hit_keywords": json.dumps(r.get("job_hit_keywords")) if r.get("job_hit_keywords") is not None else None,
-                "job_hit_titles": json.dumps(r.get("job_hit_titles")) if r.get("job_hit_titles") is not None else None,
-            })
-
-    with open(out_json, "w", encoding="utf-8") as f:
-        json.dump({"generated_rows": top, "target_roles": DEFAULT_ROLE_TITLES}, f, indent=2)
-
-def export_watchlist(rows: List[Dict[str, Any]], out_csv: str, out_json: str) -> None:
-    Path(out_csv).parent.mkdir(parents=True, exist_ok=True)
-    Path(out_json).parent.mkdir(parents=True, exist_ok=True)
-
-    with open(out_csv, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=[
-            "company","total_score","fit_score","urgency_score","access_score",
-            "trial_count","best_fit_trial_title","best_fit_trial_status","best_fit_trial_phases","best_fit_trial_last_update",
-            "best_urgency_trial_title","best_urgency_trial_status","best_urgency_trial_phases","best_urgency_trial_last_update",
-            "recent_job_hits","recent_job_total","job_hit_examples","fit_reason","urgency_reason","urgency_source","access_reason","bonus_recent_trial","bonus_multi_trial",
-            "trigger_summary","evidence_links","target_roles","job_hit_keywords","job_hit_titles"
-        ])
+def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> None:
+    out_csv.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "rank","account_name","fit","urgency","total","fit_reason","urgency_reason","urgency_source",
+        "trigger_summary",
+        "best_fit_trial_title","best_fit_trial_status","best_fit_trial_phase","best_fit_trial_url",
+        "best_urgency_trial_title","best_urgency_trial_status","best_urgency_trial_phase","best_urgency_trial_url",
+        "sec_matched_total","patent_matched_total",
+        "job_target_roles",
+    ]
+    with out_csv.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         for r in rows:
             w.writerow({
-                "company": r["company"],
-                "total_score": f"{r['total_score']:.2f}",
-                "fit_score": r["fit_score"],
-                "urgency_score": r["urgency_score"],
-                "access_score": r["access_score"],
-                "trial_count": r.get("trial_count"),
-                "best_fit_trial_title": r.get("best_fit_trial_title"),
-                "best_fit_trial_status": r.get("best_fit_trial_status"),
-                "best_fit_trial_phases": json.dumps(r.get("best_fit_trial_phases")) if r.get("best_fit_trial_phases") is not None else None,
-                "best_fit_trial_last_update": r.get("best_fit_trial_last_update"),
-                "best_urgency_trial_title": r.get("best_urgency_trial_title"),
-                "best_urgency_trial_status": r.get("best_urgency_trial_status"),
-                "best_urgency_trial_phases": json.dumps(r.get("best_urgency_trial_phases")) if r.get("best_urgency_trial_phases") is not None else None,
-                "best_urgency_trial_last_update": r.get("best_urgency_trial_last_update"),
-                "recent_job_hits": r.get("recent_job_hits"),
-                "recent_job_total": r.get("recent_job_total"),
-                "job_hit_examples": json.dumps(r.get("job_hit_examples")) if r.get("job_hit_examples") is not None else None,
+                "rank": r.get("rank"),
+                "account_name": r.get("account_name"),
+                "fit": r.get("fit"),
+                "urgency": r.get("urgency"),
+                "total": r.get("total"),
                 "fit_reason": r.get("fit_reason"),
                 "urgency_reason": r.get("urgency_reason"),
                 "urgency_source": r.get("urgency_source"),
-                "access_reason": r.get("access_reason"),
-                "bonus_recent_trial": r.get("bonus_recent_trial"),
-                "bonus_multi_trial": r.get("bonus_multi_trial"),
-                "trigger_summary": r["trigger_summary"],
-                "evidence_links": " ; ".join(r["evidence_links"]),
-                "target_roles": " | ".join(r.get("target_roles") or DEFAULT_ROLE_TITLES),
-                "job_hit_keywords": json.dumps(r.get("job_hit_keywords")) if r.get("job_hit_keywords") is not None else None,
-                "job_hit_titles": json.dumps(r.get("job_hit_titles")) if r.get("job_hit_titles") is not None else None,
+                "trigger_summary": r.get("trigger_summary"),
+                "best_fit_trial_title": r.get("best_fit_trial_title"),
+                "best_fit_trial_status": r.get("best_fit_trial_status"),
+                "best_fit_trial_phase": r.get("best_fit_trial_phase"),
+                "best_fit_trial_url": r.get("best_fit_trial_url"),
+                "best_urgency_trial_title": r.get("best_urgency_trial_title"),
+                "best_urgency_trial_status": r.get("best_urgency_trial_status"),
+                "best_urgency_trial_phase": r.get("best_urgency_trial_phase"),
+                "best_urgency_trial_url": r.get("best_urgency_trial_url"),
+                "sec_matched_total": (r.get("sec") or {}).get("matched_total"),
+                "patent_matched_total": (r.get("patents") or {}).get("matched_total"),
+                "job_target_roles": json.dumps(r.get("target_roles") or DEFAULT_ROLE_TITLES),
             })
 
-    with open(out_json, "w", encoding="utf-8") as f:
-        json.dump({"watchlist_rows": rows, "target_roles": DEFAULT_ROLE_TITLES}, f, indent=2)
+    out_json.write_text(json.dumps(rows, indent=2), encoding="utf-8")
+
+def export_watchlist(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> None:
+    out_csv.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "account_name","fit","urgency","total","fit_reason","urgency_reason","urgency_source",
+        "trigger_summary",
+        "sec_matched_total","sec_examples",
+        "patent_matched_total","patent_examples",
+        "job_target_roles",
+    ]
+    with out_csv.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames)
+        w.writeheader()
+        for r in rows:
+            w.writerow({
+                "account_name": r.get("account_name"),
+                "fit": r.get("fit"),
+                "urgency": r.get("urgency"),
+                "total": r.get("total"),
+                "fit_reason": r.get("fit_reason"),
+                "urgency_reason": r.get("urgency_reason"),
+                "urgency_source": r.get("urgency_source"),
+                "trigger_summary": r.get("trigger_summary"),
+                "sec_matched_total": (r.get("sec") or {}).get("matched_total"),
+                "sec_examples": json.dumps((r.get("sec") or {}).get("examples")),
+                "patent_matched_total": (r.get("patents") or {}).get("matched_total"),
+                "patent_examples": json.dumps((r.get("patents") or {}).get("examples")),
+                "job_target_roles": json.dumps(r.get("target_roles") or DEFAULT_ROLE_TITLES),
+            })
+    out_json.write_text(json.dumps(rows, indent=2), encoding="utf-8")

@@ -6,7 +6,7 @@ from typing import Any, Dict, List
 from radar.config import AppConfig
 from radar import db
 from radar.collectors import clinicaltrials as ctg
-from radar.collectors import greenhouse, lever, workday
+from radar.collectors import sec_edgar, patentsview
 from radar.scoring import compute_scores
 from radar.export import export_ranked, export_watchlist, summarize_triggers
 from radar.role_recommender import recommend_roles
@@ -16,7 +16,6 @@ def normalize_account_name(name: str, aliases: Dict[str, str]) -> str:
     return aliases.get(n, n) if n else "UNKNOWN"
 
 
-def _job_hit_details(job_sigs: List[Dict[str, Any]], keywords: List[str], window_days: int = 45, max_titles: int = 3) -> Dict[str, Any]:
     # Best-effort: job signals may have different title fields; we use signals table 'title'
     from radar.scoring import within_days
     recent = [j for j in job_sigs if within_days(j.get("published_at"), window_days)]
@@ -29,7 +28,6 @@ def _job_hit_details(job_sigs: List[Dict[str, Any]], keywords: List[str], window
                 matched.add(k)
         if j.get("title") and len(titles) < max_titles:
             titles.append(j.get("title"))
-    return {"recent_job_hits": len(recent), "job_hit_titles": titles, "job_hit_keywords": sorted(matched)}
 def run_daily(cfg: AppConfig) -> None:
     conn = db.connect()
     db.migrate(conn)
@@ -260,75 +258,55 @@ def run_weekly(cfg: AppConfig) -> None:
     aliases = cfg.aliases()
     companies = cfg.companies_list()
 
+    # SEC config
+    sec_cfg_raw = cfg.config.get("sec", {}) or {}
+    ua_env = sec_cfg_raw.get("user_agent_env", "SEC_USER_AGENT")
+    user_agent = os.environ.get(ua_env) or "trigger-radar (set SEC_USER_AGENT with contact email)"
+    sec_cfg = sec_edgar.SecConfig(
+        user_agent=user_agent,
+        keywords=sec_cfg_raw.get("keywords") or sec_edgar.DEFAULT_KEYWORDS,
+        recent_window_days=int(sec_cfg_raw.get("recent_window_days", 90)),
+        max_filings_per_company=int(sec_cfg_raw.get("max_filings_per_company", 5)),
+        min_keyword_hits=int(sec_cfg_raw.get("min_keyword_hits", 1)),
+        request_delay_s=float(sec_cfg_raw.get("request_delay_s", 0.25)),
+    )
+
+    # Patents config
+    pat_raw = cfg.config.get("patents", {}) or {}
+    pat_cfg = patentsview.PatentsConfig(
+        keywords=pat_raw.get("keywords") or patentsview.DEFAULT_KEYWORDS,
+        recent_window_days=int(pat_raw.get("recent_window_days", 365)),
+        max_patents_per_company=int(pat_raw.get("max_patents_per_company", 10)),
+        request_delay_s=float(pat_raw.get("request_delay_s", 0.25)),
+    )
+
     ingested = 0
-
-    # 1) Ingest public jobs JSON if present (recommended)
-    public_jobs_path = (cfg.config.get("jobs", {}) or {}).get("public_jobs_json_path", "public/jobs.json")
-    if public_jobs_path and os.path.exists(public_jobs_path):
-        try:
-            from radar.collectors import jobs_json as jobs_json_collector
-            sigs = jobs_json_collector.ingest_jobs_json(public_jobs_path)
-            for sig in sigs:
-                acct = normalize_account_name(sig.account_name, aliases)
-                account_id = db.upsert_account(conn, acct, modality_tags=["car-t", "t-cell engager"])
-                db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                ingested += 1
-            print(f"[weekly] ingested job postings from {public_jobs_path}: {len(sigs)}")
-        except Exception as e:
-            print(f"[weekly] WARN: failed ingest public jobs JSON {public_jobs_path}: {e}")
-    else:
-        print(f"[weekly] public jobs JSON not found at {public_jobs_path} (skip)")
-
-    # 2) Optional: also ingest from ATS sources defined in companies.yaml
     for c in companies:
         name = c.get("name")
         if not name:
             continue
         account_name = normalize_account_name(name, aliases)
-        ats = (c.get("ats") or "").lower().strip()
-
-        if not ats:
-            continue
-
         account_id = db.upsert_account(conn, account_name, modality_tags=["car-t", "t-cell engager"])
 
+        # SEC filings
         try:
-            if ats == "greenhouse":
-                token = c.get("greenhouse_board_token")
-                if not token:
-                    continue
-                jobs = greenhouse.fetch_jobs(token)
-                for j in jobs:
-                    sig = greenhouse.normalize_job(j, account_name, board_token=token)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                    ingested += 1
-
-            elif ats == "lever":
-                token = c.get("lever_account")
-                if not token:
-                    continue
-                jobs = lever.fetch_jobs(token)
-                for j in jobs:
-                    sig = lever.normalize_job(j, account_name)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                    ingested += 1
-
-            elif ats == "workday":
-                tenant = c.get("tenant")
-                wd_host = c.get("wd_host")
-                site = c.get("site")
-                if not tenant or not wd_host or not site:
-                    continue
-                jobs = workday.fetch_jobs(tenant=tenant, site=site, wd_host=wd_host, limit=50, max_pages=20)
-                for j in jobs:
-                    sig = workday.normalize_job(j, account_name, tenant=tenant, site=site, wd_host=wd_host)
-                    db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
-                    ingested += 1
-
+            filings = sec_edgar.ingest_sec_filings(account_name, sec_cfg)
+            for sig in filings:
+                db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                ingested += 1
         except Exception as e:
-            print(f"[weekly] WARN: failed jobs ingest for {account_name}: {e}")
+            print(f"[weekly] WARN: SEC ingest failed for {account_name}: {e}")
 
-    print(f"[weekly] ingested job postings (all): {ingested}")
+        # Patents
+        try:
+            pats = patentsview.ingest_patents(account_name, pat_cfg)
+            for sig in pats:
+                db.insert_signal(conn, account_id, sig.signal_type, sig.source, sig.title, sig.evidence_url, sig.published_at, sig.payload)
+                ingested += 1
+        except Exception as e:
+            print(f"[weekly] WARN: patents ingest failed for {account_name}: {e}")
+
+    print(f"[weekly] ingested sec+patent signals: {ingested}")
 
     update_scores_and_export(conn, cfg)
     conn.close()
@@ -337,7 +315,6 @@ def run_weekly(cfg: AppConfig) -> None:
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
     cur = conn.cursor()
-    keywords = [k.lower() for k in cfg.job_keywords()]
     job_window = int(cfg.config.get('jobs', {}).get('recent_window_days', 45))
 
     # Ensure watchlist companies exist as accounts even if they have zero signals yet.
@@ -382,23 +359,6 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             "evidence_links": evidence,
             "target_roles": roles,
             "trial_count": scores.get("details", {}).get("trial_count"),
-            "recent_job_hits": scores.get("details", {}).get("jobs", {}).get("relevant_recent_jobs"),
-            "best_fit_trial_title": (scores.get("details", {}).get("best_fit_trial") or {}).get("brief_title"),
-            "best_fit_trial_status": (scores.get("details", {}).get("best_fit_trial") or {}).get("overall_status"),
-            "best_fit_trial_phases": (scores.get("details", {}).get("best_fit_trial") or {}).get("phases"),
-            "best_fit_trial_last_update": (scores.get("details", {}).get("best_fit_trial") or {}).get("last_update_posted"),
-            "best_urgency_trial_title": (scores.get("details", {}).get("best_urgency_trial") or {}).get("brief_title"),
-            "best_urgency_trial_status": (scores.get("details", {}).get("best_urgency_trial") or {}).get("overall_status"),
-            "best_urgency_trial_phases": (scores.get("details", {}).get("best_urgency_trial") or {}).get("phases"),
-            "best_urgency_trial_last_update": (scores.get("details", {}).get("best_urgency_trial") or {}).get("last_update_posted"),
-            "fit_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("fit_reason"),
-            "urgency_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("urgency_reason"),
-            "urgency_source": (scores.get("details", {}).get("reasons", {}) or {}).get("urgency_source"),
-            "access_reason": (scores.get("details", {}).get("reasons", {}) or {}).get("access_reason"),
-            "bonus_recent_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("recent_trial_bonus"),
-            "bonus_multi_trial": (scores.get("details", {}).get("bonuses", {}) or {}).get("multi_trial_bonus"),
-            "job_hit_titles": scores.get("job_hit_titles"),
-            "job_hit_keywords": scores.get("job_hit_keywords"),
             "score_details": scores.get("details"),
             "target_roles": roles,
         }

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from typing import Any, Dict, List, Tuple
 import datetime as dt
 from dateutil import parser as dateparser
@@ -16,62 +17,68 @@ def parse_date_maybe(s: str | None) -> dt.datetime | None:
     except Exception:
         return None
 
-def within_days(published_at: str | None, window_days: int) -> bool:
-    d = parse_date_maybe(published_at)
+def within_days(date_str: str | None, window_days: int) -> bool:
+    d = parse_date_maybe(date_str)
     if not d:
         return False
     now = dt.datetime.now(dt.timezone.utc)
-    return (now - d) <= dt.timedelta(days=window_days)
-
-
-def _normalize_text(s: str | None) -> str:
-    t = (s or "").lower()
-    for ch in ["\u2010","\u2011","\u2012","\u2013","\u2014","\u2212"]:
-        t = t.replace(ch, "-")
-    t = t.replace("-", " ")
-    t = " ".join(t.split())
-    return t
+    return (now - d).days <= window_days
 
 def _match_keywords(text: str, keywords: List[str]) -> List[str]:
-    text_n = _normalize_text(text)
+    t = (text or "").lower()
     hits = []
     for k in keywords:
-        k_n = _normalize_text(k)
-        if k_n and k_n in text_n:
+        kk = (k or "").lower()
+        if kk and kk in t:
             hits.append(k)
     return hits
 
-def _job_blob_from_signal(signal: Dict[str, Any]) -> str:
-    blob = ""
-    pj = signal.get("payload_json")
-    if pj:
-        try:
-            import json as _json
-            pobj = _json.loads(pj)
-            blob = pobj.get("text_blob") or ""
-        except Exception:
-            blob = ""
-    if not blob:
-        blob = signal.get("title") or ""
-    return blob
+def fit_from_trial_title(title: str | None, tcell_engager_molecules: List[str]) -> Tuple[int, str]:
+    if not title:
+        return 1, "missing title"
+    t = title.lower()
+    if "car-t" in t or "car t" in t or "chimeric antigen receptor" in t:
+        return 5, "CAR-T trial"
+    if "t-cell engager" in t or "t cell engager" in t or "cd3" in t or "bispecific" in t:
+        return 4, "T cell engager / CD3 / bispecific trial"
+    for m in tcell_engager_molecules:
+        if m.lower() in t:
+            return 4, f"molecule match: {m}"
+    if "cell therapy" in t or "tcr" in t:
+        return 3, "cell therapy / TCR trial"
+    return 2, "immuno-oncology trial"
 
-def job_match_stats(
-    job_signals: List[Dict[str, Any]],
-    keywords: List[str],
-    window_days: int = 45,
-    max_examples: int = 3,
-) -> Dict[str, Any]:
-    """Compute auditable job matching stats for a company."""
+def trial_urgency(status: str | None, phases: List[str] | None, high_urgency_phases: List[str]) -> Tuple[int, str]:
+    st = (status or "").upper().strip()
+    ph = [p.upper().strip() for p in (phases or []) if p]
+    if st in HIGH_URGENCY_STATUSES:
+        if any(p in high_urgency_phases for p in ph):
+            return 3, f"{st} in high urgency phase ({','.join(ph)})"
+        return 2, f"{st}"
+    if st:
+        return 1, st
+    return 0, "unknown status"
+
+def other_signal_stats(signals: List[Dict[str, Any]], keywords: List[str], window_days: int, max_examples: int = 3) -> Dict[str, Any]:
     recent_total = 0
     matched_total = 0
     matched_keywords: set[str] = set()
     examples: List[Dict[str, Any]] = []
 
-    for j in job_signals:
-        if not within_days(j.get("published_at"), window_days):
+    for s in signals:
+        if not within_days(s.get("published_at"), window_days):
             continue
         recent_total += 1
-        blob = _job_blob_from_signal(j)
+        blob = ""
+        pj = s.get("payload_json")
+        if pj:
+            try:
+                import json as _json
+                blob = (_json.loads(pj) or {}).get("text_blob") or ""
+            except Exception:
+                blob = ""
+        if not blob:
+            blob = s.get("title") or ""
         hits = _match_keywords(blob, keywords)
         if not hits:
             continue
@@ -80,83 +87,33 @@ def job_match_stats(
             matched_keywords.add(h)
         if len(examples) < max_examples:
             examples.append({
-                "title": j.get("title"),
-                "evidence_url": j.get("evidence_url"),
-                "published_at": j.get("published_at"),
+                "signal_type": s.get("signal_type"),
+                "title": s.get("title"),
+                "evidence_url": s.get("evidence_url"),
+                "published_at": s.get("published_at"),
                 "matched_keywords": hits,
             })
 
     return {
-        "recent_job_total": recent_total,
-        "recent_job_hits": matched_total,  # hits == matched jobs
-        "job_hit_keywords": sorted(matched_keywords),
-        "job_hit_titles": [e.get("title") for e in examples if e.get("title")],
-        "job_hit_examples": examples,
+        "recent_total": recent_total,
+        "matched_total": matched_total,
+        "matched_keywords": sorted(matched_keywords),
+        "examples": examples,
     }
-def _norm(s: str | None) -> str:
-    t = (s or "").lower()
-    # Normalize unicode hyphens to ASCII hyphen, then also create a space-normalized variant for matching
-    for ch in ["‐", "‑", "‒", "–", "—", "−"]:
-        t = t.replace(ch, "-")
-    return t
 
-def fit_from_trial_title(title: str | None, engager_molecules: list[str] | None = None) -> Tuple[int, str]:
-    t = _norm(title)
-    t_space = t.replace("-", " ")
-
-    if any(term in t_space for term in ["car t", "tcr t", "chimeric antigen receptor"]):
-        return 3, "trial title contains CAR-T/TCR-T/chimeric antigen receptor"
-    if "car-t" in t or "tcr-t" in t:
-        return 3, "trial title contains CAR-T/TCR-T"
-
-    # T-cell engagers: capture common phrasing variants ("t cell-engaging antibody", "t-cell engaging", etc.)
-    # Known T-cell engager molecules (useful when titles omit "bispecific")
-    mols = [m.lower() for m in (engager_molecules or [])]
-    if mols and any(m in t_space for m in mols):
-        return 3, "trial title contains known T-cell engager molecule"
-
-    if any(phrase in t_space for phrase in ["t cell engager", "t cell engaging", "t cell redirecting"]):
-        return 3, "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting"
-    if "t-cell engager" in t or "t-cell-engaging" in t or "t-cell engaging" in t:
-        return 3, "trial title indicates T-cell engager / T-cell engaging"
-    if "t cell-engaging" in t or "t cell engaging" in t:
-        return 3, "trial title indicates T-cell engaging antibody"
-
-    if "bispecific" in t and "cd3" in t:
-        return 3, "trial title contains bispecific + CD3"
-    if "cd3" in t:
-        return 2, "trial title contains CD3"
-    if "bispecific" in t:
-        return 2, "trial title contains bispecific"
-    return 1, "no strong wedge keywords in trial titles"
-
-def trial_urgency(overall_status: str | None, phases: list[str] | None, high_urgency_phases: list[str]) -> Tuple[int, str]:
-    status = (overall_status or "").upper()
-    phases_u = {p.upper() for p in (phases or [])}
-    high_u = {p.upper() for p in (high_urgency_phases or [])}
-    if status in HIGH_URGENCY_STATUSES and (phases_u & high_u):
-        return 3, f"trial status {status} and phase in {sorted(phases_u & high_u)}"
-    if status in HIGH_URGENCY_STATUSES:
-        return 2, f"trial status {status}"
-    return 1, f"trial status {status or 'UNKNOWN'}"
-
-def job_urgency(relevant_recent_jobs: int, spike_threshold: int) -> Tuple[int, str]:
-    if relevant_recent_jobs >= max(spike_threshold + 1, 3):
-        return 3, f"{relevant_recent_jobs} relevant jobs in window (>=3)"
-    if relevant_recent_jobs >= spike_threshold:
-        return 2, f"{relevant_recent_jobs} relevant jobs in window (>=threshold {spike_threshold})"
-    if relevant_recent_jobs == 1:
-        return 1, "1 relevant job in window"
-    return 0, "no relevant jobs in window"
-
-def access_score(ats_known: bool, ats_known_points: int, default_points: int) -> Tuple[int, str]:
-    if ats_known:
-        return ats_known_points, "company on watchlist / ATS known"
-    return default_points, "not on watchlist"
+def other_urgency(matched_total: int) -> Tuple[int, str]:
+    if matched_total >= 3:
+        return 2, f"{matched_total} relevant signals in window (>=3)"
+    if matched_total == 2:
+        return 2, "2 relevant signals in window"
+    if matched_total == 1:
+        return 1, "1 relevant signal in window"
+    return 0, "no relevant signals in window"
 
 def compute_scores(
     trials: List[Dict[str, Any]],
-    job_signals: List[Dict[str, Any]],
+    sec_signals: List[Dict[str, Any]],
+    patent_signals: List[Dict[str, Any]],
     config: Dict[str, Any],
     company_in_watchlist: bool,
 ) -> Dict[str, Any]:
@@ -171,13 +128,21 @@ def compute_scores(
             best_fit = s
             fit_reason = reason
             best_fit_trial = t
-        # If all trials are score=1, still keep the first as "best" for debugging
         if best_fit_trial is None:
             best_fit_trial = t
             best_fit = s
             fit_reason = reason
     if not trials:
         best_fit = 1
+
+    # If no trials, let SEC/patents contribute to fit modestly (so non-trial companies can rank)
+    other_kw = (config.get("sec", {}) or {}).get("keywords", []) or (config.get("patents", {}) or {}).get("keywords", [])
+    sec_stat = other_signal_stats(sec_signals, other_kw, window_days=int((config.get("sec", {}) or {}).get("recent_window_days", 90)))
+    pat_stat = other_signal_stats(patent_signals, (config.get("patents", {}) or {}).get("keywords", []), window_days=int((config.get("patents", {}) or {}).get("recent_window_days", 365)))
+    other_matched = int(sec_stat["matched_total"]) + int(pat_stat["matched_total"])
+    if not trials and other_matched > 0:
+        best_fit = max(best_fit, 2)
+        fit_reason = "non-trial modality signals (SEC/patents)"
 
     # ----- Urgency -----
     high_urgency_phases = config.get("ctg", {}).get("high_urgency_phases", [])
@@ -190,94 +155,37 @@ def compute_scores(
             best_trial_urg = s
             trial_urg_reason = reason
             best_urg_trial = t
-    if not trials:
+    if best_trial_urg < 0:
         best_trial_urg = 0
+        trial_urg_reason = "no trials"
 
-    job_window = int(config.get("jobs", {}).get("recent_window_days", 45))
-    spike_threshold = int(config.get("jobs", {}).get("spike_threshold", 2))
-    keywords = (config.get("jobs", {}) or {}).get("job_keywords", [])
+    other_urg_score, other_urg_reason = other_urgency(other_matched)
 
-    jm = job_match_stats(job_signals, keywords, window_days=job_window, max_examples=3)
-    relevant_recent_jobs = int(jm.get("recent_job_hits") or 0)
-
-    job_urg, job_urg_reason = job_urgency(relevant_recent_jobs, spike_threshold)
-
-
-    if trials and best_trial_urg >= job_urg:
+    if trials and best_trial_urg >= other_urg_score:
         urgency = float(best_trial_urg)
         urgency_reason = trial_urg_reason
-        urgency_source = "trial"
-    elif job_urg > 0:
-        urgency = float(job_urg)
-        urgency_reason = job_urg_reason
-        urgency_source = "jobs"
+        urgency_source = "clinicaltrials"
+    elif other_urg_score > 0:
+        urgency = float(other_urg_score)
+        urgency_reason = other_urg_reason
+        urgency_source = "sec/patents"
     else:
         urgency = 0.0
-        urgency_reason = "no trials and no relevant jobs"
+        urgency_reason = "no trials and no relevant sec/patent signals"
         urgency_source = "none"
 
-    # ----- Access -----
-    acc_cfg = config.get("scoring", {}).get("access", {})
-    access_points, access_reason = access_score(
-        company_in_watchlist,
-        int(acc_cfg.get("ats_known_points", 2)),
-        int(acc_cfg.get("default_points", 1)),
-    )
-    access = float(access_points)
-
     # ----- Total -----
-    w = config.get("scoring", {}).get("weights", {})
-    total = float(best_fit) * float(w.get("fit", 1.0)) + float(urgency) * float(w.get("urgency", 1.0)) + float(access) * float(w.get("access", 1.0))
+    total = best_fit * 2.0 + urgency * 3.0 + (2.0 if company_in_watchlist else 0.0)
 
-    # ----- Bonuses -----
-    tb = config.get("scoring", {}).get("tiebreakers", {})
-    recent_days = int(tb.get("recent_trial_update_days", 90))
-    recent_bonus = float(tb.get("recent_trial_bonus", 0.5))
-    extra_per = float(tb.get("extra_trial_bonus_per_trial", 0.15))
-    extra_cap = float(tb.get("extra_trial_bonus_cap", 0.6))
-
-    any_recent = any(within_days(t.get("last_update_posted"), recent_days) for t in trials[:50])
-    bonus_recent = recent_bonus if any_recent else 0.0
-    bonus_multi = min(extra_cap, max(0.0, (len(trials) - 1) * extra_per))
-    total += bonus_recent + bonus_multi
-
-    details = {
-        "trial_count": len(trials),
-        "best_fit_trial": {
-            "nct_id": (best_fit_trial or {}).get("nct_id"),
-            "brief_title": (best_fit_trial or {}).get("brief_title"),
-            "overall_status": (best_fit_trial or {}).get("overall_status"),
-            "phases": (best_fit_trial or {}).get("phases"),
-            "last_update_posted": (best_fit_trial or {}).get("last_update_posted"),
-        } if best_fit_trial else None,
-        "best_urgency_trial": {
-            "nct_id": (best_urg_trial or {}).get("nct_id"),
-            "brief_title": (best_urg_trial or {}).get("brief_title"),
-            "overall_status": (best_urg_trial or {}).get("overall_status"),
-            "phases": (best_urg_trial or {}).get("phases"),
-            "last_update_posted": (best_urg_trial or {}).get("last_update_posted"),
-        } if best_urg_trial else None,
-        "jobs": {
-            "recent_window_days": job_window,
-            "spike_threshold": spike_threshold,
-            "relevant_recent_jobs": relevant_recent_jobs,
-        },
-        "reasons": {
-            "fit_reason": fit_reason,
-            "urgency_reason": urgency_reason,
-            "urgency_source": urgency_source,
-            "access_reason": access_reason,
-        },
-        "bonuses": {
-            "recent_trial_bonus": bonus_recent,
-            "multi_trial_bonus": bonus_multi,
-            "any_recent_trial_update": any_recent,
-        },
-        "weights": {
-            "fit": float(w.get("fit", 1.0)),
-            "urgency": float(w.get("urgency", 1.0)),
-            "access": float(w.get("access", 1.0)),
-        },
+    return {
+        "fit": float(best_fit),
+        "urgency": float(urgency),
+        "total": float(total),
+        "fit_reason": fit_reason,
+        "urgency_reason": urgency_reason,
+        "urgency_source": urgency_source,
+        "best_fit_trial": best_fit_trial,
+        "best_urgency_trial": best_urg_trial,
+        "sec": sec_stat,
+        "patents": pat_stat,
     }
-
-    return {"fit": float(best_fit), "urgency": float(urgency), "access": float(access), "total": float(total), "details": details}
