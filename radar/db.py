@@ -113,6 +113,33 @@ def fetch_accounts(conn: sqlite3.Connection):
     cur.execute("SELECT * FROM accounts")
     return cur.fetchall()
 
+
+def get_studies_for_account(conn: sqlite3.Connection, account_id: int) -> List[Dict[str, Any]]:
+    """Return normalized studies for an account from the studies table."""
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT nct_id, brief_title, overall_status, phases_json, last_update_posted, sponsor_class, study_url, raw_json FROM studies WHERE account_id=?",
+        (account_id,),
+    )
+    rows = cur.fetchall() or []
+    out: List[Dict[str, Any]] = []
+    for r in rows:
+        phases = []
+        try:
+            phases = json.loads(r["phases_json"] or "[]") or []
+        except Exception:
+            phases = []
+        out.append({
+            "nct_id": r["nct_id"],
+            "brief_title": r["brief_title"],
+            "overall_status": r["overall_status"],
+            "phases": phases,
+            "last_update_posted": r["last_update_posted"],
+            "sponsor_class": r["sponsor_class"],
+            "study_url": r["study_url"],
+            "raw_json": r["raw_json"],
+        })
+    return out
 def set_scores(conn: sqlite3.Connection, account_id: int, fit: float, urgency: float, access: float, total: float) -> None:
     cur = conn.cursor()
     cur.execute("UPDATE accounts SET fit_score=?, urgency_score=?, access_score=?, total_score=?, last_seen_at=? WHERE account_id=?",
