@@ -57,7 +57,7 @@ def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path, top
 
     out_json.write_text(json.dumps(rows, indent=2), encoding="utf-8")
 
-def export_watchlist(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> None:
+def export_watchlist(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path, top_n: int | None = None) -> None:
     out_csv = Path(out_csv)
     out_json = Path(out_json)
     out_csv.parent.mkdir(parents=True, exist_ok=True)
