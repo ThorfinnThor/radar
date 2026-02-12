@@ -18,7 +18,7 @@ def normalize_account_name(name: str, aliases: Dict[str, str]) -> str:
 
     # Best-effort: job signals may have different title fields; we use signals table 'title'
     from radar.scoring import within_days
-    recent = [j for j in job_sigs if within_days(j.get("published_at"), window_days)]
+    recent = [j for j in sec_sigs if within_days(j.get("published_at"), window_days)]
     titles = []
     matched = set()
     for j in recent:
@@ -339,8 +339,10 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
                 t["phases"] = []
 
         cur.execute("SELECT * FROM signals WHERE account_id=? AND signal_type='job_posting' ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
-        job_sigs = [dict(r) for r in cur.fetchall()]
+        sec_sigs = [dict(r) for r in cur.fetchall()]
 
+        sec_sigs = db.get_signals_for_account(conn, account_id, signal_type="sec_filing")
+        patent_sigs = db.get_signals_for_account(conn, account_id, signal_type="patent_publication")
         scores = compute_scores(trials, sec_sigs, patent_sigs, cfg.config, company_in_watchlist=(company in watchlist))
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
