@@ -2,65 +2,87 @@
   "watchlist_rows": [
     {
       "company": "AstraZeneca",
-      "total_score": 6.0,
-      "fit_score": 1.0,
+      "total_score": 9.1,
+      "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "job_posting: (Senior) Finance Manager - Deal Finance China | job_posting: Area Manager - CVRM - HN | job_posting: Area Manager - ONCO - HN",
+      "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies. | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Positive for HLA-A*02:01 and the TP53 R175H Mutation | trial_candidate: Phase 1 Study to Investigate TCRTs KRAS Mutation in Unresectable, Advanced, and/or Metastatic Solid Tumors",
       "evidence_links": [
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/China/Manager---Deal-Finance_R-245732",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---CVRM---HN_R-245280-1",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Vietnam---Hanoi/Area-Manager---ONCO---HN_R-245806",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/India---Bangalore/Associate-Director-Study-Data-Manager_R-244066",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Gaithersburg---MD/Associate-Director--R-I-Clinical-Regulatory-Writing--CReW-_R-245681-1",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/South-Korea---Seoul/Associate-Manager-P-R_R-245793",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Austria---Vienna/Brand-Manager--Breakthrough-Launch---CVRM--m-w-d-_R-245311",
-        "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Poland---Warsaw/Buying-Content-Specialist_R-245814-1"
+        "https://clinicaltrials.gov/study/NCT06542250",
+        "https://clinicaltrials.gov/study/NCT05877599",
+        "https://clinicaltrials.gov/study/NCT06218914",
+        "https://clinicaltrials.gov/study/NCT07215585",
+        "https://clinicaltrials.gov/study/NCT04594642",
+        "https://clinicaltrials.gov/study/NCT06530849"
       ],
       "target_roles": [
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-        "Director, CMC / Analytical Development (Cell Therapy/Biologics)",
-        "Director, Process Development / MSAT (Cell Therapy)",
-        "Director, Computational Biology / Systems Immunology"
+        "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+        "Director, Bioassay / Potency / Analytical Development",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
       ],
-      "trial_count": 0,
-      "recent_job_hits": 110,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "best_urgency_trial_title": null,
-      "best_urgency_trial_status": null,
-      "best_urgency_trial_phases": null,
-      "best_urgency_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "110 relevant jobs in window (>=3)",
-      "urgency_source": "jobs",
+      "trial_count": 5,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_fit_trial_last_update": "2026-02-10",
+      "best_urgency_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "best_urgency_trial_last_update": "2026-02-10",
+      "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+      "urgency_source": "trial",
       "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.6,
       "job_hit_titles": null,
       "job_hit_keywords": null,
       "score_details": {
-        "trial_count": 0,
-        "best_fit_trial": null,
-        "best_urgency_trial": null,
+        "trial_count": 5,
+        "best_fit_trial": {
+          "nct_id": "NCT06542250",
+          "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT06542250",
+          "brief_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "last_update_posted": "2026-02-10"
+        },
         "jobs": {
           "recent_window_days": 45,
           "spike_threshold": 2,
-          "relevant_recent_jobs": 110
+          "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "110 relevant jobs in window (>=3)",
-          "urgency_source": "jobs",
+          "fit_reason": "trial title indicates T-cell engager / T-cell engaging / T-cell redirecting",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1', 'PHASE2']",
+          "urgency_source": "trial",
           "access_reason": "company on watchlist / ATS known"
         },
         "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.6,
+          "any_recent_trial_update": true
         },
         "weights": {
           "fit": 1.0,
@@ -71,65 +93,82 @@
     },
     {
       "company": "Pfizer",
-      "total_score": 6.0,
-      "fit_score": 1.0,
+      "total_score": 9.1,
+      "fit_score": 3.0,
       "urgency_score": 3.0,
       "access_score": 2.0,
-      "trigger_summary": "job_posting: Area Business Manager, Rare Cardiac Disease - Albany, NY | job_posting: Area Business Manager, Rare Cardiac Disease - Mid-Atlantic | job_posting: Area Business Manager, Rare Cardiac Disease - North",
+      "trigger_summary": "trial_candidate: A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (MM) That Has Come Back After Taking Other Treatments (Including Prior Treatment With an Anti-CD38 Antibody and Lenalidomide) | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myeloma Who Have Received Other Treatments",
       "evidence_links": [
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Albany--NY_4951117-1",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Virginia---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Mid-Atlantic_4951121-1",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Minnesota---Remote/Area-Business-Manager--Rare-Cardiac-Disease---North_4951102-1",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Area-Business-Manager--Rare-Cardiac-Disease---Southern-California_4951110",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---North-Carolina---Rocky-Mount/Aseptic-Service-Worker_4950731-3",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Intern_4951569-1",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/India---Mumbai/Business-Strategy---Operations-Trainee_4951568",
-        "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---Remote/Cardiovascular-Health-and-Science-Professional--HSP----Murrieta--CA_4951058-1"
+        "https://clinicaltrials.gov/study/NCT05623020",
+        "https://clinicaltrials.gov/study/NCT06152575",
+        "https://clinicaltrials.gov/study/NCT05020236",
+        "https://clinicaltrials.gov/study/NCT05675449",
+        "https://clinicaltrials.gov/study/NCT06421675"
       ],
       "target_roles": [
-        "Director, Process Development / MSAT (Cell Therapy)",
+        "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
         "Director/VP, Translational Medicine (Oncology/Immunology)",
         "Head/Director, Clinical Biomarkers / Translational Biomarkers",
         "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
         "Director, Bioassay / Potency / Analytical Development"
       ],
-      "trial_count": 0,
-      "recent_job_hits": 14,
-      "best_fit_trial_title": null,
-      "best_fit_trial_status": null,
-      "best_fit_trial_phases": null,
-      "best_fit_trial_last_update": null,
-      "best_urgency_trial_title": null,
-      "best_urgency_trial_status": null,
-      "best_urgency_trial_phases": null,
-      "best_urgency_trial_last_update": null,
-      "fit_reason": "no trials",
-      "urgency_reason": "14 relevant jobs in window (>=3)",
-      "urgency_source": "jobs",
+      "trial_count": 5,
+      "recent_job_hits": 0,
+      "best_fit_trial_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+      "best_fit_trial_status": "RECRUITING",
+      "best_fit_trial_phases": [
+        "PHASE3"
+      ],
+      "best_fit_trial_last_update": "2026-02-03",
+      "best_urgency_trial_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+      "best_urgency_trial_status": "RECRUITING",
+      "best_urgency_trial_phases": [
+        "PHASE1"
+      ],
+      "best_urgency_trial_last_update": "2026-01-26",
+      "fit_reason": "trial title contains known T-cell engager molecule",
+      "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+      "urgency_source": "trial",
       "access_reason": "company on watchlist / ATS known",
-      "bonus_recent_trial": 0.0,
-      "bonus_multi_trial": 0.0,
+      "bonus_recent_trial": 0.5,
+      "bonus_multi_trial": 0.6,
       "job_hit_titles": null,
       "job_hit_keywords": null,
       "score_details": {
-        "trial_count": 0,
-        "best_fit_trial": null,
-        "best_urgency_trial": null,
+        "trial_count": 5,
+        "best_fit_trial": {
+          "nct_id": "NCT05623020",
+          "brief_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE3"
+          ],
+          "last_update_posted": "2026-02-03"
+        },
+        "best_urgency_trial": {
+          "nct_id": "NCT05675449",
+          "brief_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
+          "overall_status": "RECRUITING",
+          "phases": [
+            "PHASE1"
+          ],
+          "last_update_posted": "2026-01-26"
+        },
         "jobs": {
           "recent_window_days": 45,
           "spike_threshold": 2,
-          "relevant_recent_jobs": 14
+          "relevant_recent_jobs": 0
         },
         "reasons": {
-          "fit_reason": "no trials",
-          "urgency_reason": "14 relevant jobs in window (>=3)",
-          "urgency_source": "jobs",
+          "fit_reason": "trial title contains known T-cell engager molecule",
+          "urgency_reason": "trial status RECRUITING and phase in ['PHASE1']",
+          "urgency_source": "trial",
           "access_reason": "company on watchlist / ATS known"
         },
         "bonuses": {
-          "recent_trial_bonus": 0.0,
-          "multi_trial_bonus": 0.0,
-          "any_recent_trial_update": false
+          "recent_trial_bonus": 0.5,
+          "multi_trial_bonus": 0.6,
+          "any_recent_trial_update": true
         },
         "weights": {
           "fit": 1.0,
