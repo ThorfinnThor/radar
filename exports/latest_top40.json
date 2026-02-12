@@ -8,7 +8,7 @@
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
     "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subje | sec_filing: 6-K filed 2026-02-10 \u2013 FINAL RESULTS | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Posit",
+    "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subje | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Posit | trial_candidate: Phase 1 Study to Investigate TCRTs KRAS Mutation in Unresectable, Advanced, and/or Metastatic Solid Tumors",
     "best_fit_trial_title": "A Study of GC012F (AZD0120), a CAR T Therapy Targeting CD19 and BCMA in Subjects With Relapsed/Refractory Multiple Myeloma",
     "best_fit_trial_status": "RECRUITING",
     "best_fit_trial_phase": "PHASE1,PHASE2",
@@ -18,7 +18,7 @@
     "best_urgency_trial_phase": "PHASE1,PHASE2",
     "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06542250",
     "sec": {
-      "recent_total": 5,
+      "recent_total": 0,
       "matched_total": 0,
       "matched_keywords": [],
       "examples": []
@@ -43,13 +43,13 @@
     "access_score": 0.0,
     "evidence_links": [
       "https://clinicaltrials.gov/study/NCT06542250",
-      "https://www.sec.gov/Archives/edgar/data/901832/000165495426001073/a3234s.htm",
       "https://clinicaltrials.gov/study/NCT05877599",
-      "https://www.sec.gov/Archives/edgar/data/901832/000165495426000795/a2764r.htm",
       "https://clinicaltrials.gov/study/NCT06218914",
-      "https://www.sec.gov/Archives/edgar/data/901832/000165495426000688/a9169q.htm",
       "https://clinicaltrials.gov/study/NCT06005493",
-      "https://clinicaltrials.gov/study/NCT07215585"
+      "https://clinicaltrials.gov/study/NCT07215585",
+      "https://clinicaltrials.gov/study/NCT04594642",
+      "https://clinicaltrials.gov/study/NCT07201558",
+      "https://clinicaltrials.gov/study/NCT05850234"
     ],
     "score_details": {
       "trial_count": 8,
