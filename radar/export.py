@@ -16,7 +16,7 @@ def summarize_triggers(signals: List[Dict[str, Any]], max_items: int = 3) -> str
             parts.append(f"{st}")
     return " | ".join(parts)
 
-def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> None:
+def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path, top_n: int | None = None) -> None:
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "rank","account_name","fit","urgency","total","fit_reason","urgency_reason","urgency_source",
@@ -29,7 +29,7 @@ def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> 
     with out_csv.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
-        for r in rows:
+        for r in (rows[:top_n] if top_n else rows):
             w.writerow({
                 "rank": r.get("rank"),
                 "account_name": r.get("account_name"),
@@ -67,7 +67,7 @@ def export_watchlist(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) 
     with out_csv.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
-        for r in rows:
+        for r in (rows[:top_n] if top_n else rows):
             w.writerow({
                 "account_name": r.get("account_name"),
                 "fit": r.get("fit"),

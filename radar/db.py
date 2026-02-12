@@ -118,3 +118,22 @@ def set_scores(conn: sqlite3.Connection, account_id: int, fit: float, urgency: f
     cur.execute("UPDATE accounts SET fit_score=?, urgency_score=?, access_score=?, total_score=?, last_seen_at=? WHERE account_id=?",
                 (fit, urgency, access, total, utc_now_iso(), account_id))
     conn.commit()
+
+
+def get_signals_for_account(conn: sqlite3.Connection, account_id: int, signal_type: Optional[str] = None):
+    cur = conn.cursor()
+    if signal_type:
+        cur.execute(
+            "SELECT signal_type, source, title, evidence_url, published_at, payload_json, created_at "
+            "FROM signals WHERE account_id=? AND signal_type=? "
+            "ORDER BY COALESCE(published_at, created_at) DESC",
+            (account_id, signal_type),
+        )
+    else:
+        cur.execute(
+            "SELECT signal_type, source, title, evidence_url, published_at, payload_json, created_at "
+            "FROM signals WHERE account_id=? "
+            "ORDER BY COALESCE(published_at, created_at) DESC",
+            (account_id,),
+        )
+    return [dict(r) for r in cur.fetchall()]

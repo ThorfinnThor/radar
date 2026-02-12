@@ -315,13 +315,12 @@ def run_weekly(cfg: AppConfig) -> None:
 def update_scores_and_export(conn, cfg: AppConfig) -> None:
     watchlist = cfg.company_names_set()
     cur = conn.cursor()
-    job_window = int(cfg.config.get('jobs', {}).get('recent_window_days', 45))
 
     # Ensure watchlist companies exist as accounts even if they have zero signals yet.
     for c in cfg.companies_list():
         nm = (c.get("name") or "").strip()
         if nm:
-            db.upsert_account(conn, nm, modality_tags=["car-t","t-cell engager"])
+            db.upsert_account(conn, nm, modality_tags=["car-t", "t-cell engager"])
 
     rows_out: List[Dict[str, Any]] = []
     watch_rows: List[Dict[str, Any]] = []
@@ -330,7 +329,11 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
         account_id = int(a["account_id"])
         company = a["name"]
 
-        cur.execute("SELECT * FROM studies WHERE account_id=? ORDER BY COALESCE(last_update_posted,'') DESC", (account_id,))
+        # Trials are stored in studies table
+        cur.execute(
+            "SELECT * FROM studies WHERE account_id=? ORDER BY COALESCE(last_update_posted,'') DESC",
+            (account_id,),
+        )
         trials = [dict(r) for r in cur.fetchall()]
         for t in trials:
             try:
@@ -338,43 +341,71 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             except Exception:
                 t["phases"] = []
 
-        cur.execute("SELECT * FROM signals WHERE account_id=? AND signal_type='job_posting' ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
-        sec_sigs = [dict(r) for r in cur.fetchall()]
-
+        # SEC + patents signals
         sec_sigs = db.get_signals_for_account(conn, account_id, signal_type="sec_filing")
         patent_sigs = db.get_signals_for_account(conn, account_id, signal_type="patent_publication")
-        scores = compute_scores(trials, sec_sigs, patent_sigs, cfg.config, company_in_watchlist=(company in watchlist))
+
+        scores = compute_scores(
+            trials,
+            sec_sigs,
+            patent_sigs,
+            cfg.config,
+            company_in_watchlist=(company in watchlist),
+        )
+
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
-        cur.execute("SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
-        all_sigs = [dict(r) for r in cur.fetchall()]
-
+        all_sigs = db.get_signals_for_account(conn, account_id)
         evidence = [s["evidence_url"] for s in all_sigs[:8] if s.get("evidence_url")]
         roles = recommend_roles(all_sigs, max_roles=5)
+
+        best_fit_trial = scores.get("best_fit_trial") or {}
+        best_urg_trial = scores.get("best_urgency_trial") or {}
+
         row = {
-            "company": company,
-            "total_score": scores["total"],
-            "fit_score": scores["fit"],
-            "urgency_score": scores["urgency"],
-            "access_score": scores["access"],
+            # Canonical keys used by export.py
+            "account_name": company,
+            "fit": scores.get("fit"),
+            "urgency": scores.get("urgency"),
+            "access": scores.get("access", 0.0),
+            "total": scores.get("total"),
+            "fit_reason": scores.get("fit_reason"),
+            "urgency_reason": scores.get("urgency_reason"),
+            "urgency_source": scores.get("urgency_source"),
             "trigger_summary": summarize_triggers(all_sigs),
+            "best_fit_trial_title": best_fit_trial.get("brief_title"),
+            "best_fit_trial_status": best_fit_trial.get("overall_status"),
+            "best_fit_trial_phase": ",".join(best_fit_trial.get("phases") or []),
+            "best_fit_trial_url": best_fit_trial.get("study_url"),
+            "best_urgency_trial_title": best_urg_trial.get("brief_title"),
+            "best_urgency_trial_status": best_urg_trial.get("overall_status"),
+            "best_urgency_trial_phase": ",".join(best_urg_trial.get("phases") or []),
+            "best_urgency_trial_url": best_urg_trial.get("study_url"),
+            "sec": scores.get("sec"),
+            "patents": scores.get("patents"),
+            "target_roles": roles,
+            # Backward compatible/debug keys
+            "company": company,
+            "total_score": scores.get("total"),
+            "fit_score": scores.get("fit"),
+            "urgency_score": scores.get("urgency"),
+            "access_score": scores.get("access", 0.0),
             "evidence_links": evidence,
-            "target_roles": roles,
-            "trial_count": scores.get("details", {}).get("trial_count"),
             "score_details": scores.get("details"),
-            "target_roles": roles,
         }
+
         rows_out.append(row)
         if company in watchlist:
             watch_rows.append(row)
 
-    rows_out.sort(key=lambda r: r["total_score"], reverse=True)
-    watch_rows.sort(key=lambda r: r["total_score"], reverse=True)
+    rows_out.sort(key=lambda r: (r.get("total") or 0.0), reverse=True)
+    watch_rows.sort(key=lambda r: (r.get("total") or 0.0), reverse=True)
 
     export_ranked(rows_out, cfg.export_csv_path(), cfg.export_json_path(), top_n=cfg.export_top_n())
     export_watchlist(watch_rows, cfg.export_watchlist_csv_path(), cfg.export_watchlist_json_path())
 
-    print(f"[export] wrote ranked + watchlist exports")
+    print("[export] wrote ranked + watchlist exports")
+
 
 def run_export_only(cfg: AppConfig) -> None:
     conn = db.connect()

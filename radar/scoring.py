@@ -94,6 +94,8 @@ def other_signal_stats(signals: List[Dict[str, Any]], keywords: List[str], windo
                 "matched_keywords": hits,
             })
 
+    access = 0.0
+
     return {
         "recent_total": recent_total,
         "matched_total": matched_total,
@@ -177,8 +179,11 @@ def compute_scores(
     # ----- Total -----
     total = best_fit * 2.0 + urgency * 3.0 + (2.0 if company_in_watchlist else 0.0)
 
+    access = 0.0
+
     return {
         "fit": float(best_fit),
+        "access": float(access),
         "urgency": float(urgency),
         "total": float(total),
         "fit_reason": fit_reason,
@@ -186,6 +191,7 @@ def compute_scores(
         "urgency_source": urgency_source,
         "best_fit_trial": best_fit_trial,
         "best_urgency_trial": best_urg_trial,
+        "details": {"trial_count": len(trials), "sec_matched": int(sec_stat["matched_total"]), "patent_matched": int(pat_stat["matched_total"])},
         "sec": sec_stat,
         "patents": pat_stat,
     }
