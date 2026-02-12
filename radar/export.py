@@ -17,6 +17,8 @@ def summarize_triggers(signals: List[Dict[str, Any]], max_items: int = 3) -> str
     return " | ".join(parts)
 
 def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path, top_n: int | None = None) -> None:
+    out_csv = Path(out_csv)
+    out_json = Path(out_json)
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "rank","account_name","fit","urgency","total","fit_reason","urgency_reason","urgency_source",
@@ -56,6 +58,8 @@ def export_ranked(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path, top
     out_json.write_text(json.dumps(rows, indent=2), encoding="utf-8")
 
 def export_watchlist(rows: List[Dict[str, Any]], out_csv: Path, out_json: Path) -> None:
+    out_csv = Path(out_csv)
+    out_json = Path(out_json)
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "account_name","fit","urgency","total","fit_reason","urgency_reason","urgency_source",
