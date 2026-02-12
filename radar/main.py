@@ -341,7 +341,7 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
         cur.execute("SELECT * FROM signals WHERE account_id=? AND signal_type='job_posting' ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
         job_sigs = [dict(r) for r in cur.fetchall()]
 
-        scores = compute_scores(trials, job_sigs, cfg.config, company_in_watchlist=(company in watchlist))
+        scores = compute_scores(trials, sec_sigs, patent_sigs, cfg.config, company_in_watchlist=(company in watchlist))
         db.set_scores(conn, account_id, scores["fit"], scores["urgency"], scores["access"], scores["total"])
 
         cur.execute("SELECT * FROM signals WHERE account_id=? ORDER BY COALESCE(published_at, created_at) DESC", (account_id,))
