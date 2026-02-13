@@ -2,16 +2,15 @@ name: Trigger Radar
 
 on:
   schedule:
-    - cron: "10 6 * * *"   # daily trials
-    - cron: "20 6 * * 1"   # weekly sec + patents
+    - cron: "20 6 * * 1"   # weekly: trials + sec + patents + export
   workflow_dispatch:
     inputs:
       run_mode:
         description: "What to run"
         required: true
-        default: "both"
+        default: "all"
         type: choice
-        options: [daily, weekly, both]
+        options: [all, export-only]
 
 permissions:
   contents: write
@@ -31,22 +30,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Daily ingest + export (trials)
+      - name: Set SEC user agent
         if: >
-          (github.event_name == 'schedule' && github.event.schedule == '10 6 * * *') ||
-          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'daily' || github.event.inputs.run_mode == 'both'))
+          (github.event_name == 'schedule') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.run_mode == 'all')
         run: |
-          python -m radar.main --mode daily
-          python -m radar.main --mode export-only
+          if [ -n "${{ secrets.SEC_USER_AGENT }}" ]; then
+            echo "SEC_USER_AGENT=${{ secrets.SEC_USER_AGENT }}" >> $GITHUB_ENV
+          else
+            echo "SEC_USER_AGENT=trigger-radar (set SEC_USER_AGENT secret with contact email)" >> $GITHUB_ENV
+          fi
 
-      - name: Weekly ingest + export (SEC + patents)
+      - name: Ingest everything + export
         if: >
-          (github.event_name == 'schedule' && github.event.schedule == '20 6 * * 1') ||
-          (github.event_name == 'workflow_dispatch' && (github.event.inputs.run_mode == 'weekly' || github.event.inputs.run_mode == 'both'))
-        env:
-          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          (github.event_name == 'schedule') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.run_mode == 'all')
         run: |
-          python -m radar.main --mode weekly
+          python -m radar.main --mode all
+
+      - name: Export-only (no ingest)
+        if: >
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.run_mode == 'export-only')
+        run: |
+          python -m radar.main --mode export-only
 
       - name: Commit exports
         run: |
