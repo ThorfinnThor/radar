@@ -176,10 +176,38 @@ def compute_scores(
         urgency_reason = "no trials and no relevant sec/patent signals"
         urgency_source = "none"
 
-    # ----- Total -----
-    total = best_fit * 2.0 + urgency * 3.0 + (2.0 if company_in_watchlist else 0.0)
+    # ----- Access -----
+    # Job scraping was removed, so access is currently a lightweight, configurable constant.
+    # This keeps the schema stable and leaves room for adding an outreach/relationship signal later.
+    access_cfg = (config.get("scoring", {}) or {}).get("access", {}) or {}
+    default_points = float(access_cfg.get("default_points", 0.0))
+    access = default_points
 
-    access = 0.0
+    # ----- Total (weighted) -----
+    scoring_cfg = config.get("scoring", {}) or {}
+    weights = scoring_cfg.get("weights", {}) or {}
+    w_fit = float(weights.get("fit", 1.0))
+    w_urg = float(weights.get("urgency", 1.0))
+    w_acc = float(weights.get("access", 1.0))
+
+    watchlist_bonus = float(scoring_cfg.get("watchlist_bonus", 2.0 if company_in_watchlist else 0.0))
+    wl_bonus_applied = watchlist_bonus if company_in_watchlist else 0.0
+
+    total = (best_fit * w_fit) + (urgency * w_urg) + (access * w_acc) + wl_bonus_applied
+
+    # Optional small tiebreakers (kept in config so you can tune without code changes)
+    tb = scoring_cfg.get("tiebreakers", {}) or {}
+    recent_days = int(tb.get("recent_trial_update_days", 0) or 0)
+    recent_bonus = float(tb.get("recent_trial_bonus", 0.0) or 0.0)
+    extra_per_trial = float(tb.get("extra_trial_bonus_per_trial", 0.0) or 0.0)
+    extra_cap = float(tb.get("extra_trial_bonus_cap", 0.0) or 0.0)
+
+    if recent_days > 0 and recent_bonus > 0.0:
+        if any(within_days(t.get("last_update_posted"), recent_days) for t in trials[:50]):
+            total += recent_bonus
+
+    if extra_per_trial > 0.0 and extra_cap > 0.0 and trials:
+        total += min(extra_cap, extra_per_trial * float(len(trials)))
 
     return {
         "fit": float(best_fit),

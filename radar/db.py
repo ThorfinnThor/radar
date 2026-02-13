@@ -1,7 +1,7 @@
 from __future__ import annotations
 import sqlite3, json, datetime as dt
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, List
 
 DB_PATH = Path(__file__).resolve().parents[1] / "data" / "radar.sqlite"
 

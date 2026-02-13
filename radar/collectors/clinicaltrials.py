@@ -16,18 +16,53 @@ DEFAULT_FIELDS = [
     "protocolSection.sponsorCollaboratorsModule.collaborators.class",
 ]
 
-def fetch_studies(base_url: str, query_term: str, page_size: int = 200) -> List[Dict[str, Any]]:
-    params = {
-        "query.term": query_term,
-        "pageSize": page_size,
-        "format": "json",
-        "countTotal": "true",
-        "fields": ",".join(DEFAULT_FIELDS),
-    }
-    url = f"{base_url}?{urlencode(params)}"
-    r = requests.get(url, timeout=60)
-    r.raise_for_status()
-    return r.json().get("studies", [])
+def fetch_studies(
+    base_url: str,
+    query_term: str,
+    page_size: int = 200,
+    max_pages: int = 50,
+    max_studies: int = 10000,
+) -> List[Dict[str, Any]]:
+    """Fetch studies from ClinicalTrials.gov API v2 with pagination.
+
+    The API returns a `nextPageToken` in responses; pass it back as `pageToken`
+    to retrieve subsequent pages.
+    """
+    studies: List[Dict[str, Any]] = []
+    page_token: str | None = None
+    pages = 0
+
+    while True:
+        params = {
+            "query.term": query_term,
+            "pageSize": page_size,
+            "format": "json",
+            "countTotal": "true",
+            "fields": ",".join(DEFAULT_FIELDS),
+        }
+        if page_token:
+            params["pageToken"] = page_token
+
+        url = f"{base_url}?{urlencode(params)}"
+        r = requests.get(url, timeout=60)
+        r.raise_for_status()
+        blob = r.json() or {}
+        batch = blob.get("studies", []) or []
+        studies.extend(batch)
+
+        page_token = blob.get("nextPageToken")
+        pages += 1
+
+        if not page_token:
+            break
+        if max_pages is not None and pages >= max_pages:
+            break
+        if max_studies is not None and len(studies) >= max_studies:
+            studies = studies[:max_studies]
+            break
+
+    return studies
+
 
 def normalize_study(study: Dict[str, Any], source: str = "clinicaltrials") -> Tuple[Optional[str], NormalizedSignal, Dict[str, Any]]:
     ps = study.get("protocolSection", {}) or {}

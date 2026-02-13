@@ -1,22 +1,22 @@
 [
   {
     "account_name": "AstraZeneca",
-    "fit": 5.0,
-    "urgency": 3.0,
+    "fit": 1.0,
+    "urgency": 0.0,
     "access": 0.0,
-    "total": 21.0,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_candidate: A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subje | trial_candidate: A Study of NT-175 in Adult Subjects With Unresectable, Advanced, and/or Metastatic Solid Tumors That Are Posit | trial_candidate: Phase 1 Study to Investigate TCRTs KRAS Mutation in Unresectable, Advanced, and/or Metastatic Solid Tumors",
-    "best_fit_trial_title": "A Study of GC012F (AZD0120), a CAR T Therapy Targeting CD19 and BCMA in Subjects With Relapsed/Refractory Multiple Myeloma",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1,PHASE2",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05850234",
-    "best_urgency_trial_title": "A Study to Evaluate Safety, PK, PD and Efficacy of AZD5492, a T Cell-engaging Antibody Targeting CD20 in Subjects With R/R B-Cell Malignancies.",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06542250",
+    "total": 4.0,
+    "fit_reason": "no trials",
+    "urgency_reason": "no trials and no relevant sec/patent signals",
+    "urgency_source": "none",
+    "trigger_summary": "",
+    "best_fit_trial_title": null,
+    "best_fit_trial_status": null,
+    "best_fit_trial_phase": "",
+    "best_fit_trial_url": null,
+    "best_urgency_trial_title": null,
+    "best_urgency_trial_status": null,
+    "best_urgency_trial_phase": "",
+    "best_urgency_trial_url": null,
     "sec": {
       "recent_total": 0,
       "matched_total": 0,
@@ -30,86 +30,20 @@
       "examples": []
     },
     "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
       "Director/VP, Translational Medicine (Oncology/Immunology)",
       "Head/Director, Clinical Biomarkers / Translational Biomarkers",
       "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
+      "Director, Bioassay / Potency / Analytical Development",
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
     ],
     "company": "AstraZeneca",
-    "total_score": 21.0,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
+    "total_score": 4.0,
+    "fit_score": 1.0,
+    "urgency_score": 0.0,
     "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06542250",
-      "https://clinicaltrials.gov/study/NCT05877599",
-      "https://clinicaltrials.gov/study/NCT06218914",
-      "https://clinicaltrials.gov/study/NCT06005493",
-      "https://clinicaltrials.gov/study/NCT07215585",
-      "https://clinicaltrials.gov/study/NCT04594642",
-      "https://clinicaltrials.gov/study/NCT07201558",
-      "https://clinicaltrials.gov/study/NCT05850234"
-    ],
+    "evidence_links": [],
     "score_details": {
-      "trial_count": 8,
-      "sec_matched": 0,
-      "patent_matched": 0
-    }
-  },
-  {
-    "account_name": "Pfizer",
-    "fit": 4.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 19.0,
-    "fit_reason": "molecule match: elranatamab",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_candidate: A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With D | trial_candidate: MagnetisMM-32: A Study to Learn About the Study Medicine Called Elranatamab in People With Multiple Myeloma (M | trial_candidate: A Study to Learn About the Study Medicine Elranatamab Alone and With Daratumumab in People With Multiple Myelo",
-    "best_fit_trial_title": "A Study to Learn About Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant or Who Will Not Receive a Transplant as Initial Therapy",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE3",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05623020",
-    "best_urgency_trial_title": "A Clinical Trial of Four Medicines (Elranatamab Plus Carfilzomib and Dexamethasone or Maplirpacept) in People With Relapsed Refractory Multiple Myeloma",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT05675449",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": []
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": []
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Pfizer",
-    "total_score": 19.0,
-    "fit_score": 4.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT05623020",
-      "https://clinicaltrials.gov/study/NCT06152575",
-      "https://clinicaltrials.gov/study/NCT05020236",
-      "https://clinicaltrials.gov/study/NCT05675449",
-      "https://clinicaltrials.gov/study/NCT05090566",
-      "https://clinicaltrials.gov/study/NCT05317416",
-      "https://clinicaltrials.gov/study/NCT04649359"
-    ],
-    "score_details": {
-      "trial_count": 7,
+      "trial_count": 0,
       "sec_matched": 0,
       "patent_matched": 0
     }
@@ -152,6 +86,55 @@
       "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
     ],
     "company": "GSK",
+    "total_score": 4.0,
+    "fit_score": 1.0,
+    "urgency_score": 0.0,
+    "access_score": 0.0,
+    "evidence_links": [],
+    "score_details": {
+      "trial_count": 0,
+      "sec_matched": 0,
+      "patent_matched": 0
+    }
+  },
+  {
+    "account_name": "Pfizer",
+    "fit": 1.0,
+    "urgency": 0.0,
+    "access": 0.0,
+    "total": 4.0,
+    "fit_reason": "no trials",
+    "urgency_reason": "no trials and no relevant sec/patent signals",
+    "urgency_source": "none",
+    "trigger_summary": "",
+    "best_fit_trial_title": null,
+    "best_fit_trial_status": null,
+    "best_fit_trial_phase": "",
+    "best_fit_trial_url": null,
+    "best_urgency_trial_title": null,
+    "best_urgency_trial_status": null,
+    "best_urgency_trial_phase": "",
+    "best_urgency_trial_url": null,
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": []
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": []
+    },
+    "target_roles": [
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development",
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)"
+    ],
+    "company": "Pfizer",
     "total_score": 4.0,
     "fit_score": 1.0,
     "urgency_score": 0.0,

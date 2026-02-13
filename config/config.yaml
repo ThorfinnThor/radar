@@ -38,12 +38,18 @@ normalization:
 
 scoring:
   weights:
-    fit: 1.0
-    urgency: 1.0
+    # Total score = fit*fit_weight + urgency*urgency_weight + access*access_weight + watchlist_bonus
+    # (plus optional tiebreaker bonuses below)
+    fit: 2.0
+    urgency: 3.0
     access: 1.0
+
+  # Bonus added when the company is in config/companies.yaml
+  watchlist_bonus: 2.0
   access:
-    ats_known_points: 2
-    default_points: 1
+    # Job scraping was removed; this is a simple constant to keep the score schema stable.
+    # Set to 0.0 if you don't want access to contribute.
+    default_points: 0.0
   tiebreakers:
     recent_trial_update_days: 90
     recent_trial_bonus: 0.5

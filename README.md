@@ -2,7 +2,7 @@
 
 This repo builds and maintains an **account discovery list** from **public signals**:
 - **ClinicalTrials.gov API v2**: trials matching CAR-T / T-cell engager terms
-- **Workday / Greenhouse / Lever**: public job postings (biomarkers / cytometry / potency / assay / comparability)
+- **SEC filings** + **Patents**: keyword-triggered weekly signals for the watchlist
 
 Key upgrades in this version:
 - Filters ClinicalTrials sponsors to **INDUSTRY** (configurable)
@@ -18,10 +18,10 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-python -m radar.main --mode daily
-python -m radar.main --mode export-only
+python -m radar.main --mode all
 
-python -m radar.main --mode weekly
+# Recompute exports from the existing database (no ingest)
+python -m radar.main --mode export-only
 ```
 
 Outputs:

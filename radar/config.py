@@ -42,9 +42,6 @@ class AppConfig:
     def ctg_include_industry_collaborators(self) -> bool:
         return bool(self.config.get("ctg", {}).get("include_industry_collaborators", True))
 
-    def job_keywords(self) -> List[str]:
-        return self.config.get("jobs", {}).get("job_keywords", [])
-
     def aliases(self) -> Dict[str, str]:
         return self.config.get("normalization", {}).get("aliases", {})
 

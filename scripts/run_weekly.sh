@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 set -euo pipefail
-python -m radar.main --mode weekly
+python -m radar.main --mode all
