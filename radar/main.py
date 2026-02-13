@@ -303,7 +303,13 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
             "fit_reason": scores.get("fit_reason"),
             "urgency_reason": scores.get("urgency_reason"),
             "urgency_source": scores.get("urgency_source"),
-            "trigger_summary": summarize_triggers(all_sigs),
+            # Only include SEC/patent items in summaries if they actually match configured keywords.
+            # Trials are always included.
+            "trigger_summary": summarize_triggers(
+                [s for s in all_sigs if s.get("signal_type") in {"trial_lead_sponsor", "trial_collaborator"}]
+                + ((scores.get("sec") or {}).get("examples") or [])
+                + ((scores.get("patents") or {}).get("examples") or [])
+            ),
             "best_fit_trial_title": best_fit_trial.get("brief_title"),
             "best_fit_trial_status": best_fit_trial.get("overall_status"),
             "best_fit_trial_phase": ",".join(best_fit_trial.get("phases") or []),
@@ -328,7 +334,7 @@ def update_scores_and_export(conn, cfg: AppConfig) -> None:
         require_signals = bool(cfg.config.get("export", {}).get("ranked_require_signals", False))
         if (not require_signals) or (len(all_sigs) > 0) or (len(trials) > 0):
             rows_out.append(row)
-        if company in watchlist:
+        if normalize_account_name(company, aliases) in watchlist:
             watch_rows.append(row)
 
     rows_out.sort(key=lambda r: (r.get("total") or 0.0), reverse=True)

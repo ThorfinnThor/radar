@@ -51,10 +51,22 @@ scoring:
     # Set to 0.0 if you don't want access to contribute.
     default_points: 0.0
   tiebreakers:
-    recent_trial_update_days: 90
-    recent_trial_bonus: 0.5
-    extra_trial_bonus_per_trial: 0.15
-    extra_trial_bonus_cap: 0.6
+    # Recommended: more discriminative, non-saturating tiebreakers.
+    # These break the common "everyone ties at max" pattern by using:
+    #  - log-scaled volume (more trials / more matched non-trial signals => small boost)
+    #  - exponential recency decay (more recent => larger boost, smoothly)
+    trial_count_log_weight: 0.35
+    trial_recency_half_life_days: 120
+    trial_recency_weight: 0.80
+    other_matched_log_weight: 0.30
+    other_recency_half_life_days: 180
+    other_recency_weight: 0.50
+
+    # Legacy (kept for backwards compatibility, but disabled here).
+    recent_trial_update_days: 0
+    recent_trial_bonus: 0.0
+    extra_trial_bonus_per_trial: 0.0
+    extra_trial_bonus_cap: 0.0
 
 exports:
   top_n: 40

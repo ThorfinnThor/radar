@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Tuple
 import datetime as dt
+import math
 from dateutil import parser as dateparser
 
 HIGH_URGENCY_STATUSES = {"RECRUITING", "NOT_YET_RECRUITING", "ACTIVE_NOT_RECRUITING"}
@@ -64,11 +65,18 @@ def other_signal_stats(signals: List[Dict[str, Any]], keywords: List[str], windo
     matched_total = 0
     matched_keywords: set[str] = set()
     examples: List[Dict[str, Any]] = []
+    most_recent_recent: dt.datetime | None = None
+    most_recent_matched: dt.datetime | None = None
 
     for s in signals:
         if not within_days(s.get("published_at"), window_days):
             continue
         recent_total += 1
+
+        d = parse_date_maybe(s.get("published_at"))
+        if d and (most_recent_recent is None or d > most_recent_recent):
+            most_recent_recent = d
+
         blob = ""
         pj = s.get("payload_json")
         if pj:
@@ -83,6 +91,10 @@ def other_signal_stats(signals: List[Dict[str, Any]], keywords: List[str], windo
         if not hits:
             continue
         matched_total += 1
+
+        if d and (most_recent_matched is None or d > most_recent_matched):
+            most_recent_matched = d
+
         for h in hits:
             matched_keywords.add(h)
         if len(examples) < max_examples:
@@ -101,7 +113,24 @@ def other_signal_stats(signals: List[Dict[str, Any]], keywords: List[str], windo
         "matched_total": matched_total,
         "matched_keywords": sorted(matched_keywords),
         "examples": examples,
+        "most_recent_recent": most_recent_recent.isoformat() if most_recent_recent else None,
+        "most_recent_matched": most_recent_matched.isoformat() if most_recent_matched else None,
     }
+
+
+def _decay_bonus(most_recent_iso: str | None, half_life_days: float, weight: float) -> float:
+    """Exponential decay bonus based on recency.
+
+    bonus = weight * 0.5 ** (days_since / half_life_days)
+    """
+    if not most_recent_iso or half_life_days <= 0 or weight <= 0:
+        return 0.0
+    d = parse_date_maybe(most_recent_iso)
+    if not d:
+        return 0.0
+    now = dt.datetime.now(dt.timezone.utc)
+    days_since = max(0.0, (now - d).total_seconds() / 86400.0)
+    return float(weight) * float(0.5 ** (days_since / float(half_life_days)))
 
 def other_urgency(matched_total: int) -> Tuple[int, str]:
     if matched_total >= 3:
@@ -195,8 +224,42 @@ def compute_scores(
 
     total = (best_fit * w_fit) + (urgency * w_urg) + (access * w_acc) + wl_bonus_applied
 
-    # Optional small tiebreakers (kept in config so you can tune without code changes)
+    # Optional small tiebreakers (kept in config so you can tune without code changes).
+    # Prefer non-saturating, more discriminative bonuses if configured.
     tb = scoring_cfg.get("tiebreakers", {}) or {}
+
+    # New (recommended): log-volume + recency decay bonuses
+    trial_count_log_weight = float(tb.get("trial_count_log_weight", 0.15) or 0.0)
+    other_matched_log_weight = float(tb.get("other_matched_log_weight", 0.20) or 0.0)
+
+    trial_recency_half_life_days = float(tb.get("trial_recency_half_life_days", 90) or 0.0)
+    trial_recency_weight = float(tb.get("trial_recency_weight", 0.60) or 0.0)
+    other_recency_half_life_days = float(tb.get("other_recency_half_life_days", 120) or 0.0)
+    other_recency_weight = float(tb.get("other_recency_weight", 0.35) or 0.0)
+
+    if trial_count_log_weight > 0 and trials:
+        total += trial_count_log_weight * float(math.log1p(len(trials)))
+    if other_matched_log_weight > 0 and other_matched > 0:
+        total += other_matched_log_weight * float(math.log1p(other_matched))
+
+    # Recency based on most recent trial update + most recent matched SEC/patent signal
+    most_recent_trial_update = None
+    for t in trials[:50]:
+        d = parse_date_maybe(t.get("last_update_posted"))
+        if d and (most_recent_trial_update is None or d > most_recent_trial_update):
+            most_recent_trial_update = d
+    total += _decay_bonus(most_recent_trial_update.isoformat() if most_recent_trial_update else None,
+                         trial_recency_half_life_days, trial_recency_weight)
+
+    most_recent_other_matched = None
+    for iso in [sec_stat.get("most_recent_matched"), pat_stat.get("most_recent_matched")]:
+        d = parse_date_maybe(iso)
+        if d and (most_recent_other_matched is None or d > most_recent_other_matched):
+            most_recent_other_matched = d
+    total += _decay_bonus(most_recent_other_matched.isoformat() if most_recent_other_matched else None,
+                         other_recency_half_life_days, other_recency_weight)
+
+    # Backwards-compatible (legacy) tiebreakers
     recent_days = int(tb.get("recent_trial_update_days", 0) or 0)
     recent_bonus = float(tb.get("recent_trial_bonus", 0.0) or 0.0)
     extra_per_trial = float(tb.get("extra_trial_bonus_per_trial", 0.0) or 0.0)
@@ -219,7 +282,13 @@ def compute_scores(
         "urgency_source": urgency_source,
         "best_fit_trial": best_fit_trial,
         "best_urgency_trial": best_urg_trial,
-        "details": {"trial_count": len(trials), "sec_matched": int(sec_stat["matched_total"]), "patent_matched": int(pat_stat["matched_total"])},
+        "details": {
+            "trial_count": len(trials),
+            "sec_matched": int(sec_stat["matched_total"]),
+            "patent_matched": int(pat_stat["matched_total"]),
+            "most_recent_trial_update": most_recent_trial_update.isoformat() if most_recent_trial_update else None,
+            "most_recent_other_matched": most_recent_other_matched.isoformat() if most_recent_other_matched else None,
+        },
         "sec": sec_stat,
         "patents": pat_stat,
     }
