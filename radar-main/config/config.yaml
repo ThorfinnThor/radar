@@ -1,0 +1,94 @@
+ctg:
+  base_url: "https://clinicaltrials.gov/api/v2/studies"
+  page_size: 200
+  ctg_queries:
+    - '"CAR-T" OR "CAR T" OR "chimeric antigen receptor"'
+    - '"T-cell engager" OR "T cell engager" OR "CD3 bispecific" OR ("bispecific" AND CD3)'
+    - '"TCR-T" OR "TCR T" OR "T cell receptor engineered"'
+  keep_statuses:
+    - "RECRUITING"
+    - "NOT_YET_RECRUITING"
+    - "ACTIVE_NOT_RECRUITING"
+  keep_sponsor_classes:
+    - "INDUSTRY"
+  high_urgency_phases:
+    - "PHASE1"
+    - "PHASE1_PHASE2"
+    - "PHASE2"
+  include_industry_collaborators: true
+
+  # If lead sponsor is not INDUSTRY, still keep the study if there is at least one INDUSTRY collaborator.
+  # The system will attribute the study to INDUSTRY collaborator accounts (not the academic lead).
+  allow_non_industry_lead_with_industry_collab: true
+
+  # Optional: promote fit=3 for known T-cell engager molecules even if titles omit 'bispecific'.
+  tcell_engager_molecules:
+    - elranatamab
+    - teclistamab
+    - talquetamab
+    - epcoritamab
+    - mosunetuzumab
+    - glofitamab
+    - odronextamab
+    - blinatumomab
+
+
+normalization:
+  aliases: {}
+
+scoring:
+  weights:
+    # Total score = fit*fit_weight + urgency*urgency_weight + access*access_weight + watchlist_bonus
+    # (plus optional tiebreaker bonuses below)
+    fit: 2.0
+    urgency: 3.0
+    access: 1.0
+
+  # Bonus added when the company is in config/companies.yaml
+  watchlist_bonus: 2.0
+  access:
+    # Job scraping was removed; this is a simple constant to keep the score schema stable.
+    # Set to 0.0 if you don't want access to contribute.
+    default_points: 0.0
+  tiebreakers:
+    recent_trial_update_days: 90
+    recent_trial_bonus: 0.5
+    extra_trial_bonus_per_trial: 0.15
+    extra_trial_bonus_cap: 0.6
+
+exports:
+  top_n: 40
+  out_csv: "exports/latest_top40.csv"
+  out_json: "exports/latest_top40.json"
+  watchlist_csv: "exports/latest_watchlist.csv"
+  watchlist_json: "exports/latest_watchlist.json"
+
+sec:
+  # IMPORTANT: SEC requires a descriptive User-Agent containing contact info.
+  # Set env var SEC_USER_AGENT, e.g. "trigger-radar (you@company.com)"
+  user_agent_env: "SEC_USER_AGENT"
+  keywords:
+    - "CAR-T"
+    - "chimeric antigen receptor"
+    - "T cell engager"
+    - "CD3"
+    - "bispecific"
+    - "TCR-T"
+    - "cell therapy"
+  recent_window_days: 90
+  max_filings_per_company: 5
+  min_keyword_hits: 1
+  request_delay_s: 0.25
+
+patents:
+  keywords:
+    - "CAR-T"
+    - "chimeric antigen receptor"
+    - "T cell engager"
+    - "CD3"
+    - "bispecific"
+    - "TCR-T"
+    - "cell therapy"
+  recent_window_days: 365
+  max_patents_per_company: 10
+  request_delay_s: 0.25
