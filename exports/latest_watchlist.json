@@ -4,7 +4,7 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 22.853572147236367,
+    "total": 22.850412159168872,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -41,25 +41,25 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "AstraZeneca",
-    "total_score": 22.853572147236367,
+    "total_score": 22.850412159168872,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07215585",
       "https://clinicaltrials.gov/study/NCT07295847",
       "https://clinicaltrials.gov/study/NCT06542250",
       "https://www.sec.gov/Archives/edgar/data/901832/000165495426001073/a3234s.htm",
       "https://clinicaltrials.gov/study/NCT06897930",
       "https://clinicaltrials.gov/study/NCT07391657",
       "https://clinicaltrials.gov/study/NCT06564038",
-      "https://clinicaltrials.gov/study/NCT07224373",
-      "https://clinicaltrials.gov/study/NCT05877599"
+      "https://clinicaltrials.gov/study/NCT07224373"
     ],
     "score_details": {
       "trial_count": 20,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-11T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
       "most_recent_other_matched": null
     }
   },
@@ -68,7 +68,7 @@
     "fit": 4.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.7089650561093,
+    "total": 20.6972052435467,
     "fit_reason": "molecule match: elranatamab",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -105,7 +105,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Pfizer",
-    "total_score": 20.7089650561093,
+    "total_score": 20.6972052435467,
     "fit_score": 4.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
