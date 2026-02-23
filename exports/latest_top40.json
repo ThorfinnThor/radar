@@ -4,7 +4,7 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 22.850412159168872,
+    "total": 22.836927038259464,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -13,10 +13,10 @@
     "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
     "best_fit_trial_phase": "PHASE1,PHASE2",
     "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04257578",
-    "best_urgency_trial_title": "A Study of AZD0120 in Autoimmune Diseases",
+    "best_urgency_trial_title": "Study Evaluating Safety, Tolerability, PK/PD of Surovatamig in Adult RA or SLE Participants",
     "best_urgency_trial_status": "RECRUITING",
     "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07295847",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07201558",
     "sec": {
       "recent_total": 5,
       "matched_total": 0,
@@ -41,25 +41,25 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "AstraZeneca",
-    "total_score": 22.850412159168872,
+    "total_score": 22.836927038259464,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07201558",
+      "https://clinicaltrials.gov/study/NCT04594642",
       "https://clinicaltrials.gov/study/NCT07215585",
       "https://clinicaltrials.gov/study/NCT07295847",
       "https://clinicaltrials.gov/study/NCT06542250",
       "https://www.sec.gov/Archives/edgar/data/901832/000165495426001073/a3234s.htm",
       "https://clinicaltrials.gov/study/NCT06897930",
-      "https://clinicaltrials.gov/study/NCT07391657",
-      "https://clinicaltrials.gov/study/NCT06564038",
-      "https://clinicaltrials.gov/study/NCT07224373"
+      "https://clinicaltrials.gov/study/NCT07391657"
     ],
     "score_details": {
       "trial_count": 20,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-17T00:00:00+00:00",
       "most_recent_other_matched": null
     },
     "rank": 1
@@ -69,7 +69,7 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 21.039636039929274,
+    "total": 21.00889063944698,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -106,7 +106,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Chongqing Precision Biotech Co., Ltd",
-    "total_score": 21.039636039929274,
+    "total_score": 21.00889063944698,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -130,11 +130,76 @@
     "rank": 2
   },
   {
+    "account_name": "Regeneron Pharmaceuticals",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.911433576537995,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE2,PHASE3)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: A Global Study of Novel Agents in Paediatric and Adolescent Relapsed and Refractory B-cell Non-Hodgkin Lymphom | trial_collaborator: Response-Based Dose Reduction of Linvoseltamab in the Treatment of Relapsed, Refractory, or Triple-Class Relap | trial_collaborator: A Study to Learn How Safe and How Well Linvoseltamab Works Compared to Standard Treatment in Adult Patients Wi",
+    "best_fit_trial_title": "PLAT-08: A Study Of SC-DARIC33 CAR T Cells In Pediatric And Young Adults With Relapsed Or Refractory CD33+ AML",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05105152",
+    "best_urgency_trial_title": "A Global Study of Novel Agents in Paediatric and Adolescent Relapsed and Refractory B-cell Non-Hodgkin Lymphoma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE2,PHASE3",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT05991388",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Regeneron Pharmaceuticals",
+    "total_score": 20.911433576537995,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT05991388",
+      "https://clinicaltrials.gov/study/NCT07181941",
+      "https://clinicaltrials.gov/study/NCT06787612",
+      "https://clinicaltrials.gov/study/NCT05092347",
+      "https://clinicaltrials.gov/study/NCT03761108",
+      "https://clinicaltrials.gov/study/NCT06097364",
+      "https://clinicaltrials.gov/study/NCT06230224",
+      "https://clinicaltrials.gov/study/NCT05828511"
+    ],
+    "score_details": {
+      "trial_count": 24,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 3
+  },
+  {
     "account_name": "Yake Biotechnology Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.924432846120883,
+    "total": 20.896239187411368,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1,PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -171,7 +236,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Yake Biotechnology Ltd.",
-    "total_score": 20.924432846120883,
+    "total_score": 20.896239187411368,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -192,71 +257,6 @@
       "most_recent_trial_update": "2026-01-27T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 3
-  },
-  {
-    "account_name": "Regeneron Pharmaceuticals",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.906915551506973,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: A Study to Learn How Safe and How Well Linvoseltamab Works Compared to Standard Treatment in Adult Patients Wi | trial_collaborator: Response-Based Dose Reduction of Linvoseltamab in the Treatment of Relapsed, Refractory, or Triple-Class Relap | trial_collaborator: PLAT-08: A Study Of SC-DARIC33 CAR T Cells In Pediatric And Young Adults With Relapsed Or Refractory CD33+ AML",
-    "best_fit_trial_title": "PLAT-08: A Study Of SC-DARIC33 CAR T Cells In Pediatric And Young Adults With Relapsed Or Refractory CD33+ AML",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05105152",
-    "best_urgency_trial_title": "A Study to Learn How Safe and Tolerable Vonsetamig is in Adult Patients With Chronic Kidney Disease (CKD) Who Need Kidney Transplantation and Are Highly Sensitized to Human Leukocyte Antigen (HLA)",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT05092347",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Regeneron Pharmaceuticals",
-    "total_score": 20.906915551506973,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT05092347",
-      "https://clinicaltrials.gov/study/NCT03761108",
-      "https://clinicaltrials.gov/study/NCT05828511",
-      "https://clinicaltrials.gov/study/NCT06230224",
-      "https://clinicaltrials.gov/study/NCT06097364",
-      "https://clinicaltrials.gov/study/NCT06091865",
-      "https://clinicaltrials.gov/study/NCT06149286",
-      "https://clinicaltrials.gov/study/NCT06469281"
-    ],
-    "score_details": {
-      "trial_count": 24,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-12T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
     "rank": 4
   },
   {
@@ -264,19 +264,19 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.85041215425066,
+    "total": 20.83692703358752,
     "fit_reason": "CAR-T trial",
-    "urgency_reason": "ACTIVE_NOT_RECRUITING in high urgency phase (PHASE1)",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
     "trigger_summary": "trial_collaborator: A Study of Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Ciltacabtagene Autoleuce | trial_collaborator: Subcutaneous Talquetamab in Elderly Patients With Multiple Myeloma in Early Relapse | trial_collaborator: MMulti-Immune HR; Multi-Target Immunotherapy for High-Risk Multiple Myeloma",
     "best_fit_trial_title": "A Study of Bortezomib, Lenalidomide and Dexamethasone (VRd) Followed by Cilta-cel, a CAR-T Therapy Directed Against BCMA Versus VRd Followed by Lenalidomide and Dexamethasone (Rd) Therapy in Participants With Newly Diagnosed Multiple Myeloma for Whom ASCT is Not Planned as Initial Therapy",
     "best_fit_trial_status": "ACTIVE_NOT_RECRUITING",
     "best_fit_trial_phase": "PHASE3",
     "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04923893",
-    "best_urgency_trial_title": "A Study of JNJ-75229414 for Metastatic Castration-resistant Prostate Cancer Participants",
-    "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+    "best_urgency_trial_title": "A Study of JNJ-87189401 Plus JNJ-78278343 for Advanced Prostate Cancer",
+    "best_urgency_trial_status": "RECRUITING",
     "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT05022849",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06095089",
     "sec": {
       "recent_total": 0,
       "matched_total": 0,
@@ -301,25 +301,25 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Janssen Research & Development, LLC",
-    "total_score": 20.85041215425066,
+    "total_score": 20.83692703358752,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06095089",
+      "https://clinicaltrials.gov/study/NCT07149857",
+      "https://clinicaltrials.gov/study/NCT05421663",
+      "https://clinicaltrials.gov/study/NCT05784441",
+      "https://clinicaltrials.gov/study/NCT06550895",
       "https://clinicaltrials.gov/study/NCT04923893",
       "https://clinicaltrials.gov/study/NCT05022849",
-      "https://clinicaltrials.gov/study/NCT05421663",
-      "https://clinicaltrials.gov/study/NCT04181827",
-      "https://clinicaltrials.gov/study/NCT06550895",
-      "https://clinicaltrials.gov/study/NCT05784441",
-      "https://clinicaltrials.gov/study/NCT07149857",
-      "https://clinicaltrials.gov/study/NCT04557098"
+      "https://clinicaltrials.gov/study/NCT04181827"
     ],
     "score_details": {
       "trial_count": 20,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-17T00:00:00+00:00",
       "most_recent_other_matched": null
     },
     "rank": 5
@@ -329,7 +329,7 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.841397625398624,
+    "total": 20.8106522208371,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "ACTIVE_NOT_RECRUITING in high urgency phase (PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -366,7 +366,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Kite, A Gilead Company",
-    "total_score": 20.841397625398624,
+    "total_score": 20.8106522208371,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -375,8 +375,8 @@
       "https://clinicaltrials.gov/study/NCT04155749",
       "https://clinicaltrials.gov/study/NCT06144606",
       "https://clinicaltrials.gov/study/NCT06539338",
-      "https://clinicaltrials.gov/study/NCT06413498",
       "https://clinicaltrials.gov/study/NCT07375628",
+      "https://clinicaltrials.gov/study/NCT06413498",
       "https://clinicaltrials.gov/study/NCT07304154",
       "https://clinicaltrials.gov/study/NCT06079164"
     ],
@@ -390,11 +390,76 @@
     "rank": 6
   },
   {
+    "account_name": "Novartis Pharmaceuticals",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.75523309582556,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: A Second Infusion (Early Reinfusion) of Tisagenlecleucel in Children and Young Adults With B-Cell Acute Lympho | trial_collaborator: RadiothErapy priMIng for CAR-T",
+    "best_fit_trial_title": "CAR-T Long Term Follow Up (LTFU) Study",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE3",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT02445222",
+    "best_urgency_trial_title": "A Study of Rapcabtagene Autoleucel in Active, Refractory Systemic Lupus Erythematosus (SLE) or Lupus Nephritis (LN) Patients (AUTOGRAPH - SLE/LN)",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06581198",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Novartis Pharmaceuticals",
+    "total_score": 20.75523309582556,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06581198",
+      "https://clinicaltrials.gov/study/NCT05888493",
+      "https://clinicaltrials.gov/study/NCT05798117",
+      "https://clinicaltrials.gov/study/NCT06617793",
+      "https://clinicaltrials.gov/study/NCT06868290",
+      "https://clinicaltrials.gov/study/NCT06704269",
+      "https://clinicaltrials.gov/study/NCT06665256",
+      "https://clinicaltrials.gov/study/NCT05460533"
+    ],
+    "score_details": {
+      "trial_count": 15,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 7
+  },
+  {
     "account_name": "CARsgen Therapeutics Co., Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.73569781941687,
+    "total": 20.708464542469947,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -431,7 +496,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "CARsgen Therapeutics Co., Ltd.",
-    "total_score": 20.73569781941687,
+    "total_score": 20.708464542469947,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -452,26 +517,26 @@
       "most_recent_trial_update": "2026-01-21T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 7
+    "rank": 8
   },
   {
-    "account_name": "Novartis Pharmaceuticals",
+    "account_name": "Kyverna Therapeutics",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.719793721157956,
+    "total": 20.673544810923993,
     "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_reason": "ACTIVE_NOT_RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: A Second Infusion (Early Reinfusion) of Tisagenlecleucel in Children and Young Adults With B-Cell Acute Lympho | trial_collaborator: RadiothErapy priMIng for CAR-T",
-    "best_fit_trial_title": "CAR-T Long Term Follow Up (LTFU) Study",
+    "trigger_summary": "trial_collaborator: CARTIMMUNE: Study of Patients With Autoimmune Diseases Receiving KYV-101 | trial_collaborator: A Study of KYV-101, a CD19 CAR T Cell Therapy, in Participants With Treatment Refractory Progressive Multiple  | trial_collaborator: A Study of Anti-CD19 Chimeric Antigen Receptor T-Cell ( CAR-T) Therapy in Subjects With Non-relapsing and Prog",
+    "best_fit_trial_title": "KYSA-6: A Study of Anti-CD19 Chimeric Antigen Receptor T-Cell Therapy, in Patients With Generalized Myasthenia Gravis",
     "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE3",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT02445222",
-    "best_urgency_trial_title": "Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Generalized Myasthenia Gravis",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06704269",
+    "best_fit_trial_phase": "PHASE2,PHASE3",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06193889",
+    "best_urgency_trial_title": "CARTIMMUNE: Study of Patients With Autoimmune Diseases Receiving KYV-101",
+    "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06152172",
     "sec": {
       "recent_total": 0,
       "matched_total": 0,
@@ -495,36 +560,101 @@
       "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
       "Director, Bioassay / Potency / Analytical Development"
     ],
-    "company": "Novartis Pharmaceuticals",
-    "total_score": 20.719793721157956,
+    "company": "Kyverna Therapeutics",
+    "total_score": 20.673544810923993,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06704269",
-      "https://clinicaltrials.gov/study/NCT06665256",
-      "https://clinicaltrials.gov/study/NCT05460533",
-      "https://clinicaltrials.gov/study/NCT07048197",
-      "https://clinicaltrials.gov/study/NCT06617793",
-      "https://clinicaltrials.gov/study/NCT03960840",
-      "https://clinicaltrials.gov/study/NCT03570892",
-      "https://clinicaltrials.gov/study/NCT06785818"
+      "https://clinicaltrials.gov/study/NCT06152172",
+      "https://clinicaltrials.gov/study/NCT07403188",
+      "https://clinicaltrials.gov/study/NCT06193889",
+      "https://clinicaltrials.gov/study/NCT06451159",
+      "https://clinicaltrials.gov/study/NCT06588491",
+      "https://clinicaltrials.gov/study/NCT06342960",
+      "https://clinicaltrials.gov/study/NCT05938725",
+      "https://clinicaltrials.gov/study/NCT06400303"
     ],
     "score_details": {
-      "trial_count": 15,
+      "trial_count": 12,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-05T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-18T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 8
+    "rank": 9
+  },
+  {
+    "account_name": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.67354480845229,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Cyclophosphamide Followed by Intravenous and Intraperitoneal Infusion of Autologous T Cells Genetically Engine | trial_collaborator: BCMA Targeted CAR T Cells With or Without Lenalidomide for the Treatment of Multiple Myeloma | trial_collaborator: A Trial of \"Armored\" CAR T Cells Targeting CD19 For Patients With Relapsed CD19+ Hematologic Malignancies",
+    "best_fit_trial_title": "A Study of CC-97540 (BMS-986353 or Zola-cel), CD19-Targeted NEX-T CAR T Cells, in Participants With Active SLE Despite Immunosuppressants (Breakfree-SLE)",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07015983",
+    "best_urgency_trial_title": "A Study to Evaluate the Safety, Effectiveness and Tolerable Dose of Arlocabtagene Autoleucel (BMS-986393) in Novel Combinations in Participants With Relapsed and/or Refractory Multiple Myeloma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06121843",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+    "total_score": 20.67354480845229,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06121843",
+      "https://clinicaltrials.gov/study/NCT07015983",
+      "https://clinicaltrials.gov/study/NCT06220201",
+      "https://clinicaltrials.gov/study/NCT06297226",
+      "https://clinicaltrials.gov/study/NCT06615479",
+      "https://clinicaltrials.gov/study/NCT07335562",
+      "https://clinicaltrials.gov/study/NCT07115745",
+      "https://clinicaltrials.gov/study/NCT05869955"
+    ],
+    "score_details": {
+      "trial_count": 12,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-18T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 10
   },
   {
     "account_name": "Pfizer",
     "fit": 4.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.6972052435467,
+    "total": 20.66750714274709,
     "fit_reason": "molecule match: elranatamab",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -561,15 +691,15 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Pfizer",
-    "total_score": 20.6972052435467,
+    "total_score": 20.66750714274709,
     "fit_score": 4.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
       "https://clinicaltrials.gov/study/NCT06215118",
       "https://clinicaltrials.gov/study/NCT05748171",
-      "https://clinicaltrials.gov/study/NCT05623020",
       "https://clinicaltrials.gov/study/NCT06152575",
+      "https://clinicaltrials.gov/study/NCT05623020",
       "https://clinicaltrials.gov/study/NCT05020236",
       "https://clinicaltrials.gov/study/NCT06057402",
       "https://clinicaltrials.gov/study/NCT05675449",
@@ -582,144 +712,79 @@
       "most_recent_trial_update": "2026-02-05T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 9
-  },
-  {
-    "account_name": "Kyverna Therapeutics",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.67354704740634,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE2,PHASE3)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: A Study of KYV-101, a CD19 CAR T Cell Therapy, in Participants With Treatment Refractory Progressive Multiple  | trial_collaborator: CARTIMMUNE: Study of Patients With Autoimmune Diseases Receiving KYV-101 | trial_collaborator: A Study of Anti-CD19 Chimeric Antigen Receptor T-Cell ( CAR-T) Therapy in Subjects With Non-relapsing and Prog",
-    "best_fit_trial_title": "KYSA-6: A Study of Anti-CD19 Chimeric Antigen Receptor T-Cell Therapy, in Patients With Generalized Myasthenia Gravis",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE2,PHASE3",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06193889",
-    "best_urgency_trial_title": "KYSA-6: A Study of Anti-CD19 Chimeric Antigen Receptor T-Cell Therapy, in Patients With Generalized Myasthenia Gravis",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE2,PHASE3",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06193889",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Kyverna Therapeutics",
-    "total_score": 20.67354704740634,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT07403188",
-      "https://clinicaltrials.gov/study/NCT06193889",
-      "https://clinicaltrials.gov/study/NCT06451159",
-      "https://clinicaltrials.gov/study/NCT06588491",
-      "https://clinicaltrials.gov/study/NCT06342960",
-      "https://clinicaltrials.gov/study/NCT05938725",
-      "https://clinicaltrials.gov/study/NCT06400303",
-      "https://clinicaltrials.gov/study/NCT06152172"
-    ],
-    "score_details": {
-      "trial_count": 12,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-11T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 10
-  },
-  {
-    "account_name": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.66907867960382,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Cyclophosphamide Followed by Intravenous and Intraperitoneal Infusion of Autologous T Cells Genetically Engine | trial_collaborator: BCMA Targeted CAR T Cells With or Without Lenalidomide for the Treatment of Multiple Myeloma | trial_collaborator: A Trial of \"Armored\" CAR T Cells Targeting CD19 For Patients With Relapsed CD19+ Hematologic Malignancies",
-    "best_fit_trial_title": "Study of Arlocabtagene Autoleucel (BMS-986393) a GPRC5D-directed CAR T Cell Therapy in Adult Participants With Relapsed or Refractory Multiple Myeloma",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE2",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06297226",
-    "best_urgency_trial_title": "A Study to Evaluate the Safety, Tolerability, Efficacy, and Drug Levels of CC-97540 in Participants With Relapsing Forms of Multiple Sclerosis, Progressive Forms of Multiple Sclerosis or Refractory Myasthenia Gravis (MG) (Breakfree-2)",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06220201",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
-    "total_score": 20.66907867960382,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06220201",
-      "https://clinicaltrials.gov/study/NCT06615479",
-      "https://clinicaltrials.gov/study/NCT06297226",
-      "https://clinicaltrials.gov/study/NCT07015983",
-      "https://clinicaltrials.gov/study/NCT07335562",
-      "https://clinicaltrials.gov/study/NCT07115745",
-      "https://clinicaltrials.gov/study/NCT05869955",
-      "https://clinicaltrials.gov/study/NCT06121843"
-    ],
-    "score_details": {
-      "trial_count": 12,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-10T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
     "rank": 11
+  },
+  {
+    "account_name": "Hebei Senlang Biotechnology Inc., Ltd.",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.650024099978314,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: SL4903 CAR-T Therapy for Relapsed/Refractory Multiple Myeloma | trial_collaborator: Nanobody-Based CD19/CD22 Tandem Dual CAR-T Therapy for R/R B-ALL | trial_collaborator: Nanobody-Based Anti-CD5 CAR-T for Relapsed/Refractory T-ALL/LBL",
+    "best_fit_trial_title": "SL4903 CAR-T Therapy for Relapsed/Refractory Multiple Myeloma",
+    "best_fit_trial_status": "NOT_YET_RECRUITING",
+    "best_fit_trial_phase": "EARLY_PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07234721",
+    "best_urgency_trial_title": "Phase I/II Study of SENL103 for Relapsed or Refractory Multiple Myeloma: A Multicenter, Open-Label, Single-Arm Trial.",
+    "best_urgency_trial_status": "NOT_YET_RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07421856",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Hebei Senlang Biotechnology Inc., Ltd.",
+    "total_score": 20.650024099978314,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07421856",
+      "https://clinicaltrials.gov/study/NCT07234721",
+      "https://clinicaltrials.gov/study/NCT07244406",
+      "https://clinicaltrials.gov/study/NCT07244380",
+      "https://clinicaltrials.gov/study/NCT07161193",
+      "https://clinicaltrials.gov/study/NCT05618041",
+      "https://clinicaltrials.gov/study/NCT05388695",
+      "https://clinicaltrials.gov/study/NCT06880913"
+    ],
+    "score_details": {
+      "trial_count": 11,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-19T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 12
   },
   {
     "account_name": "Miltenyi Biomedicine GmbH",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.638989955364195,
+    "total": 20.61159891585718,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -756,7 +821,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Miltenyi Biomedicine GmbH",
-    "total_score": 20.638989955364195,
+    "total_score": 20.61159891585718,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -766,8 +831,8 @@
       "https://clinicaltrials.gov/study/NCT04844866",
       "https://clinicaltrials.gov/study/NCT06424340",
       "https://clinicaltrials.gov/study/NCT06508931",
-      "https://clinicaltrials.gov/study/NCT06189157",
       "https://clinicaltrials.gov/study/NCT06508775",
+      "https://clinicaltrials.gov/study/NCT06189157",
       "https://clinicaltrials.gov/study/NCT03853616"
     ],
     "score_details": {
@@ -777,14 +842,79 @@
       "most_recent_trial_update": "2026-01-22T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 12
+    "rank": 13
+  },
+  {
+    "account_name": "Gracell Biotechnologies (Shanghai) Co., Ltd.",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.610607528831846,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: GC012F Injection in Refractory Idiopathic Inflammatory Myopathy | trial_collaborator: This Study is an Open-lable, Phase I Study to Evaluate the Safety, Feasibility, Cytokinetics, and Preliminary  | trial_collaborator: GC012F Injection in the Treatment of Refractory Generalized Myasthenia Gravis(24103)",
+    "best_fit_trial_title": "Study of GC012F, CAR-T Therapy Targeting CD19 and BCMA in Chinese Participants With Relapsed or Refractory AL Amyloidosis",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07250269",
+    "best_urgency_trial_title": "Study of GC012F, CAR-T Therapy Targeting CD19 and BCMA in Chinese Participants With Relapsed or Refractory AL Amyloidosis",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07250269",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Gracell Biotechnologies (Shanghai) Co., Ltd.",
+    "total_score": 20.610607528831846,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07250269",
+      "https://clinicaltrials.gov/study/NCT06235229",
+      "https://clinicaltrials.gov/study/NCT07086404",
+      "https://clinicaltrials.gov/study/NCT06530849",
+      "https://clinicaltrials.gov/study/NCT07249879",
+      "https://clinicaltrials.gov/study/NCT07058298",
+      "https://clinicaltrials.gov/study/NCT07072884",
+      "https://clinicaltrials.gov/study/NCT06880354"
+    ],
+    "score_details": {
+      "trial_count": 10,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-17T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 14
   },
   {
     "account_name": "Guangzhou Bio-gene Technology Co., Ltd",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.626565111293143,
+    "total": 20.600561643031433,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -821,7 +951,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Guangzhou Bio-gene Technology Co., Ltd",
-    "total_score": 20.626565111293143,
+    "total_score": 20.600561643031433,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -830,8 +960,8 @@
       "https://clinicaltrials.gov/study/NCT07196124",
       "https://clinicaltrials.gov/study/NCT07196111",
       "https://clinicaltrials.gov/study/NCT07195617",
-      "https://clinicaltrials.gov/study/NCT07152236",
       "https://clinicaltrials.gov/study/NCT07152210",
+      "https://clinicaltrials.gov/study/NCT07152236",
       "https://clinicaltrials.gov/study/NCT07152223",
       "https://clinicaltrials.gov/study/NCT06118788"
     ],
@@ -842,26 +972,26 @@
       "most_recent_trial_update": "2026-01-13T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 13
+    "rank": 15
   },
   {
-    "account_name": "Hebei Senlang Biotechnology Inc., Ltd.",
+    "account_name": "Shanghai Xiniao Biotech Co., Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.61060975065365,
+    "total": 20.577248963487577,
     "fit_reason": "CAR-T trial",
-    "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE2)",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: SL4903 CAR-T Therapy for Relapsed/Refractory Multiple Myeloma | trial_collaborator: Nanobody-Based CD19/CD22 Tandem Dual CAR-T Therapy for R/R B-ALL | trial_collaborator: Nanobody-Based Anti-CD5 CAR-T for Relapsed/Refractory T-ALL/LBL",
-    "best_fit_trial_title": "SL4903 CAR-T Therapy for Relapsed/Refractory Multiple Myeloma",
+    "trigger_summary": "trial_collaborator: A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Tar | trial_collaborator: UCAR T-cell Therapy Targeting CD19/ BCMA(QT-019C) in Patients With Relapse/ Refractory Autoimmune Diseases | trial_collaborator: CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
+    "best_fit_trial_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C)in Patients With Refractory Primary Immune Thrombocytopenia",
     "best_fit_trial_status": "NOT_YET_RECRUITING",
     "best_fit_trial_phase": "EARLY_PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07234721",
-    "best_urgency_trial_title": "Phase II Trial of S101 Autologous Anti-CD7 CAR-T Cells in Patients With R/R T-LBL/ALL.",
-    "best_urgency_trial_status": "NOT_YET_RECRUITING",
-    "best_urgency_trial_phase": "PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07244380",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07416032",
+    "best_urgency_trial_title": "CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07315087",
     "sec": {
       "recent_total": 0,
       "matched_total": 0,
@@ -885,36 +1015,36 @@
       "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
       "Director, Bioassay / Potency / Analytical Development"
     ],
-    "company": "Hebei Senlang Biotechnology Inc., Ltd.",
-    "total_score": 20.61060975065365,
+    "company": "Shanghai Xiniao Biotech Co., Ltd.",
+    "total_score": 20.577248963487577,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT07234721",
-      "https://clinicaltrials.gov/study/NCT07244380",
-      "https://clinicaltrials.gov/study/NCT07244406",
-      "https://clinicaltrials.gov/study/NCT07161193",
-      "https://clinicaltrials.gov/study/NCT05618041",
-      "https://clinicaltrials.gov/study/NCT05388695",
-      "https://clinicaltrials.gov/study/NCT06880913",
-      "https://clinicaltrials.gov/study/NCT06874946"
+      "https://clinicaltrials.gov/study/NCT07416032",
+      "https://clinicaltrials.gov/study/NCT07410377",
+      "https://clinicaltrials.gov/study/NCT07315087",
+      "https://clinicaltrials.gov/study/NCT06939166",
+      "https://clinicaltrials.gov/study/NCT06941129",
+      "https://clinicaltrials.gov/study/NCT07155369",
+      "https://clinicaltrials.gov/study/NCT06920433",
+      "https://clinicaltrials.gov/study/NCT06933563"
     ],
     "score_details": {
-      "trial_count": 10,
+      "trial_count": 9,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-10T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-17T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 14
+    "rank": 16
   },
   {
     "account_name": "Bristol-Myers Squibb",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.59073408403082,
+    "total": 20.559631437862375,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -951,7 +1081,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Bristol-Myers Squibb",
-    "total_score": 20.59073408403082,
+    "total_score": 20.559631437862375,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -972,14 +1102,14 @@
       "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 15
+    "rank": 17
   },
   {
     "account_name": "Genentech, Inc.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.580043566756437,
+    "total": 20.5506865769362,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1016,7 +1146,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Genentech, Inc.",
-    "total_score": 20.580043566756437,
+    "total_score": 20.5506865769362,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1037,14 +1167,144 @@
       "most_recent_trial_update": "2026-02-03T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 16
+    "rank": 18
+  },
+  {
+    "account_name": "Genmab",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.549335369972372,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Epcoritamab Plus Ibrutinib for the Treatment of Relapsed or Refractory Aggressive B-Cell Non-Hodgkin Lymphoma | trial_collaborator: Safety and Efficacy of Epcoritamab With Gemcitabine, Dexamethasone, and Cisplatin (GDP) Salvage Chemotherapy i | trial_collaborator: Epcoritamab for the Treatment of Relapsed or Refractory Post Transplant Lymphoproliferative Disorders",
+    "best_fit_trial_title": "Epcoritamab-CAR T Cells for Large B-cell Lymphomas",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06458439",
+    "best_urgency_trial_title": "Epcoritamab Plus Ibrutinib for the Treatment of Relapsed or Refractory Aggressive B-Cell Non-Hodgkin Lymphoma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06536049",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Genmab",
+    "total_score": 20.549335369972372,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06536049",
+      "https://clinicaltrials.gov/study/NCT04623541",
+      "https://clinicaltrials.gov/study/NCT05660967",
+      "https://clinicaltrials.gov/study/NCT05180474",
+      "https://clinicaltrials.gov/study/NCT05852717",
+      "https://clinicaltrials.gov/study/NCT06672705",
+      "https://clinicaltrials.gov/study/NCT05206357",
+      "https://clinicaltrials.gov/study/NCT06458439"
+    ],
+    "score_details": {
+      "trial_count": 8,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-19T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 19
+  },
+  {
+    "account_name": "AbbVie",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.549335367658088,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Epcoritamab Plus Ibrutinib for the Treatment of Relapsed or Refractory Aggressive B-Cell Non-Hodgkin Lymphoma | trial_collaborator: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and | trial_collaborator: Venetoclax, Dasatinib, Prednisone, Rituximab and Blinatumomab for the Treatment of Newly Diagnosed or Relapsed",
+    "best_fit_trial_title": "MRD-Directed Consolidation With Epcor-only or Epcor-R2 Post Anti-CD19 CAR TCell Therapy for Large B-Cell Lymphoma",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06414148",
+    "best_urgency_trial_title": "Epcoritamab Plus Ibrutinib for the Treatment of Relapsed or Refractory Aggressive B-Cell Non-Hodgkin Lymphoma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06536049",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "AbbVie",
+    "total_score": 20.549335367658088,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06536049",
+      "https://clinicaltrials.gov/study/NCT04623541",
+      "https://clinicaltrials.gov/study/NCT04872790",
+      "https://clinicaltrials.gov/study/NCT03933735",
+      "https://clinicaltrials.gov/study/NCT05660967",
+      "https://clinicaltrials.gov/study/NCT05753501",
+      "https://clinicaltrials.gov/study/NCT07097363",
+      "https://clinicaltrials.gov/study/NCT07197307"
+    ],
+    "score_details": {
+      "trial_count": 8,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-19T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 20
   },
   {
     "account_name": "Rui Therapeutics Co., Ltd",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.559633612235174,
+    "total": 20.529763471031995,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1081,7 +1341,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Rui Therapeutics Co., Ltd",
-    "total_score": 20.559633612235174,
+    "total_score": 20.529763471031995,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1091,9 +1351,9 @@
       "https://clinicaltrials.gov/study/NCT07105735",
       "https://clinicaltrials.gov/study/NCT06976437",
       "https://clinicaltrials.gov/study/NCT06318533",
-      "https://clinicaltrials.gov/study/NCT06469190",
       "https://clinicaltrials.gov/study/NCT06613490",
-      "https://clinicaltrials.gov/study/NCT06337474"
+      "https://clinicaltrials.gov/study/NCT06337474",
+      "https://clinicaltrials.gov/study/NCT06469190"
     ],
     "score_details": {
       "trial_count": 9,
@@ -1102,79 +1362,14 @@
       "most_recent_trial_update": "2026-02-06T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 17
-  },
-  {
-    "account_name": "Genmab",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.553857905208773,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "ACTIVE_NOT_RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Safety and Efficacy of Epcoritamab With Gemcitabine, Dexamethasone, and Cisplatin (GDP) Salvage Chemotherapy i | trial_collaborator: Epcoritamab for the Treatment of Relapsed or Refractory Post Transplant Lymphoproliferative Disorders | trial_collaborator: Epcoritamab Plus Ibrutinib for the Treatment of Relapsed or Refractory Aggressive B-Cell Non-Hodgkin Lymphoma",
-    "best_fit_trial_title": "Epcoritamab-CAR T Cells for Large B-cell Lymphomas",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE2",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06458439",
-    "best_urgency_trial_title": "Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and Richter's Syndrome",
-    "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT04623541",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Genmab",
-    "total_score": 20.553857905208773,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT04623541",
-      "https://clinicaltrials.gov/study/NCT05660967",
-      "https://clinicaltrials.gov/study/NCT05180474",
-      "https://clinicaltrials.gov/study/NCT05852717",
-      "https://clinicaltrials.gov/study/NCT06672705",
-      "https://clinicaltrials.gov/study/NCT06536049",
-      "https://clinicaltrials.gov/study/NCT05206357",
-      "https://clinicaltrials.gov/study/NCT06458439"
-    ],
-    "score_details": {
-      "trial_count": 8,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 18
+    "rank": 21
   },
   {
     "account_name": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.553857904418845,
+    "total": 20.52275525986057,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1211,7 +1406,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
-    "total_score": 20.553857904418845,
+    "total_score": 20.52275525986057,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1232,79 +1427,14 @@
       "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 19
-  },
-  {
-    "account_name": "Shanghai Xiniao Biotech Co., Ltd.",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.553857903270817,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: UCAR T-cell Therapy Targeting CD19/ BCMA(QT-019C) in Patients With Relapse/ Refractory Autoimmune Diseases | trial_collaborator: CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases | trial_collaborator: Universal Chimeric Antigen Receptor T-Cell \uff08UCAR T-cell\uff09 Therapy Targeting CD19/B Cell Maturation Antigen \uff08CD1",
-    "best_fit_trial_title": "UCAR T-cell Therapy Targeting CD19/ BCMA(QT-019C) in Patients With Relapse/ Refractory Autoimmune Diseases",
-    "best_fit_trial_status": "NOT_YET_RECRUITING",
-    "best_fit_trial_phase": "EARLY_PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07410377",
-    "best_urgency_trial_title": "CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07315087",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Shanghai Xiniao Biotech Co., Ltd.",
-    "total_score": 20.553857903270817,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT07410377",
-      "https://clinicaltrials.gov/study/NCT07315087",
-      "https://clinicaltrials.gov/study/NCT06939166",
-      "https://clinicaltrials.gov/study/NCT06941129",
-      "https://clinicaltrials.gov/study/NCT07155369",
-      "https://clinicaltrials.gov/study/NCT06920433",
-      "https://clinicaltrials.gov/study/NCT06933563",
-      "https://clinicaltrials.gov/study/NCT06920446"
-    ],
-    "score_details": {
-      "trial_count": 8,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 20
+    "rank": 22
   },
   {
     "account_name": "Nanjing Legend Biotech Co.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.542418422165376,
+    "total": 20.513230514239556,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1341,7 +1471,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Nanjing Legend Biotech Co.",
-    "total_score": 20.542418422165376,
+    "total_score": 20.513230514239556,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1362,136 +1492,6 @@
       "most_recent_trial_update": "2026-02-02T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 21
-  },
-  {
-    "account_name": "AbbVie",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.540375003749354,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Safety and Efficacy Study of Epcoritamab in Subjects With Relapsed/Refractory Chronic Lymphocytic Leukemia and | trial_collaborator: Venetoclax, Dasatinib, Prednisone, Rituximab and Blinatumomab for the Treatment of Newly Diagnosed or Relapsed | trial_collaborator: Subcutaneous Epcoritamab With or Without Lenalidomide as First Line Therapy for Diffuse Large B-Cell Lymphoma",
-    "best_fit_trial_title": "MRD-Directed Consolidation With Epcor-only or Epcor-R2 Post Anti-CD19 CAR TCell Therapy for Large B-Cell Lymphoma",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE2",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06414148",
-    "best_urgency_trial_title": "Venetoclax, Dasatinib, Prednisone, Rituximab and Blinatumomab for the Treatment of Newly Diagnosed or Relapsed Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia or Mixed Phenotype Acute Leukemia",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT04872790",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "AbbVie",
-    "total_score": 20.540375003749354,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT04623541",
-      "https://clinicaltrials.gov/study/NCT04872790",
-      "https://clinicaltrials.gov/study/NCT03933735",
-      "https://clinicaltrials.gov/study/NCT05660967",
-      "https://clinicaltrials.gov/study/NCT05753501",
-      "https://clinicaltrials.gov/study/NCT07097363",
-      "https://clinicaltrials.gov/study/NCT07197307",
-      "https://clinicaltrials.gov/study/NCT06672705"
-    ],
-    "score_details": {
-      "trial_count": 8,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-10T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 22
-  },
-  {
-    "account_name": "Gracell Biotechnologies (Shanghai) Co., Ltd.",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.53043573097238,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: GC012F Injection in Refractory Idiopathic Inflammatory Myopathy | trial_collaborator: This Study is an Open-lable, Phase I Study to Evaluate the Safety, Feasibility, Cytokinetics, and Preliminary  | trial_collaborator: GC012F Injection in the Treatment of Refractory Generalized Myasthenia Gravis(24103)",
-    "best_fit_trial_title": "Study of GC012F, CAR-T Therapy Targeting CD19 and BCMA in Chinese Participants With Relapsed or Refractory AL Amyloidosis",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07250269",
-    "best_urgency_trial_title": "A Study of GC012F in Patients With Relapsed/Refractory Multiple Myeloma",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06235229",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Gracell Biotechnologies (Shanghai) Co., Ltd.",
-    "total_score": 20.53043573097238,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06235229",
-      "https://clinicaltrials.gov/study/NCT07086404",
-      "https://clinicaltrials.gov/study/NCT06530849",
-      "https://clinicaltrials.gov/study/NCT07250269",
-      "https://clinicaltrials.gov/study/NCT07249879",
-      "https://clinicaltrials.gov/study/NCT07058298",
-      "https://clinicaltrials.gov/study/NCT07072884",
-      "https://clinicaltrials.gov/study/NCT06880354"
-    ],
-    "score_details": {
-      "trial_count": 10,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-01-22T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
     "rank": 23
   },
   {
@@ -1499,7 +1499,7 @@
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.512633841365776,
+    "total": 20.51263158316456,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -1536,15 +1536,15 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Merck Sharp & Dohme LLC",
-    "total_score": 20.512633841365776,
+    "total_score": 20.51263158316456,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
       "https://clinicaltrials.gov/study/NCT05458297",
+      "https://clinicaltrials.gov/study/NCT07227597",
       "https://clinicaltrials.gov/study/NCT06395103",
       "https://clinicaltrials.gov/study/NCT07194980",
-      "https://clinicaltrials.gov/study/NCT07227597",
       "https://clinicaltrials.gov/study/NCT04201873",
       "https://clinicaltrials.gov/study/NCT03272334",
       "https://clinicaltrials.gov/study/NCT05934448",
@@ -1554,82 +1554,17 @@
       "trial_count": 7,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
       "most_recent_other_matched": null
     },
     "rank": 24
-  },
-  {
-    "account_name": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.49922349186338,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
-    "best_fit_trial_title": "Clinical Study of CD7 CAR-T Cells for Relapsed/refractory Autoimmune Diseases",
-    "best_fit_trial_status": "NOT_YET_RECRUITING",
-    "best_fit_trial_phase": "NA",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06871644",
-    "best_urgency_trial_title": "PA3-17 Injection in Adult Patients With CD7-positive Relapsed/Refractory T-lymphoblastic Leukemia/Lymphoma",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07188610",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
-    "total_score": 20.49922349186338,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT07338604",
-      "https://clinicaltrials.gov/study/NCT07312630",
-      "https://clinicaltrials.gov/study/NCT07188610",
-      "https://clinicaltrials.gov/study/NCT06092047",
-      "https://clinicaltrials.gov/study/NCT06871644",
-      "https://clinicaltrials.gov/study/NCT06417398",
-      "https://clinicaltrials.gov/study/NCT06361745",
-      "https://clinicaltrials.gov/study/NCT06279026"
-    ],
-    "score_details": {
-      "trial_count": 10,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-01-14T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 25
   },
   {
     "account_name": "Takeda",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.49915094714656,
+    "total": 20.512631577300233,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1666,13 +1601,13 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Takeda",
-    "total_score": 20.49915094714656,
+    "total_score": 20.512631577300233,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
     "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT05748197",
       "https://clinicaltrials.gov/study/NCT06980480",
+      "https://clinicaltrials.gov/study/NCT05748197",
       "https://clinicaltrials.gov/study/NCT05952804",
       "https://clinicaltrials.gov/study/NCT03263572",
       "https://clinicaltrials.gov/study/NCT04464200",
@@ -1683,17 +1618,145 @@
       "trial_count": 7,
       "sec_matched": 0,
       "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-10T00:00:00+00:00",
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 25
+  },
+  {
+    "account_name": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.473069388394066,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Anti-FLT3 CAR-T Cell (TAA05 Cell Injection) in the Treatment of Relapsed / Refractory Acute Myeloid Leukemia",
+    "best_fit_trial_title": "Clinical Study of CD7 CAR-T Cells for Relapsed/refractory Autoimmune Diseases",
+    "best_fit_trial_status": "NOT_YET_RECRUITING",
+    "best_fit_trial_phase": "NA",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06871644",
+    "best_urgency_trial_title": "PA3-17 Injection in Adult Patients With CD7-positive Relapsed/Refractory T-lymphoblastic Leukemia/Lymphoma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07188610",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
+    "total_score": 20.473069388394066,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07338604",
+      "https://clinicaltrials.gov/study/NCT07312630",
+      "https://clinicaltrials.gov/study/NCT07188610",
+      "https://clinicaltrials.gov/study/NCT06092047",
+      "https://clinicaltrials.gov/study/NCT06871644",
+      "https://clinicaltrials.gov/study/NCT06417398",
+      "https://clinicaltrials.gov/study/NCT06361745",
+      "https://clinicaltrials.gov/study/NCT06279026"
+    ],
+    "score_details": {
+      "trial_count": 10,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-01-14T00:00:00+00:00",
       "most_recent_other_matched": null
     },
     "rank": 26
+  },
+  {
+    "account_name": "Cabaletta Bio",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.465895588253847,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "ACTIVE_NOT_RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "",
+    "best_fit_trial_title": "A Phase 1/2, Open-label, Safety and Dosing Study of Autologous CART Cells (Desmoglein 3 Chimeric Autoantibody Receptor T Cells [DSG3-CAART] or CD19-specific Chimeric Antigen Receptor T Cells [CABA-201]) in Subjects With Active, Pemphigus Vulgaris (RESET-PV)",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1,PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04422912",
+    "best_urgency_trial_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
+    "best_urgency_trial_status": "ACTIVE_NOT_RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06359041",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Cabaletta Bio",
+    "total_score": 20.465895588253847,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06359041",
+      "https://clinicaltrials.gov/study/NCT06154252",
+      "https://clinicaltrials.gov/study/NCT04422912",
+      "https://clinicaltrials.gov/study/NCT06121297",
+      "https://clinicaltrials.gov/study/NCT07006805",
+      "https://clinicaltrials.gov/study/NCT06328777"
+    ],
+    "score_details": {
+      "trial_count": 6,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 27
   },
   {
     "account_name": "Nanjing IASO Biotechnology Co., Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.491643204309163,
+    "total": 20.465789506092882,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1730,7 +1793,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Nanjing IASO Biotechnology Co., Ltd.",
-    "total_score": 20.491643204309163,
+    "total_score": 20.465789506092882,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1751,14 +1814,14 @@
       "most_recent_trial_update": "2026-01-12T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 27
+    "rank": 28
   },
   {
     "account_name": "Nanjing Bioheng Biotech Co., Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.46431817651763,
+    "total": 20.435130273492895,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -1795,7 +1858,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Nanjing Bioheng Biotech Co., Ltd.",
-    "total_score": 20.46431817651763,
+    "total_score": 20.435130273492895,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1815,14 +1878,76 @@
       "most_recent_trial_update": "2026-02-02T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 28
+    "rank": 29
+  },
+  {
+    "account_name": "Bellicum Pharmaceuticals",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.41194285165038,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Autologous CAR-T Cells Targeting CSPG4 in Relapsed/Refractory HNSCC | trial_collaborator: Autologous CAR T-Cells Targeting the GD2 Antigen for Lung Cancer | trial_collaborator: Administration of Autologous CAR-T CD19 Antigen With Inducible Safety Switch in Patients With Relapsed/Refract",
+    "best_fit_trial_title": "Autologous CAR-T Cells Targeting CSPG4 in Relapsed/Refractory HNSCC",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1,PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06096038",
+    "best_urgency_trial_title": "Autologous CAR-T Cells Targeting CSPG4 in Relapsed/Refractory HNSCC",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06096038",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Bellicum Pharmaceuticals",
+    "total_score": 20.41194285165038,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06096038",
+      "https://clinicaltrials.gov/study/NCT05620342",
+      "https://clinicaltrials.gov/study/NCT03016377",
+      "https://clinicaltrials.gov/study/NCT02414269",
+      "https://clinicaltrials.gov/study/NCT03721068"
+    ],
+    "score_details": {
+      "trial_count": 5,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 30
   },
   {
     "account_name": "Hebei Taihe Chunyu Biotechnology Co., Ltd",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.412544238059283,
+    "total": 20.392142328851158,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1,PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -1859,7 +1984,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Hebei Taihe Chunyu Biotechnology Co., Ltd",
-    "total_score": 20.412544238059283,
+    "total_score": 20.392142328851158,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1880,14 +2005,14 @@
       "most_recent_trial_update": "2025-12-02T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 29
+    "rank": 31
   },
   {
     "account_name": "Autolus Limited",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.398462215343162,
+    "total": 20.367893892263634,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -1924,7 +2049,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Autolus Limited",
-    "total_score": 20.398462215343162,
+    "total_score": 20.367893892263634,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -1942,201 +2067,14 @@
       "most_recent_trial_update": "2026-02-10T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 30
-  },
-  {
-    "account_name": "Bellicum Pharmaceuticals",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.37650347978633,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Autologous CAR T-Cells Targeting the GD2 Antigen for Lung Cancer | trial_collaborator: Autologous CAR-T Cells Targeting CSPG4 in Relapsed/Refractory HNSCC | trial_collaborator: Administration of Autologous CAR-T CD19 Antigen With Inducible Safety Switch in Patients With Relapsed/Refract",
-    "best_fit_trial_title": "Autologous CAR T-Cells Targeting the GD2 Antigen for Lung Cancer",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "EARLY_PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05620342",
-    "best_urgency_trial_title": "Autologous CAR-T Cells Targeting CSPG4 in Relapsed/Refractory HNSCC",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06096038",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Bellicum Pharmaceuticals",
-    "total_score": 20.37650347978633,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT05620342",
-      "https://clinicaltrials.gov/study/NCT06096038",
-      "https://clinicaltrials.gov/study/NCT03016377",
-      "https://clinicaltrials.gov/study/NCT02414269",
-      "https://clinicaltrials.gov/study/NCT03721068"
-    ],
-    "score_details": {
-      "trial_count": 5,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-05T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 31
-  },
-  {
-    "account_name": "iCell Gene Therapeutics",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.372240932759322,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "trial_collaborator: Chimeric Antigen Receptor T Cell Redirected to Target CD4 Positive Relapsed Refractory Acute Myeloid Leukemia  | trial_collaborator: Chimeric Antigen Receptor T Cell Therapy Redirected to CD4 (CD4CAR)as a Second Line Treatment for Chronic Myel | trial_collaborator: CD4CAR for CD4+ Leukemia and Lymphoma",
-    "best_fit_trial_title": "Chimeric Antigen Receptor T Cell Redirected to Target CD4 Positive Relapsed Refractory Acute Myeloid Leukemia (AML ) as a Bridge to Allogeneic Stem Cell Transplant",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06197672",
-    "best_urgency_trial_title": "Chimeric Antigen Receptor T Cell Redirected to Target CD4 Positive Relapsed Refractory Acute Myeloid Leukemia (AML ) as a Bridge to Allogeneic Stem Cell Transplant",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06197672",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "iCell Gene Therapeutics",
-    "total_score": 20.372240932759322,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06197672",
-      "https://clinicaltrials.gov/study/NCT06071624",
-      "https://clinicaltrials.gov/study/NCT03829540",
-      "https://clinicaltrials.gov/study/NCT07328581",
-      "https://clinicaltrials.gov/study/NCT04162353",
-      "https://clinicaltrials.gov/study/NCT06787989"
-    ],
-    "score_details": {
-      "trial_count": 6,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-01-22T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
     "rank": 32
-  },
-  {
-    "account_name": "Allogene Therapeutics",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.37218732998655,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "",
-    "best_fit_trial_title": "A Study to Investigate the Safety and Preliminary Efficacy of ALLO-329, an Allogeneic CAR T-cell Therapy, in Adults With Autoimmune Disease",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07085104",
-    "best_urgency_trial_title": "A Study to Investigate the Safety and Preliminary Efficacy of ALLO-329, an Allogeneic CAR T-cell Therapy, in Adults With Autoimmune Disease",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07085104",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Allogene Therapeutics",
-    "total_score": 20.37218732998655,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT07085104",
-      "https://clinicaltrials.gov/study/NCT06500273",
-      "https://clinicaltrials.gov/study/NCT04696731",
-      "https://clinicaltrials.gov/study/NCT04416984",
-      "https://clinicaltrials.gov/study/NCT04093596"
-    ],
-    "score_details": {
-      "trial_count": 5,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-04T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 33
   },
   {
     "account_name": "Juventas Cell Therapy Ltd.",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.370563400358606,
+    "total": 20.34818608216149,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -2173,7 +2111,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Juventas Cell Therapy Ltd.",
-    "total_score": 20.370563400358606,
+    "total_score": 20.34818608216149,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -2194,14 +2132,322 @@
       "most_recent_trial_update": "2025-12-18T00:00:00+00:00",
       "most_recent_other_matched": null
     },
+    "rank": 33
+  },
+  {
+    "account_name": "Incyte Corporation",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.348130309244475,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: Ruxolitinib for Immune Effector Cell Associated Hemophagocytic Lymphohistiocytosis-like Syndrome (RISE) | trial_collaborator: Itacitinib Pre-modulation in DLBCL Receiving CAR T Cell Therapy | trial_collaborator: Total Therapy XVII for Newly Diagnosed Patients With Acute Lymphoblastic Leukemia and Lymphoma",
+    "best_fit_trial_title": "Itacitinib Pre-modulation in DLBCL Receiving CAR T Cell Therapy",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT05757219",
+    "best_urgency_trial_title": "Ruxolitinib for Immune Effector Cell Associated Hemophagocytic Lymphohistiocytosis-like Syndrome (RISE)",
+    "best_urgency_trial_status": "NOT_YET_RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07424222",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Incyte Corporation",
+    "total_score": 20.348130309244475,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07424222",
+      "https://clinicaltrials.gov/study/NCT07195916",
+      "https://clinicaltrials.gov/study/NCT05757219",
+      "https://clinicaltrials.gov/study/NCT03117751"
+    ],
+    "score_details": {
+      "trial_count": 4,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
     "rank": 34
+  },
+  {
+    "account_name": "A2 Biotherapeutics Inc.",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.348130306831052,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "",
+    "best_fit_trial_title": "A Study to Evaluate the Safety and Efficacy of Mesothelin-Targeting Logic-gated CAR T, in Participants With Solid Tumors That Express MSLN and Have Lost HLA-A*02 Expression",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1,PHASE2",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06051695",
+    "best_urgency_trial_title": "A Study to Evaluate the Safety and Efficacy of Mesothelin-Targeting Logic-gated CAR T, in Participants With Solid Tumors That Express MSLN and Have Lost HLA-A*02 Expression",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1,PHASE2",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06051695",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "A2 Biotherapeutics Inc.",
+    "total_score": 20.348130306831052,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT06051695",
+      "https://clinicaltrials.gov/study/NCT04981119",
+      "https://clinicaltrials.gov/study/NCT06682793",
+      "https://clinicaltrials.gov/study/NCT05736731"
+    ],
+    "score_details": {
+      "trial_count": 4,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-20T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 35
+  },
+  {
+    "account_name": "iCell Gene Therapeutics",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.34484989425522,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "trial_collaborator: CD4CAR for CD4+ Leukemia and Lymphoma | trial_collaborator: Chimeric Antigen Receptor T Cell Therapy Redirected to CD4 (CD4CAR)as a Second Line Treatment for Chronic Myel | trial_collaborator: Chimeric Antigen Receptor T Cell Redirected to Target CD4 Positive Relapsed Refractory Acute Myeloid Leukemia ",
+    "best_fit_trial_title": "Chimeric Antigen Receptor T Cell Therapy Redirected to CD4 (CD4CAR)as a Second Line Treatment for Chronic Myelomonocytic Leukemia, CMML.",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06071624",
+    "best_urgency_trial_title": "CD4CAR for CD4+ Leukemia and Lymphoma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT03829540",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "iCell Gene Therapeutics",
+    "total_score": 20.34484989425522,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT03829540",
+      "https://clinicaltrials.gov/study/NCT06071624",
+      "https://clinicaltrials.gov/study/NCT06197672",
+      "https://clinicaltrials.gov/study/NCT07328581",
+      "https://clinicaltrials.gov/study/NCT04162353",
+      "https://clinicaltrials.gov/study/NCT06787989"
+    ],
+    "score_details": {
+      "trial_count": 6,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-01-22T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 36
+  },
+  {
+    "account_name": "Poseida Therapeutics, Inc.",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.343610036532343,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "",
+    "best_fit_trial_title": "P-BCMA-ALLO1 Allogeneic CAR-T Cells in the Treatment of Subjects With Multiple Myeloma",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04960579",
+    "best_urgency_trial_title": "P-BCMA-ALLO1 Allogeneic CAR-T Cells in the Treatment of Subjects With Multiple Myeloma",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT04960579",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Poseida Therapeutics, Inc.",
+    "total_score": 20.343610036532343,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT04960579",
+      "https://clinicaltrials.gov/study/NCT06014762",
+      "https://clinicaltrials.gov/study/NCT05239143",
+      "https://clinicaltrials.gov/study/NCT03741127"
+    ],
+    "score_details": {
+      "trial_count": 4,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-19T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 37
+  },
+  {
+    "account_name": "Allogene Therapeutics",
+    "fit": 5.0,
+    "urgency": 3.0,
+    "access": 0.0,
+    "total": 20.342660277695433,
+    "fit_reason": "CAR-T trial",
+    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
+    "urgency_source": "clinicaltrials",
+    "trigger_summary": "",
+    "best_fit_trial_title": "A Study to Investigate the Safety and Preliminary Efficacy of ALLO-329, an Allogeneic CAR T-cell Therapy, in Adults With Autoimmune Disease",
+    "best_fit_trial_status": "RECRUITING",
+    "best_fit_trial_phase": "PHASE1",
+    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT07085104",
+    "best_urgency_trial_title": "A Study to Investigate the Safety and Preliminary Efficacy of ALLO-329, an Allogeneic CAR T-cell Therapy, in Adults With Autoimmune Disease",
+    "best_urgency_trial_status": "RECRUITING",
+    "best_urgency_trial_phase": "PHASE1",
+    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT07085104",
+    "sec": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "patents": {
+      "recent_total": 0,
+      "matched_total": 0,
+      "matched_keywords": [],
+      "examples": [],
+      "most_recent_recent": null,
+      "most_recent_matched": null
+    },
+    "target_roles": [
+      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
+      "Director/VP, Translational Medicine (Oncology/Immunology)",
+      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
+      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
+      "Director, Bioassay / Potency / Analytical Development"
+    ],
+    "company": "Allogene Therapeutics",
+    "total_score": 20.342660277695433,
+    "fit_score": 5.0,
+    "urgency_score": 3.0,
+    "access_score": 0.0,
+    "evidence_links": [
+      "https://clinicaltrials.gov/study/NCT07085104",
+      "https://clinicaltrials.gov/study/NCT06500273",
+      "https://clinicaltrials.gov/study/NCT04696731",
+      "https://clinicaltrials.gov/study/NCT04416984",
+      "https://clinicaltrials.gov/study/NCT04093596"
+    ],
+    "score_details": {
+      "trial_count": 5,
+      "sec_matched": 0,
+      "patent_matched": 0,
+      "most_recent_trial_update": "2026-02-04T00:00:00+00:00",
+      "most_recent_other_matched": null
+    },
+    "rank": 38
   },
   {
     "account_name": "Bioray Laboratories",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.351110209329367,
+    "total": 20.330825807485237,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
     "urgency_source": "clinicaltrials",
@@ -2238,7 +2484,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Bioray Laboratories",
-    "total_score": 20.351110209329367,
+    "total_score": 20.330825807485237,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -2259,136 +2505,14 @@
       "most_recent_trial_update": "2025-12-01T00:00:00+00:00",
       "most_recent_other_matched": null
     },
-    "rank": 35
-  },
-  {
-    "account_name": "A2 Biotherapeutics Inc.",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.34813257413112,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "",
-    "best_fit_trial_title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04981119",
-    "best_urgency_trial_title": "A Study to Evaluate the Safety and Efficacy of Mesothelin-Targeting Logic-gated CAR T, in Participants With Solid Tumors That Express MSLN and Have Lost HLA-A*02 Expression",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06051695",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "A2 Biotherapeutics Inc.",
-    "total_score": 20.34813257413112,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT04981119",
-      "https://clinicaltrials.gov/study/NCT06051695",
-      "https://clinicaltrials.gov/study/NCT06682793",
-      "https://clinicaltrials.gov/study/NCT05736731"
-    ],
-    "score_details": {
-      "trial_count": 4,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 36
-  },
-  {
-    "account_name": "Poseida Therapeutics, Inc.",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.348132572921124,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "",
-    "best_fit_trial_title": "P-CD19CD20-ALLO1 Allogeneic CAR-T Cells in the Treatment of Subjects With B Cell Malignancies",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06014762",
-    "best_urgency_trial_title": "P-CD19CD20-ALLO1 Allogeneic CAR-T Cells in the Treatment of Subjects With B Cell Malignancies",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06014762",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Poseida Therapeutics, Inc.",
-    "total_score": 20.348132572921124,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06014762",
-      "https://clinicaltrials.gov/study/NCT05239143",
-      "https://clinicaltrials.gov/study/NCT04960579",
-      "https://clinicaltrials.gov/study/NCT03741127"
-    ],
-    "score_details": {
-      "trial_count": 4,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 37
+    "rank": 39
   },
   {
     "account_name": "Cartesian Therapeutics",
     "fit": 5.0,
     "urgency": 3.0,
     "access": 0.0,
-    "total": 20.34813256689145,
+    "total": 20.317029923578424,
     "fit_reason": "CAR-T trial",
     "urgency_reason": "NOT_YET_RECRUITING in high urgency phase (PHASE2)",
     "urgency_source": "clinicaltrials",
@@ -2425,7 +2549,7 @@
       "Director, Bioassay / Potency / Analytical Development"
     ],
     "company": "Cartesian Therapeutics",
-    "total_score": 20.34813256689145,
+    "total_score": 20.317029923578424,
     "fit_score": 5.0,
     "urgency_score": 3.0,
     "access_score": 0.0,
@@ -2440,130 +2564,6 @@
       "sec_matched": 0,
       "patent_matched": 0,
       "most_recent_trial_update": "2026-02-13T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 38
-  },
-  {
-    "account_name": "Cabaletta Bio",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.344851810536714,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1,PHASE2)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "",
-    "best_fit_trial_title": "A Phase 1/2, Open-label, Safety and Dosing Study of Autologous CART Cells (Desmoglein 3 Chimeric Autoantibody Receptor T Cells [DSG3-CAART] or CD19-specific Chimeric Antigen Receptor T Cells [CABA-201]) in Subjects With Active, Pemphigus Vulgaris (RESET-PV)",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1,PHASE2",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT04422912",
-    "best_urgency_trial_title": "RESET-MG: A Study to Evaluate the Safety and Efficacy of CABA-201 in Participants With Generalized Myasthenia Gravis",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1,PHASE2",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06359041",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Cabaletta Bio",
-    "total_score": 20.344851810536714,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06359041",
-      "https://clinicaltrials.gov/study/NCT04422912",
-      "https://clinicaltrials.gov/study/NCT06121297",
-      "https://clinicaltrials.gov/study/NCT07006805",
-      "https://clinicaltrials.gov/study/NCT06154252",
-      "https://clinicaltrials.gov/study/NCT06328777"
-    ],
-    "score_details": {
-      "trial_count": 6,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-01-15T00:00:00+00:00",
-      "most_recent_other_matched": null
-    },
-    "rank": 39
-  },
-  {
-    "account_name": "Fate Therapeutics",
-    "fit": 5.0,
-    "urgency": 3.0,
-    "access": 0.0,
-    "total": 20.339118038186662,
-    "fit_reason": "CAR-T trial",
-    "urgency_reason": "RECRUITING in high urgency phase (PHASE1)",
-    "urgency_source": "clinicaltrials",
-    "trigger_summary": "",
-    "best_fit_trial_title": "FT825/ONO-8250, an Off-the-Shelf, HER2 CAR-T, With or Without Monoclonal Antibodies in Advanced Solid Tumors",
-    "best_fit_trial_status": "RECRUITING",
-    "best_fit_trial_phase": "PHASE1",
-    "best_fit_trial_url": "https://clinicaltrials.gov/study/NCT06241456",
-    "best_urgency_trial_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
-    "best_urgency_trial_status": "RECRUITING",
-    "best_urgency_trial_phase": "PHASE1",
-    "best_urgency_trial_url": "https://clinicaltrials.gov/study/NCT06308978",
-    "sec": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "patents": {
-      "recent_total": 0,
-      "matched_total": 0,
-      "matched_keywords": [],
-      "examples": [],
-      "most_recent_recent": null,
-      "most_recent_matched": null
-    },
-    "target_roles": [
-      "Clinical Scientist / Early Clinical Development Lead (Phase 1)",
-      "Director/VP, Translational Medicine (Oncology/Immunology)",
-      "Head/Director, Clinical Biomarkers / Translational Biomarkers",
-      "Head/Director, Immune Monitoring / Flow Cytometry / Cytometry Core",
-      "Director, Bioassay / Potency / Analytical Development"
-    ],
-    "company": "Fate Therapeutics",
-    "total_score": 20.339118038186662,
-    "fit_score": 5.0,
-    "urgency_score": 3.0,
-    "access_score": 0.0,
-    "evidence_links": [
-      "https://clinicaltrials.gov/study/NCT06308978",
-      "https://clinicaltrials.gov/study/NCT07216105",
-      "https://clinicaltrials.gov/study/NCT04629729",
-      "https://clinicaltrials.gov/study/NCT06241456"
-    ],
-    "score_details": {
-      "trial_count": 4,
-      "sec_matched": 0,
-      "patent_matched": 0,
-      "most_recent_trial_update": "2026-02-11T00:00:00+00:00",
       "most_recent_other_matched": null
     },
     "rank": 40
